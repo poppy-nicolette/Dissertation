@@ -5,7 +5,7 @@ Date: March 2025 -> current
 
 ### venv
 This uses a venv for running the Part3 notebook. 
-source part_3/bin/activate
+source part_3_cohere/bin/activate
 
 ## Todo:
 - [ ] rewrite Part 1 notebook to compare Crossref REST and XML APIs - make it more simple.

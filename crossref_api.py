@@ -25,7 +25,7 @@ class CrossrefAPI:
     get_data() -> Dict[str, Any]
         retrieves data from the Crossref API and returns it as a dictionary
     get_title() -> str
-        retrieves the Title from the JSON data retrieved from the Crossref API
+        retrieves the title from the JSON data retrieved from the Crossref API
     """
 
     def __init__(self, doi: str) -> None:
@@ -38,6 +38,7 @@ class CrossrefAPI:
             the Digital Object Identifier (DOI) of the work to be retrieved
         """
         self.doi = doi
+        self.title = title
         self.url = f"https://api.crossref.org/works/{self.doi}"
 
     def get_data(self) -> Dict[str, Any]:
@@ -60,8 +61,11 @@ class CrossrefAPI:
         Returns
         -------
         str
-            the DOI of the work retrieved from the Crossref API
+            the title of the work retrieved from the Crossref API
         """
         data = self.get_data()
-        title = data["message"]["Title"]
-        return title
+        title = data["message"]["title"][0]
+        if title:
+            return title
+        else:
+            return "no title"

@@ -192,8 +192,27 @@ class CrossrefAPI:
                 if 'content-version' in license and (license['content-version'] == 'vor' or license['content-version'] == 'unspecified'):
                     version = license['content-version']
                     url = license['URL']
-                    print(f"version:{version}")
-                    print(f"url: {url}")
                     return (version, url)
+        return (None,None)
+
+    def get_language(self) -> str:
+        """
+        Retrieves the language reported for a work. 
+        The REST API returns only one language, whereas the XML API
+        may have a language attribute in the abstract or title and 
+        may have multiple abstracts and/or titles for each language version.
+        The REST API returns the first in the order they are listed in the 
+        XML submisison from the publisher. 
+
+        Returns
+        -------
+        str
+            A string of the language that uses the two-letter following ISO-639.
+        """
+        data = self.get_data()
+        # retrieve the language if it exists
+        if 'message' in data and 'language' in data['message']:
+            language = data['message'].get('language',None)
+            return language
         else:
-            return (None,None)
+            return None

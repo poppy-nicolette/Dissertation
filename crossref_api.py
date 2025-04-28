@@ -5,7 +5,7 @@ import requests
 import json
 from typing import Any, Dict
 
-class CrossrefAPI:
+class Crossref_REST_API:
     """
     A class used to retrieve data from the Crossref REST API
     ...

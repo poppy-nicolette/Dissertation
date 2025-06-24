@@ -1,0 +1,6 @@
+Requests==2.32.4
+pandas==2.2.3
+numpy==2.2.6
+colorama==0.4.6
+tqdm==4.67.1
+

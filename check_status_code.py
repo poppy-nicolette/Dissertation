@@ -29,5 +29,5 @@ def check_status_code(url:str)-> str:
         # rate limiting
         time.sleep(.5)
         return str(response.status_code)
-    except requests.exceptions.RequestException as e:
-        return f"Attempt failed: {e}"
+    except requests.exceptions.RequestException:
+        return f"Attempt failed"

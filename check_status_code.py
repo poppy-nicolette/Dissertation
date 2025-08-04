@@ -1,6 +1,17 @@
+#check_status_code.py
+
+"""
+Usage: pass list of URLs to check_urls() to take advantage of multithreading.
+Otherwise, you can just use check_status_code(url).
+
+"""
+
 import requests
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from tqdm import tqdm
+import pandas as pd
+
 
 def check_status_code(url: str) -> str:
     """
@@ -10,6 +21,7 @@ def check_status_code(url: str) -> str:
     Returns
     str
         Status code - this is a status code that must be interpreted.
+        "Access Failed" - if the request fails.
 
     Example:
     200 - This is a valid and functioning URL
@@ -18,10 +30,10 @@ def check_status_code(url: str) -> str:
     try:
         response = requests.get(url, timeout=5)  # timeout in 5 seconds
         return str(response.status_code)
-    except requests.exceptions.RequestException as e:
-        return f"Attempt failed: {str(e)}"
+    except requests.exceptions.RequestException:
+        return "Access Failed"
 
-def check_urls(urls: list, max_workers: int = 5) -> dict:
+def check_urls(urls: list, max_workers: int = 5) -> list:
     """
     This function takes a list of URLs and checks their status codes using multithreading.
 
@@ -30,9 +42,9 @@ def check_urls(urls: list, max_workers: int = 5) -> dict:
     max_workers (int): Maximum number of threads to use.
 
     Returns:
-    dict: A dictionary with URLs as keys and their status codes as values.
+    list: A list of status codes or "Access Failed" for each URL.
     """
-    results = {}
+    results = []
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Submit all tasks to the executor
@@ -40,16 +52,10 @@ def check_urls(urls: list, max_workers: int = 5) -> dict:
 
         # Collect results as they complete
         for future in as_completed(future_to_url):
-            url = future_to_url[future]
             try:
                 status_code = future.result()
-                results[url] = status_code
-            except Exception as e:
-                results[url] = f"Error: {str(e)}"
+                results.append(status_code)
+            except Exception:
+                results.append("Access Failed")
 
     return results
-
-# Example usage
-# urls = ["https://www.example.com", "https://www.google.com", "https://www.github.com"]
-# status_codes = check_urls(urls)
-# print(status_codes)

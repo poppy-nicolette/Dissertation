@@ -8,7 +8,7 @@ Otherwise, you can just use check_status_code(url).
 
 import requests
 import time
-#from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 import pandas as pd
 
@@ -21,7 +21,7 @@ def check_status_code(url: str) -> str:
     Returns
     str
         Status code - this is a status code that must be interpreted.
-        "Access Failed" - if the request fails.
+        "Attempt Failed" - if the request fails.
 
     Example:
     200 - This is a valid and functioning URL
@@ -38,7 +38,7 @@ def check_status_code(url: str) -> str:
                                 allow_redirects=True) #allows redirects
         return str(response.status_code)
     except requests.exceptions.RequestException:
-        return "Access Failed"
+        return "Attempt Failed"
 
 def check_urls(urls: list, max_workers: int = 5) -> list:
     """
@@ -50,6 +50,10 @@ def check_urls(urls: list, max_workers: int = 5) -> list:
 
     Returns:
     list: A list of status codes or "Access Failed" for each URL.
+
+    References:
+        https://realpython.com/python-concurrency/
+        https://docs.python.org/3/library/concurrent.futures.html
     """
     results = []
 
@@ -63,6 +67,6 @@ def check_urls(urls: list, max_workers: int = 5) -> list:
                 status_code = future.result()
                 results.append(status_code)
             except Exception:
-                results.append("Access Failed")
+                results.append("Attempt Failed")
 
     return results

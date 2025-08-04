@@ -21,7 +21,7 @@ def check_status_code(url: str) -> str:
     Returns
     str
         Status code - this is a status code that must be interpreted.
-        "Attempt Failed" - if the request fails.
+        "Attempt failed" - if the request fails.
 
     Example:
     200 - This is a valid and functioning URL
@@ -38,7 +38,7 @@ def check_status_code(url: str) -> str:
                                 allow_redirects=True) #allows redirects
         return str(response.status_code)
     except requests.exceptions.RequestException:
-        return "Attempt Failed"
+        return "Attempt failed"
 
 def check_urls(urls: list, max_workers: int = 5) -> list:
     """
@@ -67,6 +67,6 @@ def check_urls(urls: list, max_workers: int = 5) -> list:
                 status_code = future.result()
                 results.append(status_code)
             except Exception:
-                results.append("Attempt Failed")
+                results.append("Attempt failed")
 
     return results

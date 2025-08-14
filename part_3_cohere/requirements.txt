@@ -1,0 +1,7 @@
+cohere
+transformers
+numpy
+typing
+os
+dotenv
+json

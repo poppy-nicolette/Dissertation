@@ -5,3 +5,7 @@ typing
 os
 dotenv
 json
+scikit-learn
+matplotlib
+seaborn
+sentence-transformers

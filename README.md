@@ -6,7 +6,7 @@ Date: March 2025 -> current
 ### venv
 This uses a venv for running the Part3 notebook. 
 source part_3_cohere/bin/activate
-**You can find this on the local PHD drive, not here in Github as its silly to bring in a venv to a repository**
+**You can find this on the local PHD drive, not here in Github as its silly to bring in a venv to a repository** 🤦🏽‍♀️
 
 ## Todo:
 - [✅] set up requirements.txt file for each notebook

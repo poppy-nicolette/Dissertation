@@ -1,0 +1,50 @@
+---
+title: "Can RAG use bibliometric metadata?"
+subtitle: "Research Proposal, PhD Program in Information Science"
+author: "Poppy Riddle"
+format: 
+  revealjs:
+    theme: dark
+    progress: true
+    slide-number: true
+    preview-links: auto
+    css: www/styles.css
+editor: visual
+backgroundcolor: "#660099"
+---
+
+# hello there! {background="#660099"}
+
+<!--# https://htmlcolorcodes.com/color-chart/web-safe-color-chart/ -->
+
+## Presentation overview {background="#660099"}
+
+-   Introduction
+-   Part 1: Random sample
+-   Part 2: Comparing sources
+-   Part 3: RAG in action
+-   Concluding thoughts and questions
+
+# Introduction {background="#6633CC"}
+
+## Background {background="#6633CC"}
+
+abstracts as summaries, though limited in depth
+
+many abstracts, might provide a more holistic answer
+
+systematic review well known process
+
+summer of 2024 experimented using abstracts as a source of RAG applications
+
+3 areas should be explored:
+
+1.  metadata characterization
+2.  metadata source
+3.  evaluate characteristic impact through case study
+
+# Part 1: Characterize metadata
+
+## Characterize metadata from Crossref
+
+What are the characteristics of textual metadata from a registration agency, such as Crossref?

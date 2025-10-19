@@ -1,0 +1,40 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Is bibliometric metadata appropriate for use in RAG?\"\n",
+        "format: revealjs\n",
+        "editor:\n",
+        "    render-on-save: true\n",
+        "\n",
+        "---\n",
+        "\n",
+        "# hello there!\n"
+      ],
+      "id": "7467433b"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "print(\"helo, there\")"
+      ],
+      "id": "07110cd1",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "part_3_cohere_rag",
+      "language": "python",
+      "display_name": "part_3_cohere_rag",
+      "path": "/Users/poppyriddle/Library/Jupyter/kernels/part_3_cohere_rag"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

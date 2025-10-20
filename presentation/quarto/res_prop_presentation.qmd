@@ -4,20 +4,30 @@ subtitle: "Research Proposal, PhD Program in Information Science"
 author: "Poppy Riddle"
 format: 
   revealjs:
-    theme: dark
+    theme: [default, www/custom.scss]
     progress: true
     slide-number: true
     preview-links: auto
-    css: www/styles.css
+    #css: www/styles.css
+    embed-resources: true
 editor: visual
 backgroundcolor: "#660099"
+background-transition: fade
 ---
 
-# hello there! {background="#660099"}
+# hello there!
 
 <!--# https://htmlcolorcodes.com/color-chart/web-safe-color-chart/ -->
 
-## Presentation overview {background="#660099"}
+<!--# more helpful stuff: https://emilhvitfeldt.com/blog -->
+
+<!--# plugins should you want them: https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware -->
+
+::: notes
+Speaker notes go here. Thank goodness, I need me some notes.
+:::
+
+## Presentation overview
 
 -   Introduction
 -   Part 1: Random sample
@@ -25,9 +35,9 @@ backgroundcolor: "#660099"
 -   Part 3: RAG in action
 -   Concluding thoughts and questions
 
-# Introduction {background="#6633CC"}
+# Introduction
 
-## Background {background="#6633CC"}
+## Background {.scrollable}
 
 abstracts as summaries, though limited in depth
 
@@ -35,16 +45,46 @@ many abstracts, might provide a more holistic answer
 
 systematic review well known process
 
+abstracts may be available when the paper is [paywalled]{.yellow}
+
 summer of 2024 experimented using abstracts as a source of RAG applications
+
+cite work by Zain and Gowri, published proceedings,
 
 3 areas should be explored:
 
 1.  metadata characterization
 2.  metadata source
 3.  evaluate characteristic impact through case study
+4.  
 
 # Part 1: Characterize metadata
 
 ## Characterize metadata from Crossref
 
 What are the characteristics of textual metadata from a registration agency, such as Crossref?
+
+# Part 2: Compare data sources
+
+## Compare the same metadata from Crossref and OpenAlex
+
+some text here
+
+## Title
+
+## Slide with linear-gradient
+
+| Value | Description                           |
+|-------|---------------------------------------|
+| `c/t` | Slide number / total slides (default) |
+| `c`   | Slide number only                     |
+| `h/v` | Horizontal / Vertical slide number    |
+| `h.v` | Horizontal . Vertical slide number    |
+
+::: p
+Hi there, I'm using the p class specified in the css.
+:::
+
+::: p
+Some more text in the p class
+:::

@@ -9,10 +9,12 @@ format:
     slide-number: true
     preview-links: auto
     #css: www/styles.css
-    embed-resources: true
+    embed-resources: false
 editor: visual
 backgroundcolor: "#660099"
 background-transition: fade
+project:
+  execute-dir: project
 ---
 
 # hello there!
@@ -56,13 +58,48 @@ cite work by Zain and Gowri, published proceedings,
 1.  metadata characterization
 2.  metadata source
 3.  evaluate characteristic impact through case study
-4.  
 
-# Part 1: Characterize metadata
+### Gaps addressed
 
-## Characterize metadata from Crossref
+-   evidence for bibliometric metadata directly as a document source in RAG
+
+-   Lack of characterization of title and abstract metadata
+
+-   Metadata source: compares two sources for effects of aggregation and transformation
+
+## Framework
+
+![](images/framework.svg){fig-align="center"}
+
+::: notes
+past studies have examined coverage, completeness, accuracy, but not content.
+:::
+
+# Part 1: Characterize metadata {.scrollable}
+
+## Characterize metadata from Crossref {.scrollable}
 
 What are the characteristics of textual metadata from a registration agency, such as Crossref?
+
+![](images/part_1.svg){fig-align="center"}
+
+Example:
+
+Abstract metadata from <https://api.crossref.org/works/10.1103/physrevd.110.036015>
+
+![](images/abstract.png){fig-align="center"}
+
+Or, another example from <https://api.crossref.org/works/10.33024/hjk.v15i1.3791>:
+
+![](images/abstract2.png){fig-align="center"}
+
+Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1108/eemcs-04-2022-0108>
+
+![](images/abstract3.png){fig-align="center"}
+
+## 
+
+[Past studies have examined metadata for presence and accuracy, but have not examined content.]{.yellow .absolute left="20%" top="30%" right="20%"}
 
 # Part 2: Compare data sources
 

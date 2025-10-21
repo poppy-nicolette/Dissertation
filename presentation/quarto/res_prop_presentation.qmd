@@ -41,28 +41,42 @@ Speaker notes go here. Thank goodness, I need me some notes.
 
 ## Background {.scrollable}
 ::: notes
-Speaker notes go here. Thank goodness, I need me some notes.
+Notes on abstracts and titles
 :::
 
-abstracts as summaries, though limited in depth
+Abstracts as summaries, though limited in depth
 
-many abstracts, might provide a more holistic answer
+Many abstracts, might provide a more holistic answer
 
-systematic review well known process
+Systematic review well known process
 
-abstracts may be available when the paper is [paywalled]{.yellow}
+Abstracts may be available when the paper is [paywalled]{.yellow}
 
-summer of 2024 experimented using abstracts as a source of RAG applications
+## Past research
+::: notes
+past studies have examined coverage, completeness, accuracy, but not content.
+:::
+
+itemize past research and cite those studies
+
+## What is RAG?
+Retrieval-augmented generation
+
+add in diagram here of retrieval-augmented generation
+
+## Proof of concept
+Summer of 2024 experimented using abstracts as a source of RAG applications
 
 cite work by Zain and Gowri, published proceedings,
 
-3 areas should be explored:
+
+## 3 areas should be explored:
 
 1.  metadata characterization
 2.  metadata source
 3.  evaluate characteristic impact through case study
 
-### Gaps addressed
+## Gaps addressed
 
 -   evidence for bibliometric metadata directly as a document source in RAG
 
@@ -74,9 +88,7 @@ cite work by Zain and Gowri, published proceedings,
 
 ![](images/framework.svg){fig-align="center"}
 
-::: notes
-past studies have examined coverage, completeness, accuracy, but not content.
-:::
+
 
 # Part 1: Characterize metadata {.scrollable}
 
@@ -140,29 +152,21 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 :::
 :::::
 
-This should tell us what has changed, by how much, and provide some insight into which data source, Crossref or OpenAlex, might be better for using in a RAG application.
+##  
+
+[Past studies have examined both databases for their appropriateness for bibliometric analysis, but not for NLP tasks.]{.yellow .absolute left="20%" top="30%" right="20%"}
 
 # Part 3: Evaluate some characteristics in action
 
 ## What happens when we put some of this metadata in a RAG application? {.scrollable}
-
-![](images/part_3_framework.svg){fig-align="center"}
-
-##  {.scrollable}
-
-::::: columns
-::: {.column width="40%"}
+::: notes
 Three datasets of 45 works containing the DOI, the title, and the abstract
-:::
 
-::: {.column width="60%"}
 A clean dataset
 
 With JATS tags prepending and appending the title and abstract.
 
 A translated version in Japanese prepending the English
-:::
-:::::
 
 -   RAG pipeline with embedding, reranking, and generation models
 
@@ -185,6 +189,11 @@ A translated version in Japanese prepending the English
     -   faithfulness
 
     -   answer relevance
+
+:::
+
+![](images/part_3_framework.svg){fig-align="center"}
+
 
 # Summary
 
@@ -242,10 +251,29 @@ Who wants to see some results?
     with [only English]{.yellow}, and
     compared [word embedding]{.yellow} to [sentence embedding]{.yellow}.
 
-## Results
+# Results
 
-Part 1 summary results
+## Part 1 summary results {.scrollable}
+::: notes
+put results into nice infographics, but use what you have first
+:::
+![](images/part_2.svg){width="587"}
 
-Part 2 summary results
+## Part 2 summary results {.scrollable}
+::: notes
+put results into nice infographics, but use what you have first
+:::
+![](images/part_2.svg){width="587"}
 
-Part 3 summary results
+## Part 3 summary results {.scrollable}
+::: notes
+use nice graphics that I have already
+:::
+![](images/part_2.svg){width="587"}
+
+# Thank you!
+Poppy Riddle
+[Department of Information Science PhD Program]{.blue}
+
+## References
+insert bibliography here

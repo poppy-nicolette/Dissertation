@@ -176,29 +176,27 @@ Poppy Riddle
 </section>
 <section id="background" class="slide level2 scrollable">
 <h2>Background</h2>
-<p>abstracts as summaries, though limited in depth</p>
-<p>many abstracts, might provide a more holistic answer</p>
-<p>systematic review well known process</p>
-<p>abstracts may be available when the paper is <span class="yellow">paywalled</span></p>
-<p>summer of 2024 experimented using abstracts as a source of RAG applications</p>
-<p>cite work by Zain and Gowri, published proceedings,</p>
-<p>3 areas should be explored:</p>
-<ol type="1">
-<li>metadata characterization</li>
-<li>metadata source</li>
-<li>evaluate characteristic impact through case study</li>
-</ol>
-<h3 id="gaps-addressed">Gaps addressed</h3>
-<ul>
-<li><p>evidence for bibliometric metadata directly as a document source in RAG</p></li>
-<li><p>Lack of characterization of title and abstract metadata</p></li>
-<li><p>Metadata source: compares two sources for effects of aggregation and transformation</p></li>
-</ul>
+<aside class="notes">
+<p>Notes on abstracts and titles</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p>Abstracts as summaries, though limited in depth</p>
+<p>Many abstracts, might provide a more holistic answer</p>
+<p>Systematic review well known process</p>
+<p>Abstracts may be available when the paper is <span class="yellow">paywalled</span></p>
 </section>
-<section id="framework" class="slide level2">
-<h2>Framework</h2>
-
-<img data-src="images/framework.svg" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<section id="past-research" class="slide level2">
+<h2>Past research</h2>
+<aside class="notes">
 <p>past studies have examined coverage, completeness, accuracy, but not content.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -211,7 +209,38 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section></section>
+<p>itemize past research and cite those studies</p>
+</section>
+<section id="what-is-rag" class="slide level2">
+<h2>What is RAG?</h2>
+<p>Retrieval-augmented generation</p>
+<p>add in diagram here of retrieval-augmented generation</p>
+</section>
+<section id="proof-of-concept" class="slide level2">
+<h2>Proof of concept</h2>
+<p>Summer of 2024 experimented using abstracts as a source of RAG applications</p>
+<p>cite work by Zain and Gowri, published proceedings,</p>
+</section>
+<section id="areas-should-be-explored" class="slide level2">
+<h2>3 areas should be explored:</h2>
+<ol type="1">
+<li>metadata characterization</li>
+<li>metadata source</li>
+<li>evaluate characteristic impact through case study</li>
+</ol>
+</section>
+<section id="gaps-addressed" class="slide level2">
+<h2>Gaps addressed</h2>
+<ul>
+<li><p>evidence for bibliometric metadata directly as a document source in RAG</p></li>
+<li><p>Lack of characterization of title and abstract metadata</p></li>
+<li><p>Metadata source: compares two sources for effects of aggregation and transformation</p></li>
+</ul>
+</section>
+<section id="framework" class="slide level2">
+<h2>Framework</h2>
+
+<img data-src="images/framework.svg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
 <section id="part-1-characterize-metadata" class="title-slide slide level1 scrollable center">
 <h1>Part 1: Characterize metadata</h1>
@@ -279,7 +308,10 @@ Poppy Riddle
 <li><p>Analyze full dataset with patterns</p></li>
 </ul>
 </div></div>
-<p>This should tell us what has changed, by how much, and provide some insight into which data source, Crossref or OpenAlex, might be better for using in a RAG application.</p>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><span class="yellow absolute" style="top: 30%; left: 20%; right: 20%; ">Past studies have examined both databases for their appropriateness for bibliometric analysis, but not for NLP tasks.</span></p>
 </section></section>
 <section>
 <section id="part-3-evaluate-some-characteristics-in-action" class="title-slide slide level1 center">
@@ -288,18 +320,11 @@ Poppy Riddle
 </section>
 <section id="what-happens-when-we-put-some-of-this-metadata-in-a-rag-application" class="slide level2 scrollable">
 <h2>What happens when we put some of this metadata in a RAG application?</h2>
-
-<img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="section-2" class="slide level2 scrollable">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:40%;">
+<aside class="notes">
 <p>Three datasets of 45 works containing the DOI, the title, and the abstract</p>
-</div><div class="column" style="width:60%;">
 <p>A clean dataset</p>
 <p>With JATS tags prepending and appending the title and abstract.</p>
 <p>A translated version in Japanese prepending the English</p>
-</div></div>
 <ul>
 <li><p>RAG pipeline with embedding, reranking, and generation models</p></li>
 <li><p>Analyze results from the retriever:</p>
@@ -317,7 +342,19 @@ Poppy Riddle
 <li><p>answer relevance</p></li>
 </ul></li>
 </ul>
-</section></section>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
 <section id="summary" class="title-slide slide level1 center">
 <h1>Summary</h1>
@@ -374,12 +411,71 @@ Poppy Riddle
 </ul></li>
 <li><p>I reran the original test with different configurations of open and closed models: with <span class="yellow">multilingual capability</span>, with <span class="yellow">only English</span>, and compared <span class="yellow">word embedding</span> to <span class="yellow">sentence embedding</span>.</p></li>
 </ol>
+</section></section>
+<section>
+<section id="results" class="title-slide slide level1 center">
+<h1>Results</h1>
+
 </section>
-<section id="results" class="slide level2">
-<h2>Results</h2>
-<p>Part 1 summary results</p>
-<p>Part 2 summary results</p>
-<p>Part 3 summary results</p>
+<section id="part-1-summary-results" class="slide level2 scrollable">
+<h2>Part 1 summary results</h2>
+<aside class="notes">
+<p>put results into nice infographics, but use what you have first</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/part_2.svg" width="587" class="r-stretch"></section>
+<section id="part-2-summary-results" class="slide level2 scrollable">
+<h2>Part 2 summary results</h2>
+<aside class="notes">
+<p>put results into nice infographics, but use what you have first</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/part_2.svg" width="587" class="r-stretch"></section>
+<section id="part-3-summary-results" class="slide level2 scrollable">
+<h2>Part 3 summary results</h2>
+<aside class="notes">
+<p>use nice graphics that I have already</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/part_2.svg" width="587" class="r-stretch"></section></section>
+<section>
+<section id="thank-you-1" class="title-slide slide level1 center">
+<h1>Thank you!</h1>
+<p>Poppy Riddle <span class="blue">Department of Information Science PhD Program</span></p>
+</section>
+<section id="references" class="slide level2">
+<h2>References</h2>
+<p>insert bibliography here</p>
 
 </section></section>
     </div>

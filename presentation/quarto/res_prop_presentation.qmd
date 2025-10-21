@@ -101,27 +101,118 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 
 [Past studies have examined metadata for presence and accuracy, but have not examined content.]{.yellow .absolute left="20%" top="30%" right="20%"}
 
-# Part 2: Compare data sources
+# Part 2: Compare data sources {.scrollable}
 
-## Compare the same metadata from Crossref and OpenAlex
+## Compare the same metadata from Crossref and OpenAlex {.scrollable}
 
-some text here
+![](images/part_2.svg){fig-align="center"}
 
-## Title
+-   Same DOIs from Part 1 used to query OpenAlex
 
-## Slide with linear-gradient
+-   shared corpus is created with overlap between two datasets
 
-| Value | Description                           |
-|-------|---------------------------------------|
-| `c/t` | Slide number / total slides (default) |
-| `c`   | Slide number only                     |
-| `h/v` | Horizontal / Vertical slide number    |
-| `h.v` | Horizontal . Vertical slide number    |
+-   Compare each element for changes
 
-::: p
-Hi there, I'm using the p class specified in the css.
-:::
+    -   Missing
 
-::: p
-Some more text in the p class
-:::
+    -   Incorrect
+
+    -   In the wrong element
+
+    -   Different
+
+    -   Correct but represented differently
+
+-   Analyze subset for title and abstract that is:
+
+-   Code the changes into patterns to search the entire dataset
+
+-   Analyze full dataset with patterns
+
+This should tell us what has changed, by how much, and provide some insight into which data source, Crossref or OpenAlex, might be better for using in a RAG application.
+
+# Part 3: Evaluate some characteristics in action
+
+## What happens when we put some of this metadata in a RAG application? {.scrollable}
+
+-   used three datasets
+
+<div>
+
+1.  A clean dataset of 49 works containing the DOI, the title, and the abstract.
+2.  The same dataset, but with JATS tags prepending and appending the title and abstract.
+3.  The same dataset, but with a translated version in Japanese prepending the English
+
+</div>
+
+-   RAG pipeline with embedding, reranking, and generation models
+
+-   Analyze results from the retriever:
+
+    -   precision
+
+    -   recall
+
+    -   F1
+
+    -   accuracy
+
+    -   balanced accuracy
+
+    -   document scores
+
+-   Analyze results from the generator model:
+
+    -   faithfulness
+
+    -   answer relevance
+
+# Summary
+
+Purpose:
+
+Bibliometric metadata can be used as a source of external knowledge in RAG, however, it is unknown what kind of errors, where these are found, and how they may impact RAG outcomes.
+
+## Benefits
+
+This study should help us understand how characteristics from Part 1 and how a data source from Part 2, may impact retrieval and generation in a RAG application.
+
+Additionally, it also provides a handy set of patterns that can be used to identify such problems before using the metadata, or for the purpose of cleaning.
+
+It characterizes metadata from Crossref and OpenAlex in a way that has not been done before.
+
+Introduces the Crossref XML API as part of analyzing metadata completeness and accuracy.
+
+Introduces a nuanced view of the Crossref Schema documentation.
+
+# Thank you!
+
+And now, its time for questions.
+
+# Sneak peek
+
+## Who wants to see some results?
+
+Ok, here's what actually happened:
+
+1.  I ran the studies as above. Part 1 was coded more than once to get consistency.
+
+2.  Part 2 was simple, and could probably be expanded.
+
+3.  Licensing information is a real train wreck. I suggest dropping this, and maybe just including a bit for discussion sake.
+
+4.  I created two different RAG applications in the end
+
+    -   One uses closed models from Cohere - I got a research grant!
+
+    -   One uses open models for embedding.
+
+5.  I reran the original test with different configurations of open and closed models, with multilingual capability, and with only English, and compared word embedding models to sentence embedding models.
+
+## Results
+
+Part 1 summary results
+
+Part 2 summary results
+
+Part 3 summary results

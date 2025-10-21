@@ -250,51 +250,109 @@ Poppy Riddle
 <p><span class="yellow absolute" style="top: 30%; left: 20%; right: 20%; ">Past studies have examined metadata for presence and accuracy, but have not examined content.</span></p>
 </section></section>
 <section>
-<section id="part-2-compare-data-sources" class="title-slide slide level1 center">
+<section id="part-2-compare-data-sources" class="title-slide slide level1 scrollable center">
 <h1>Part 2: Compare data sources</h1>
 
 </section>
-<section id="compare-the-same-metadata-from-crossref-and-openalex" class="slide level2">
+<section id="compare-the-same-metadata-from-crossref-and-openalex" class="slide level2 scrollable">
 <h2>Compare the same metadata from Crossref and OpenAlex</h2>
-<p>some text here</p>
+
+<img data-src="images/part_2.svg" class="quarto-figure quarto-figure-center r-stretch"><ul>
+<li><p>Same DOIs from Part 1 used to query OpenAlex</p></li>
+<li><p>shared corpus is created with overlap between two datasets</p></li>
+<li><p>Compare each element for changes</p>
+<ul>
+<li><p>Missing</p></li>
+<li><p>Incorrect</p></li>
+<li><p>In the wrong element</p></li>
+<li><p>Different</p></li>
+<li><p>Correct but represented differently</p></li>
+</ul></li>
+<li><p>Analyze subset for title and abstract that is:</p></li>
+<li><p>Code the changes into patterns to search the entire dataset</p></li>
+<li><p>Analyze full dataset with patterns</p></li>
+</ul>
+<p>This should tell us what has changed, by how much, and provide some insight into which data source, Crossref or OpenAlex, might be better for using in a RAG application.</p>
+</section></section>
+<section>
+<section id="part-3-evaluate-some-characteristics-in-action" class="title-slide slide level1 center">
+<h1>Part 3: Evaluate some characteristics in action</h1>
+
 </section>
-<section id="title" class="slide level2">
-<h2>Title</h2>
+<section id="what-happens-when-we-put-some-of-this-metadata-in-a-rag-application" class="slide level2 scrollable">
+<h2>What happens when we put some of this metadata in a RAG application?</h2>
+<ul>
+<li>used three datasets</li>
+</ul>
+<div>
+<ol type="1">
+<li>A clean dataset of 49 works containing the DOI, the title, and the abstract.</li>
+<li>The same dataset, but with JATS tags prepending and appending the title and abstract.</li>
+<li>The same dataset, but with a translated version in Japanese prepending the English</li>
+</ol>
+</div>
+<ul>
+<li><p>RAG pipeline with embedding, reranking, and generation models</p></li>
+<li><p>Analyze results from the retriever:</p>
+<ul>
+<li><p>precision</p></li>
+<li><p>recall</p></li>
+<li><p>F1</p></li>
+<li><p>accuracy</p></li>
+<li><p>balanced accuracy</p></li>
+<li><p>document scores</p></li>
+</ul></li>
+<li><p>Analyze results from the generator model:</p>
+<ul>
+<li><p>faithfulness</p></li>
+<li><p>answer relevance</p></li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="summary" class="title-slide slide level1 center">
+<h1>Summary</h1>
+<p>Purpose:</p>
+<p>Bibliometric metadata can be used as a source of external knowledge in RAG, however, it is unknown what kind of errors, where these are found, and how they may impact RAG outcomes.</p>
 </section>
-<section id="slide-with-linear-gradient" class="slide level2">
-<h2>Slide with linear-gradient</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>c/t</code></td>
-<td>Slide number / total slides (default)</td>
-</tr>
-<tr class="even">
-<td><code>c</code></td>
-<td>Slide number only</td>
-</tr>
-<tr class="odd">
-<td><code>h/v</code></td>
-<td>Horizontal / Vertical slide number</td>
-</tr>
-<tr class="even">
-<td><code>h.v</code></td>
-<td>Horizontal . Vertical slide number</td>
-</tr>
-</tbody>
-</table>
-<div class="p">
-<p>Hi there, I’m using the p class specified in the css.</p>
-</div>
-<div class="p">
-<p>Some more text in the p class</p>
-</div>
+<section id="benefits" class="slide level2">
+<h2>Benefits</h2>
+<p>This study should help us understand how characteristics from Part 1 and how a data source from Part 2, may impact retrieval and generation in a RAG application.</p>
+<p>Additionally, it also provides a handy set of patterns that can be used to identify such problems before using the metadata, or for the purpose of cleaning.</p>
+<p>It characterizes metadata from Crossref and OpenAlex in a way that has not been done before.</p>
+<p>Introduces the Crossref XML API as part of analyzing metadata completeness and accuracy.</p>
+<p>Introduces a nuanced view of the Crossref Schema documentation.</p>
+</section></section>
+<section id="thank-you" class="title-slide slide level1 center">
+<h1>Thank you!</h1>
+<p>And now, its time for questions.</p>
+</section>
+
+<section>
+<section id="sneak-peek" class="title-slide slide level1 center">
+<h1>Sneak peek</h1>
+
+</section>
+<section id="who-wants-to-see-some-results" class="slide level2">
+<h2>Who wants to see some results?</h2>
+<p>Ok, here’s what actually happened:</p>
+<ol type="1">
+<li><p>I ran the studies as above. Part 1 was coded more than once to get consistency.</p></li>
+<li><p>Part 2 was simple, and could probably be expanded.</p></li>
+<li><p>Licensing information is a real train wreck. I suggest dropping this, and maybe just including a bit for discussion sake.</p></li>
+<li><p>I created two different RAG applications in the end</p>
+<ul>
+<li><p>One uses closed models from Cohere - I got a research grant!</p></li>
+<li><p>One uses open models for embedding.</p></li>
+</ul></li>
+<li><p>I reran the original test with different configurations of open and closed models, with multilingual capability, and with only English, and compared word embedding models to sentence embedding models.</p></li>
+</ol>
+</section>
+<section id="results" class="slide level2">
+<h2>Results</h2>
+<p>Part 1 summary results</p>
+<p>Part 2 summary results</p>
+<p>Part 3 summary results</p>
 
 </section></section>
     </div>

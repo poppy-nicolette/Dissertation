@@ -83,7 +83,7 @@ What are the characteristics of textual metadata from a registration agency, suc
 
 ![](images/part_1.svg){fig-align="center"}
 
-Example:
+## Example: {.scrollable}
 
 Abstract metadata from <https://api.crossref.org/works/10.1103/physrevd.110.036015>
 
@@ -105,29 +105,37 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 
 ## Compare the same metadata from Crossref and OpenAlex {.scrollable}
 
-![](images/part_2.svg){fig-align="center"}
+![](images/part_2.svg){width="587"}
 
--   Same DOIs from Part 1 used to query OpenAlex
+##  {.scrollable}
 
--   shared corpus is created with overlap between two datasets
+::::: columns
+::: {.column width="50%"}
+-   Same DOIs from Part 1
 
--   Compare each element for changes
+-   Shared corpus
+
+-   Compare for changes
 
     -   Missing
 
     -   Incorrect
 
-    -   In the wrong element
+    -   Wrong element
 
     -   Different
 
-    -   Correct but represented differently
+    -   Representation
+:::
 
--   Analyze subset for title and abstract that is:
+::: {.column width="50%"}
+-   Subset analysis
 
--   Code the changes into patterns to search the entire dataset
+-   Code into patterns
 
 -   Analyze full dataset with patterns
+:::
+:::::
 
 This should tell us what has changed, by how much, and provide some insight into which data source, Crossref or OpenAlex, might be better for using in a RAG application.
 
@@ -135,15 +143,23 @@ This should tell us what has changed, by how much, and provide some insight into
 
 ## What happens when we put some of this metadata in a RAG application? {.scrollable}
 
--   used three datasets
+![](images/part_3_framework.svg){fig-align="center"}
 
-<div>
+##  {.scrollable}
 
-1.  A clean dataset of 49 works containing the DOI, the title, and the abstract.
-2.  The same dataset, but with JATS tags prepending and appending the title and abstract.
-3.  The same dataset, but with a translated version in Japanese prepending the English
+::::: columns
+::: {.column width="40%"}
+Three datasets of 45 works containing the DOI, the title, and the abstract
+:::
 
-</div>
+::: {.column width="60%"}
+A clean dataset
+
+With JATS tags prepending and appending the title and abstract.
+
+A translated version in Japanese prepending the English
+:::
+:::::
 
 -   RAG pipeline with embedding, reranking, and generation models
 

@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="res_prop_presentation_files/libs/revealjs/dist/theme/quarto-c66703ddbc695b55ffd269485e56573f.css">
+  <link rel="stylesheet" href="res_prop_presentation_files/libs/revealjs/dist/theme/quarto-b5fb3c957682fb73ecb3478fc9d898f1.css">
   <link href="res_prop_presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="res_prop_presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="res_prop_presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -220,12 +220,10 @@ Poppy Riddle
 <section id="characterize-metadata-from-crossref" class="slide level2 scrollable">
 <h2>Characterize metadata from Crossref</h2>
 <p>What are the characteristics of textual metadata from a registration agency, such as Crossref?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/part_1.svg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-<p>Example:</p>
+
+<img data-src="images/part_1.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="example" class="slide level2 scrollable">
+<h2>Example:</h2>
 <p>Abstract metadata from <a href="https://api.crossref.org/works/10.1103/physrevd.110.036015" class="uri">https://api.crossref.org/works/10.1103/physrevd.110.036015</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -257,21 +255,30 @@ Poppy Riddle
 <section id="compare-the-same-metadata-from-crossref-and-openalex" class="slide level2 scrollable">
 <h2>Compare the same metadata from Crossref and OpenAlex</h2>
 
-<img data-src="images/part_2.svg" class="quarto-figure quarto-figure-center r-stretch"><ul>
-<li><p>Same DOIs from Part 1 used to query OpenAlex</p></li>
-<li><p>shared corpus is created with overlap between two datasets</p></li>
-<li><p>Compare each element for changes</p>
+<img data-src="images/part_2.svg" width="587" class="r-stretch"></section>
+<section id="section-1" class="slide level2 scrollable">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Same DOIs from Part 1</p></li>
+<li><p>Shared corpus</p></li>
+<li><p>Compare for changes</p>
 <ul>
 <li><p>Missing</p></li>
 <li><p>Incorrect</p></li>
-<li><p>In the wrong element</p></li>
+<li><p>Wrong element</p></li>
 <li><p>Different</p></li>
-<li><p>Correct but represented differently</p></li>
+<li><p>Representation</p></li>
 </ul></li>
-<li><p>Analyze subset for title and abstract that is:</p></li>
-<li><p>Code the changes into patterns to search the entire dataset</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><p>Subset analysis</p></li>
+<li><p>Code into patterns</p></li>
 <li><p>Analyze full dataset with patterns</p></li>
 </ul>
+</div></div>
 <p>This should tell us what has changed, by how much, and provide some insight into which data source, Crossref or OpenAlex, might be better for using in a RAG application.</p>
 </section></section>
 <section>
@@ -281,16 +288,18 @@ Poppy Riddle
 </section>
 <section id="what-happens-when-we-put-some-of-this-metadata-in-a-rag-application" class="slide level2 scrollable">
 <h2>What happens when we put some of this metadata in a RAG application?</h2>
-<ul>
-<li>used three datasets</li>
-</ul>
-<div>
-<ol type="1">
-<li>A clean dataset of 49 works containing the DOI, the title, and the abstract.</li>
-<li>The same dataset, but with JATS tags prepending and appending the title and abstract.</li>
-<li>The same dataset, but with a translated version in Japanese prepending the English</li>
-</ol>
-</div>
+
+<img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="section-2" class="slide level2 scrollable">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Three datasets of 45 works containing the DOI, the title, and the abstract</p>
+</div><div class="column" style="width:60%;">
+<p>A clean dataset</p>
+<p>With JATS tags prepending and appending the title and abstract.</p>
+<p>A translated version in Japanese prepending the English</p>
+</div></div>
 <ul>
 <li><p>RAG pipeline with embedding, reranking, and generation models</p></li>
 <li><p>Analyze results from the retriever:</p>

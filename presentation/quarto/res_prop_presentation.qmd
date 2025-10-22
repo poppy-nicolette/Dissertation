@@ -61,13 +61,19 @@ itemize past research and cite those studies
 
 ## What is RAG?
 Retrieval-augmented generation
+![](images/rag_basic.svg){fig-align="center" width="160%" .absolute top="30%" left="0%"}
 
-add in diagram here of retrieval-augmented generation
 
-## Proof of concept
+## Proof of concept {.scrollable}
 Summer of 2024 experimented using abstracts as a source of RAG applications
 
-cite work by Zain and Gowri, published proceedings,
+![](images/rag_based_nav.png){fig-align="center"}
+[published in NLP4Sustainability Workshop, Proceedings of the 21st Conference on Natural Language Processing (KONVENS), Volume 2: Workshops,
+pages 282–290, 2025]{.blue}
+
+![](images/ocean_science_viz.png){fig-align="center"}
+[published in IV 2025 : 29th International Conference Information Visualisation, Darmstadt, DE]{.blue}
+
 
 
 ## 3 areas should be explored:
@@ -86,7 +92,7 @@ cite work by Zain and Gowri, published proceedings,
 
 ## Framework
 
-![](images/framework.svg){fig-align="center"}
+![](images/framework.svg){fig-align="center" }
 
 
 
@@ -96,7 +102,7 @@ cite work by Zain and Gowri, published proceedings,
 
 What are the characteristics of textual metadata from a registration agency, such as Crossref?
 
-![](images/part_1.svg){fig-align="center"}
+![](images/part_1.svg){fig-align="center" }
 
 ## Example: {.scrollable}
 

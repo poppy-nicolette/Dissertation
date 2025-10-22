@@ -121,6 +121,7 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 ## Compare the same metadata from Crossref and OpenAlex {.scrollable}
 
 ![](images/part_2.svg){width="587"}
+add subset analysis
 
 ##  {.scrollable}
 

@@ -16,18 +16,12 @@ background-transition: fade
 project:
   execute-dir: project
 ---
-
-# hello there!
-
+# hello!
 <!--# https://htmlcolorcodes.com/color-chart/web-safe-color-chart/ -->
 
 <!--# more helpful stuff: https://emilhvitfeldt.com/blog -->
 
 <!--# plugins should you want them: https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware -->
-
-::: notes
-Speaker notes go here. Thank goodness, I need me some notes.
-:::
 
 ## Presentation overview
 
@@ -52,12 +46,6 @@ Systematic review well known process
 
 Abstracts may be available when the paper is [paywalled]{.yellow}
 
-## Past research
-::: notes
-past studies have examined coverage, completeness, accuracy, but not content.
-:::
-
-itemize past research and cite those studies
 
 ## What is RAG?
 Retrieval-augmented generation
@@ -74,6 +62,24 @@ pages 282–290, 2025]{.blue}
 ![](images/ocean_science_viz.png){fig-align="center"}
 [published in IV 2025 : 29th International Conference Information Visualisation, Darmstadt, DE]{.blue}
 
+## Proposition
+What if we used abstracts as an external source of knowledge in RAG? {.yellow}
+
+## Past research 
+::: notes
+past studies have examined coverage, completeness, accuracy, but not content.
+:::
+
+itemize past research and cite those studies<br>
+- Culbert et al. (2024): shared corpus of OpenAlex and other databases<br>
+- Delgado-Quiros & Ortega (2024): metadata in Crossref and OpenAlex<br>
+- Alonso-Alverez & van Eck (2024): analysis of OpenAlex
+- Braun et al. (2024): Linzbach et al. (2023): query types
+- Kang & Kim (2023): metadata in RAG
+- Hayashi et al. (2024): metadata as document source
+- Agarwal et al. (2024): bibliometric abstracts from Semantic Scholar for kw extraction
+- F. Shi et al.(2023): irrelevant information in contexts
+- Cho et al. (2024): typos affecting retrieval performance
 
 
 ## 3 areas should be explored:

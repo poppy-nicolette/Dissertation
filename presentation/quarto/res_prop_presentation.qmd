@@ -10,6 +10,7 @@ format:
     preview-links: auto
     #css: www/styles.css
     embed-resources: false
+    scrollable: true
 editor: visual
 backgroundcolor: "#660099"
 background-transition: fade
@@ -73,13 +74,13 @@ past studies have examined coverage, completeness, accuracy, but not content.
 itemize past research and cite those studies<br>
 - Culbert et al. (2024): shared corpus of OpenAlex and other databases<br>
 - Delgado-Quiros & Ortega (2024): metadata in Crossref and OpenAlex<br>
-- Alonso-Alverez & van Eck (2024): analysis of OpenAlex
-- Braun et al. (2024): Linzbach et al. (2023): query types
-- Kang & Kim (2023): metadata in RAG
-- Hayashi et al. (2024): metadata as document source
-- Agarwal et al. (2024): bibliometric abstracts from Semantic Scholar for kw extraction
-- F. Shi et al.(2023): irrelevant information in contexts
-- Cho et al. (2024): typos affecting retrieval performance
+- Alonso-Alverez & van Eck (2024): analysis of OpenAlex<br>
+- Braun et al. (2024): Linzbach et al. (2023): query types<br>
+- Kang & Kim (2023): metadata in RAG<br>
+- Hayashi et al. (2024): metadata as document source<br>
+- Agarwal et al. (2024): bibliometric abstracts from Semantic Scholar for kw extraction<br>
+- F. Shi et al.(2023): irrelevant information in contexts<br>
+- Cho et al. (2024): typos affecting retrieval performance<br>
 
 
 ## 3 areas should be explored:

@@ -1,5 +1,5 @@
 ---
-title: "Can RAG use bibliometric metadata?"
+title: "Is bibliometric metadata ready for RAG?"
 subtitle: "Research Proposal, PhD Program in Information Science"
 author: "Poppy Riddle"
 format: 
@@ -8,11 +8,9 @@ format:
     progress: true
     slide-number: true
     preview-links: auto
-    #css: www/styles.css
     embed-resources: false
     scrollable: true
 editor: visual
-backgroundcolor: "#660099"
 background-transition: fade
 project:
   execute-dir: project
@@ -64,21 +62,25 @@ pages 282–290, 2025]{.blue}
 [published in IV 2025 : 29th International Conference Information Visualisation, Darmstadt, DE]{.blue}
 
 ## Proposition
-What if we used abstracts as an external source of knowledge in RAG? {.yellow}
+[If we use metadata as a knowledge source in RAG, is metadata quality a problem?]{.yellow .absolute left="20%" top="30%" right="20%"}
 
 ## Past research 
 ::: notes
 past studies have examined coverage, completeness, accuracy, but not content.
 :::
 
-itemize past research and cite those studies<br>
+### [OpenAlex quality]{.yellow}
 - Culbert et al. (2024): shared corpus of OpenAlex and other databases<br>
 - Delgado-Quiros & Ortega (2024): metadata in Crossref and OpenAlex<br>
 - Alonso-Alverez & van Eck (2024): analysis of OpenAlex<br>
+
+### [RAG and metadata]{.yellow}
 - Braun et al. (2024): Linzbach et al. (2023): query types<br>
 - Kang & Kim (2023): metadata in RAG<br>
 - Hayashi et al. (2024): metadata as document source<br>
 - Agarwal et al. (2024): bibliometric abstracts from Semantic Scholar for kw extraction<br>
+
+### [Perturbations in RAG]{.yellow}
 - F. Shi et al.(2023): irrelevant information in contexts<br>
 - Cho et al. (2024): typos affecting retrieval performance<br>
 
@@ -91,11 +93,11 @@ itemize past research and cite those studies<br>
 
 ## Gaps addressed
 
--   evidence for bibliometric metadata directly as a document source in RAG
-
 -   Lack of characterization of title and abstract metadata
 
 -   Metadata source: compares two sources for effects of aggregation and transformation
+
+-   evidence for bibliometric metadata directly as a document source in RAG
 
 ## Framework
 

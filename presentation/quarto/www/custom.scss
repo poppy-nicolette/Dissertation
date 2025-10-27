@@ -20,6 +20,11 @@ $presentation-heading-font: "Atkinson Hyperlegible Next", sans-serif;
     color: $theme-blue;
     font-weight: bold;
   }
+
+.italic {
+  font-style: italic;
+  font-size: smaller;
+}
   
   .yellow {
     color: $theme-yellow;

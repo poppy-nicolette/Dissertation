@@ -6,7 +6,10 @@
 <script src="res_prop_presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="res_prop_presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="res_prop_presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="res_prop_presentation_files/libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="res_prop_presentation_files/libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="res_prop_presentation_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="res_prop_presentation_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="res_prop_presentation_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Poppy Riddle">
@@ -29,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="res_prop_presentation_files/libs/revealjs/dist/theme/quarto-9187c0fc8276bb05e98f497d48934ca1.css">
+  <link rel="stylesheet" href="res_prop_presentation_files/libs/revealjs/dist/theme/quarto-9382447695e75961cf12bb5653e49889.css">
   <link href="res_prop_presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="res_prop_presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="res_prop_presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -248,8 +251,12 @@ Poppy Riddle
 </section>
 <section id="framework" class="slide level2">
 <h2>Framework</h2>
-
-<img data-src="images/framework.svg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="images/framework.svg" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</section></section>
 <section>
 <section id="part-1-characterize-metadata" class="title-slide slide level1 scrollable center">
 <h1>Part 1: Characterize metadata</h1>
@@ -258,26 +265,30 @@ Poppy Riddle
 <section id="characterize-metadata-from-crossref" class="slide level2 scrollable">
 <h2>Characterize metadata from Crossref</h2>
 <p>What are the characteristics of textual metadata from a registration agency, such as Crossref?</p>
-
-<img data-src="images/part_1.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/part_1.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/part_1.svg" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</section>
 <section id="example" class="slide level2 scrollable">
 <h2>Example:</h2>
 <p>Abstract metadata from <a href="https://api.crossref.org/works/10.1103/physrevd.110.036015" class="uri">https://api.crossref.org/works/10.1103/physrevd.110.036015</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/abstract.png" class="quarto-figure quarto-figure-center"></p>
+<p><a href="images/abstract.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/abstract.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 <p>Or, another example from <a href="https://api.crossref.org/works/10.33024/hjk.v15i1.3791" class="uri">https://api.crossref.org/works/10.33024/hjk.v15i1.3791</a>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/abstract2.png" class="quarto-figure quarto-figure-center"></p>
+<p><a href="images/abstract2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/abstract2.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 <p>Or one that contains geometric shapes, from <a href="https://api.crossref.org/works/10.1108/eemcs-04-2022-0108" class="uri">https://api.crossref.org/works/10.1108/eemcs-04-2022-0108</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/abstract3.png" class="quarto-figure quarto-figure-center"></p>
+<p><a href="images/abstract3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/abstract3.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 </section>
@@ -292,8 +303,8 @@ Poppy Riddle
 </section>
 <section id="compare-the-same-metadata-from-crossref-and-openalex" class="slide level2 scrollable">
 <h2>Compare the same metadata from Crossref and OpenAlex</h2>
-
-<img data-src="images/part_2_framework.svg" width="587" class="r-stretch"></section>
+<p><a href="images/part_2_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="images/part_2_framework.svg" width="587"></a></p>
+</section>
 <section id="section-1" class="slide level2 scrollable">
 <h2></h2>
 <div class="columns">
@@ -361,12 +372,26 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-
-<img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/part_3_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</section>
 <section id="example-of-measures-in-action" class="slide level2">
 <h2>Example of measures in action</h2>
-<p><img data-src="images/part_3_example.png" class="quarto-figure quarto-figure-center"> An example of response relevance scoring and faithfulness</p>
-<p><img data-src="images/part_3_scores.png" class="quarto-figure quarto-figure-center"> Scores recorded for each query</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/part_3_example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="images/part_3_example.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<p><span class="italic">An example of response relevance scoring and faithfulness</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/part_3_scores.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="images/part_3_scores.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<p><span class="italic">Scores recorded for each query</span></p>
 </section></section>
 <section>
 <section id="summary" class="title-slide slide level1 center">
@@ -399,7 +424,7 @@ Poppy Riddle
 </section>
 <section id="benefits-5" class="slide level2">
 <h2>Benefits</h2>
-<p><span class="absolute" style="top: 30%; left: 20%; right: 20%; ">Raised my own skills in <span class="yellow">Python</span>, knowledge of how <span class="yellow">search and retrieval</span> is changing, how <span class="yellow">LLMs</span> works and their limitations.</span></p>
+<p><span class="absolute" style="top: 30%; left: 20%; right: 20%; ">Raised my own skills in <span class="yellow">Python</span>, knowledge of how <span class="yellow">search and retrieval</span> is changing, how <span class="yellow">LLMs</span> work and their limitations.</span></p>
 </section></section>
 <section id="thank-you" class="title-slide slide level1 center">
 <h1>Thank you!</h1>
@@ -445,8 +470,8 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-
-<img data-src="images/part_2.svg" width="587" class="r-stretch"></section>
+<p><a href="images/part_2.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="images/part_2.svg" width="587"></a></p>
+</section>
 <section id="part-2-summary-results" class="slide level2 scrollable">
 <h2>Part 2 summary results</h2>
 <aside class="notes">
@@ -462,8 +487,8 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-
-<img data-src="images/part_2.svg" width="587" class="r-stretch"></section>
+<p><a href="images/part_2.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/part_2.svg" width="587"></a></p>
+</section>
 <section id="part-3-summary-results" class="slide level2 scrollable">
 <h2>Part 3 summary results</h2>
 <aside class="notes">
@@ -479,8 +504,19 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-
-<img data-src="images/part_2.svg" width="587" class="r-stretch"></section></section>
+<p><span class="italic">Metrics for each RAG pipeline using the same queries.</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/part_3_results_all.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/part_3_results_all.svg" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<p><span class="italic">Mean document scores for top DOIs</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/part_3_doc_score.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/part_3_doc_score.svg" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+</section></section>
 <section>
 <section id="thank-you-1" class="title-slide slide level1 center">
 <h1>Thank you!</h1>
@@ -891,6 +927,38 @@ Poppy Riddle
       }
     });
     </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>

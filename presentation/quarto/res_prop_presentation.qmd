@@ -10,6 +10,7 @@ format:
     preview-links: auto
     embed-resources: false
     scrollable: true
+lightbox: true
 editor: visual
 background-transition: fade
 project:
@@ -211,10 +212,12 @@ A translated version in Japanese prepending the English
 ## Example of measures in action
 
 ![](images/part_3_example.png){fig-align="center"}
-An example of response relevance scoring and faithfulness
+
+[An example of response relevance scoring and faithfulness]{.italic}
 
 ![](images/part_3_scores.png){fig-align="center"}
-Scores recorded for each query
+
+[Scores recorded for each query]{.italic}
 
 # Summary
 
@@ -244,7 +247,7 @@ Scores recorded for each query
 
 ##  Benefits
 
-[Raised my own skills in [Python]{.yellow}, knowledge of how [search and retrieval]{.yellow} is changing, how [LLMs]{.yellow} works and their limitations.]{.absolute left="20%" top="30%" right="20%"}
+[Raised my own skills in [Python]{.yellow}, knowledge of how [search and retrieval]{.yellow} is changing, how [LLMs]{.yellow} work and their limitations.]{.absolute left="20%" top="30%" right="20%"}
 
 # Thank you!
 
@@ -290,7 +293,14 @@ put results into nice infographics, but use what you have first
 ::: notes
 use nice graphics that I have already
 :::
-![](images/part_2.svg){width="587"}
+[Metrics for each RAG pipeline using the same queries.]{.italic}
+
+![](images/part_3_results_all.svg){ fig-align="center"}
+
+[Mean document scores for top DOIs]{.italic}
+
+![](images/part_3_doc_score.svg){fig-align="center"}
+
 
 # Thank you!
 Poppy Riddle

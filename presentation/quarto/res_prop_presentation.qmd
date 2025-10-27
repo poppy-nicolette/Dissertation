@@ -135,16 +135,14 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 
 ## Compare the same metadata from Crossref and OpenAlex {.scrollable}
 
-![](images/part_2.svg){width="587"}
-add subset analysis
+![](images/part_2_framework.svg){width="587"}
+
 
 ##  {.scrollable}
 
 ::::: columns
 ::: {.column width="50%"}
 -   Same DOIs from Part 1
-
--   Shared corpus
 
 -   Compare for changes
 
@@ -174,7 +172,7 @@ add subset analysis
 
 # Part 3: Evaluate some characteristics in action
 
-## What happens when we put some of this metadata in a RAG application? {.scrollable}
+## What happens when we put metadata in a RAG application? {.scrollable}
 ::: notes
 Three datasets of 45 works containing the DOI, the title, and the abstract
 
@@ -210,34 +208,41 @@ A translated version in Japanese prepending the English
 
 ![](images/part_3_framework.svg){fig-align="center"}
 
+## Example of measures in action
+
+![](images/part_3_example.png){fig-align="center"}
+An example of response relevance scoring and faithfulness
+
+![](images/part_3_scores.png){fig-align="center"}
+Scores recorded for each query
 
 # Summary
 
 ## Purpose:
 
-[[Bibliometric metadata]{.yellow} can be used as a [source of external knowledge]{.yellow} in RAG, however, it is unknown what kind of errors, where these are found, and how they may impact RAG outcomes.]{.absolute left="20%" top="30%" right="20%"}
+[[Bibliometric metadata]{.yellow} can be used as a source of [external knowledge]{.yellow} in RAG, however, it is unknown what [characteristics]{.yellow} or errors may impact RAG [performance]{.yellow}.]{.absolute left="15%" top="30%" right="15%"}
 
 ## Benefits
 
 [This study should help us understand how [characteristic]{.yellow} from Part 1 and how a [data source]{.yellow} from Part 2, may [impact retrieval and generation]{.yellow} in a RAG application.]{.absolute left="20%" top="30%" right="20%"}
 
-##  
+##  Benefits
 
 [Additionally, it also provides a handy set of [patterns]{.yellow} that can be used to [identify]{.yellow} such [problems]{.yellow} before using the metadata, or for the purpose of cleaning.]{.absolute left="20%" top="30%" right="20%"}
 
-##  
+##  Benefits
 
 [It [characterizes metadata]{.yellow} from Crossref and OpenAlex in a way that has not been done before.]{.absolute left="20%" top="30%" right="20%"}
 
-##  
+##  Benefits
 
 [Introduces the [Crossref XML API]{.yellow} as part of analyzing metadata completeness and accuracy.]{.absolute left="20%" top="30%" right="20%"}
 
-##  
+##  Benefits
 
 [It contributes to research on the [effect of perturbations]{.yellow} in embedding and generation models.]{.absolute left="20%" top="30%" right="20%"}
 
-##  
+##  Benefits
 
 [Raised my own skills in [Python]{.yellow}, knowledge of how [search and retrieval]{.yellow} is changing, how [LLMs]{.yellow} works and their limitations.]{.absolute left="20%" top="30%" right="20%"}
 

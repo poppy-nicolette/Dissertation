@@ -186,15 +186,13 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 
 ## What happens when we put metadata in a RAG application? {.scrollable}
 ::: notes
-Three datasets of 45 works containing the DOI, the title, and the abstract
+Three datasets of 45 works containing the DOI, the title, and the abstract:
 
 A clean dataset
 
 With JATS tags prepending and appending the title and abstract.
 
 A translated version in Japanese prepending the English
-
--   RAG pipeline with embedding, reranking, and generation models
 
 -   Analyze results from the retriever:
 
@@ -267,21 +265,15 @@ And now, its time for questions.
 # Sneak peek
 Who wants to see some results?
 
-## Ok, here's what actually happened:
-
-1.  Part 1 was coded more than once to get consistency.
-
-2.  Part 2 was easy, yet important to [confirm prior research]{.yellow}.
-
-3.  Licensing information is a real [train wreck]{.magenta} and would require more time and expertise.
-
-4.  I created two RAG applications:
+## 
+1. No surprises from Parts 1 and 2
+2.  for Part 3, I created two RAG applications:
 
     -   One uses [closed models]{.yellow} from Cohere - [I got a research grant!]{.blue}
 
     -   One uses [open models]{.yellow} for embedding: SciBERT and Specter.
 
-5.  I reran the original test with different configurations of open and closed models:
+3.  I reran the original test with different configurations of open and closed models:
     with [multilingual capability]{.yellow}, 
     with [only English]{.yellow}, and
     compared [word embedding]{.yellow} to [sentence embedding]{.yellow}.
@@ -302,7 +294,7 @@ put results into nice infographics, but use what you have first
 
 ## Part 3 summary results {.scrollable}
 ::: notes
-use nice graphics that I have already
+no notes
 :::
 [Metrics for each RAG pipeline using the same queries.]{.italic}
 

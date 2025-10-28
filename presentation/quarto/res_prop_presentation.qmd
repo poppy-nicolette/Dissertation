@@ -33,6 +33,17 @@ project:
 
 # Introduction
 
+## Theorhetical position
+::: notes
+notes on describing Ingwersen & Järvelin's framework
+:::
+[Ingwersen & Järvelin's Cognitive Model of IS&R]{.italic}
+![](images/cog_model_p271.png){fig-align="center"}
+
+[Detailed view of the model]{.italic}
+![](images/cog_model_detail_p284.png)
+
+
 ## Background {.scrollable}
 ::: notes
 Notes on abstracts and titles

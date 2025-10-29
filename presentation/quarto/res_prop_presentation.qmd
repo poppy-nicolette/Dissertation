@@ -59,11 +59,10 @@ Metadata can be more available than full text
 ## What is RAG?
 
 LLM-based chat application
-![](images/LLM_chat.svg){fig-align="center" width="160%" .absolute top="30%" left="0%"}
-
+![](images/LLM_chat.svg){fig-align="center" width="120%" }
 
 Retrieval-augmented generation
-![](images/rag_basic.svg){fig-align="center" width="160%" .absolute top="30%" left="0%"}
+![](images/rag_basic.svg){fig-align="center" width="160%" }
 
 ## Theorhetical position
 ::: notes

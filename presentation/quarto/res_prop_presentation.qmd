@@ -52,9 +52,7 @@ Efforts to improve metadata: COMET
 
 Generative AI in academic libraries
 
-Metadata is a good source of external knowledge
-
-Metadata can be more available than full text
+Metadata may be available when the full text is paywalled
 
 ## What is RAG?
 
@@ -85,7 +83,7 @@ pages 282–290, 2025]{.blue}
 [published in IV 2025 : 29th International Conference Information Visualisation, Darmstadt, DE]{.blue}
 
 ## Proposition
-[If we use metadata as a knowledge source in RAG, is metadata quality a problem?]{.yellow .absolute left="20%" top="30%" right="20%"}
+[If we use metadata as a knowledge source in RAG, what metadata characteristic might affect performance?]{.yellow .absolute left="20%" top="30%" right="20%"}
 
 ## Past research 
 ::: notes
@@ -96,6 +94,7 @@ past studies have examined coverage, completeness, accuracy, but not content.
 - Culbert et al. (2024): shared corpus of OpenAlex and other databases<br>
 - Delgado-Quiros & Ortega (2024): metadata in Crossref and OpenAlex<br>
 - Alonso-Alverez & van Eck (2024): analysis of OpenAlex<br>
+- Yasser et al., (2011): definition of quality
 
 ### [RAG and metadata]{.yellow}
 - Braun et al. (2024): Linzbach et al. (2023): query types<br>
@@ -107,6 +106,17 @@ past studies have examined coverage, completeness, accuracy, but not content.
 - F. Shi et al.(2023): irrelevant information in contexts<br>
 - Cho et al. (2024): typos affecting retrieval performance<br>
 
+## Definition of quality
+::: notes
+Yasser et al., (2011) identified problems in metadata in which ‘poorly created metadata records result in poor retrieval and limit accessibility to collections’. They classified problems as “Incorrect Values, Incorrect Elements, Missing Information, Information Loss, and Inconsistent Value Representation ” (Yasser, 2011, p. 51).
+also Bruce and Hillman; Delgado-Quirós & Ortega 
+:::
+
+- Incorrect values
+- Incorrect elements
+- Missing information
+- Information loss
+- Inconsistent value representation
 
 ## 3 areas should be explored:
 
@@ -116,11 +126,11 @@ past studies have examined coverage, completeness, accuracy, but not content.
 
 ## Gaps addressed
 
--   Lack of characterization of title and abstract metadata
+-   Lack of characterization: of title and abstract content in metadata records
 
 -   Metadata source: compares two sources for effects of aggregation and transformation
 
--   evidence for bibliometric metadata directly as a document source in RAG
+-   evidence for metadata directly as a document source in RAG
 
 ## Framework
 

@@ -168,7 +168,11 @@ Poppy Riddle
 <section id="background" class="slide level2 scrollable">
 <h2>Background</h2>
 <aside class="notes">
-<p>Notes on abstracts and titles</p>
+<p>metadata is data on scholarly resources, such as journal articles,</p>
+<p>Efforts in community to improve such as COMET, California Digital Library - enrichment process</p>
+<p>Generative AI in academic libraries: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant</p>
+<p>External knowledge is important as LLMs rely on training data</p>
+<p>Metadata may be available on paywalled works</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -180,14 +184,34 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<p>Abstracts as summaries, though limited in depth</p>
-<p>Many abstracts, might provide a more holistic answer</p>
-<p>Systematic review well known process</p>
-<p>Abstracts may be available when the paper is <span class="yellow">paywalled</span></p>
+<p>Metadata has been used for discovery and analysis</p>
+<p>Efforts to improve metadata: COMET</p>
+<p>Generative AI in academic libraries</p>
+<p>Metadata is a good source of external knowledge</p>
+<p>Metadata can be more available than full text</p>
 </section>
 <section id="what-is-rag" class="slide level2">
 <h2>What is RAG?</h2>
+<p>LLM-based chat application <img data-src="images/LLM_chat.svg" class="absolute quarto-figure quarto-figure-center" style="top: 30%; left: 0%; width: 160%; "></p>
 <p>Retrieval-augmented generation <img data-src="images/rag_basic.svg" class="absolute quarto-figure quarto-figure-center" style="top: 30%; left: 0%; width: 160%; "></p>
+</section>
+<section id="theorhetical-position" class="slide level2">
+<h2>Theorhetical position</h2>
+<aside class="notes">
+<p>notes on describing Ingwersen &amp; Järvelin’s framework</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p><span class="italic">Ingwersen &amp; Järvelin’s Cognitive Model of IS&amp;R</span> <img data-src="images/cog_model_p271.png" class="quarto-figure quarto-figure-center"></p>
+<p><span class="italic">Detailed view of the model</span> <img data-src="images/cog_model_detail_p284.png"></p>
 </section>
 <section id="proof-of-concept" class="slide level2 scrollable">
 <h2>Proof of concept</h2>
@@ -340,12 +364,11 @@ Poppy Riddle
 <section id="what-happens-when-we-put-metadata-in-a-rag-application" class="slide level2 scrollable">
 <h2>What happens when we put metadata in a RAG application?</h2>
 <aside class="notes">
-<p>Three datasets of 45 works containing the DOI, the title, and the abstract</p>
+<p>Three datasets of 45 works containing the DOI, the title, and the abstract:</p>
 <p>A clean dataset</p>
 <p>With JATS tags prepending and appending the title and abstract.</p>
 <p>A translated version in Japanese prepending the English</p>
 <ul>
-<li><p>RAG pipeline with embedding, reranking, and generation models</p></li>
 <li><p>Analyze results from the retriever:</p>
 <ul>
 <li><p>precision</p></li>
@@ -436,25 +459,6 @@ Poppy Riddle
 <h1>Sneak peek</h1>
 <p>Who wants to see some results?</p>
 </section>
-<section id="ok-heres-what-actually-happened" class="slide level2 scrollable">
-<h2>Ok, here’s what actually happened:</h2>
-<ol type="1">
-<li><p>Part 1 was coded more than once to get consistency.</p></li>
-<li><p>Part 2 was easy, yet important to <span class="yellow">confirm prior research</span>.</p></li>
-<li><p>Licensing information is a real <span class="magenta">train wreck</span> and would require more time and expertise.</p></li>
-<li><p>I created two RAG applications:</p>
-<ul>
-<li><p>One uses <span class="yellow">closed models</span> from Cohere - <span class="blue">I got a research grant!</span></p></li>
-<li><p>One uses <span class="yellow">open models</span> for embedding: SciBERT and Specter.</p></li>
-</ul></li>
-<li><p>I reran the original test with different configurations of open and closed models: with <span class="yellow">multilingual capability</span>, with <span class="yellow">only English</span>, and compared <span class="yellow">word embedding</span> to <span class="yellow">sentence embedding</span>.</p></li>
-</ol>
-</section></section>
-<section>
-<section id="results" class="title-slide slide level1 center">
-<h1>Results</h1>
-
-</section>
 <section id="part-1-summary-results" class="slide level2 scrollable">
 <h2>Part 1 summary results</h2>
 <aside class="notes">
@@ -492,7 +496,7 @@ Poppy Riddle
 <section id="part-3-summary-results" class="slide level2 scrollable">
 <h2>Part 3 summary results</h2>
 <aside class="notes">
-<p>use nice graphics that I have already</p>
+<p>no notes</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

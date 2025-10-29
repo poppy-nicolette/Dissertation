@@ -33,6 +33,38 @@ project:
 
 # Introduction
 
+## Background {.scrollable}
+::: notes
+metadata is data on scholarly resources, such as journal articles,
+
+Efforts in community to improve such as COMET, California Digital Library - enrichment process
+
+Generative AI in academic libraries: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant
+
+External knowledge is important as LLMs rely on training data
+
+Metadata may be available on paywalled works
+:::
+
+Metadata has been used for discovery and analysis
+
+Efforts to improve metadata: COMET
+
+Generative AI in academic libraries
+
+Metadata is a good source of external knowledge
+
+Metadata can be more available than full text
+
+## What is RAG?
+
+LLM-based chat application
+![](images/LLM_chat.svg){fig-align="center" width="160%" .absolute top="30%" left="0%"}
+
+
+Retrieval-augmented generation
+![](images/rag_basic.svg){fig-align="center" width="160%" .absolute top="30%" left="0%"}
+
 ## Theorhetical position
 ::: notes
 notes on describing Ingwersen & Järvelin's framework
@@ -42,26 +74,6 @@ notes on describing Ingwersen & Järvelin's framework
 
 [Detailed view of the model]{.italic}
 ![](images/cog_model_detail_p284.png)
-
-
-## Background {.scrollable}
-::: notes
-Notes on abstracts and titles
-:::
-
-Abstracts as summaries, though limited in depth
-
-Many abstracts, might provide a more holistic answer
-
-Systematic review well known process
-
-Abstracts may be available when the paper is [paywalled]{.yellow}
-
-
-## What is RAG?
-Retrieval-augmented generation
-![](images/rag_basic.svg){fig-align="center" width="160%" .absolute top="30%" left="0%"}
-
 
 ## Proof of concept {.scrollable}
 Summer of 2024 experimented using abstracts as a source of RAG applications
@@ -264,21 +276,6 @@ And now, its time for questions.
 
 # Sneak peek
 Who wants to see some results?
-
-## 
-1. No surprises from Parts 1 and 2
-2.  for Part 3, I created two RAG applications:
-
-    -   One uses [closed models]{.yellow} from Cohere - [I got a research grant!]{.blue}
-
-    -   One uses [open models]{.yellow} for embedding: SciBERT and Specter.
-
-3.  I reran the original test with different configurations of open and closed models:
-    with [multilingual capability]{.yellow}, 
-    with [only English]{.yellow}, and
-    compared [word embedding]{.yellow} to [sentence embedding]{.yellow}.
-
-# Results
 
 ## Part 1 summary results {.scrollable}
 ::: notes

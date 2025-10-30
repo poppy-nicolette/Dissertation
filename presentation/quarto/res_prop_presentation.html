@@ -32,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="res_prop_presentation_files/libs/revealjs/dist/theme/quarto-9382447695e75961cf12bb5653e49889.css">
+  <link rel="stylesheet" href="res_prop_presentation_files/libs/revealjs/dist/theme/quarto-cb81f631a3e53c97d2a722a26e6df8a2.css">
   <link href="res_prop_presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="res_prop_presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="res_prop_presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -153,7 +153,9 @@ Poppy Riddle
 <section id="presentation-overview" class="slide level2">
 <h2>Presentation overview</h2>
 <ul>
-<li>Introduction</li>
+<li>Introduction &amp; background</li>
+<li>Positioning &amp; framework</li>
+<li>Research questions</li>
 <li>Part 1: Random sample</li>
 <li>Part 2: Comparing sources</li>
 <li>Part 3: RAG in action</li>
@@ -169,7 +171,7 @@ Poppy Riddle
 <h2>Background</h2>
 <aside class="notes">
 <p>metadata is data on scholarly resources, such as journal articles,</p>
-<p>Efforts in community to improve such as COMET, California Digital Library - enrichment process</p>
+<p>Efforts in community to improve such as COMET, California Digital Library, OpenAlex - enrichment process</p>
 <p>Generative AI in academic libraries: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant</p>
 <p>External knowledge is important as LLMs rely on training data</p>
 <p>Metadata may be available on paywalled works</p>
@@ -185,19 +187,43 @@ Poppy Riddle
           display:block!important;
       }</style></aside>
 <p>Metadata has been used for discovery and analysis</p>
-<p>Efforts to improve metadata: COMET</p>
+<p>Efforts to improve metadata</p>
 <p>Generative AI in academic libraries</p>
 <p>Metadata may be available when the full text is paywalled</p>
 </section>
 <section id="what-is-rag" class="slide level2">
 <h2>What is RAG?</h2>
+<aside class="notes">
+<ul>
+<li><p>A large language model is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation</p></li>
+<li><p>parametric knowledge - knowlege from training data</p></li>
+<li><p>external knowledge - from sources outside the training data</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <p>LLM-based chat application <img data-src="images/LLM_chat.svg" class="quarto-figure quarto-figure-center" style="width:120.0%"></p>
 <p>Retrieval-augmented generation <img data-src="images/rag_basic.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></p>
 </section>
 <section id="theorhetical-position" class="slide level2">
 <h2>Theorhetical position</h2>
 <aside class="notes">
-<p>notes on describing Ingwersen &amp; Järvelin’s framework</p>
+<ul>
+<li>holistic model that extends to the entire system</li>
+<li>good for limiting the research and positioning it within the whole system</li>
+<li>useful for discussing internal validity</li>
+<li>discuss information object</li>
+<li>lines 4</li>
+<li>line 3 (simulated) and 6 (controlled)</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -217,10 +243,6 @@ Poppy Riddle
 <p>Summer of 2024 experimented using abstracts as a source of RAG applications</p>
 <p><img data-src="images/rag_based_nav.png" class="quarto-figure quarto-figure-center"> <span class="blue">published in NLP4Sustainability Workshop, Proceedings of the 21st Conference on Natural Language Processing (KONVENS), Volume 2: Workshops, pages 282–290, 2025</span></p>
 </section>
-<section id="proposition" class="slide level2">
-<h2>Proposition</h2>
-<p><span class="yellow absolute" style="top: 30%; left: 20%; right: 20%; ">If we use metadata as a knowledge source in RAG, what metadata characteristic might affect performance?</span></p>
-</section>
 <section id="past-research" class="slide level2">
 <h2>Past research</h2>
 <aside class="notes">
@@ -236,7 +258,7 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<h3 id="openalex-quality"><span class="yellow">OpenAlex quality</span></h3>
+<h3 id="metadata-quality"><span class="yellow">Metadata quality</span></h3>
 <ul>
 <li>Culbert et al.&nbsp;(2024): shared corpus of OpenAlex and other databases<br></li>
 <li>Delgado-Quiros &amp; Ortega (2024): metadata in Crossref and OpenAlex<br></li>
@@ -245,10 +267,9 @@ Poppy Riddle
 </ul>
 <h3 id="rag-and-metadata"><span class="yellow">RAG and metadata</span></h3>
 <ul>
-<li>Braun et al.&nbsp;(2024): Linzbach et al.&nbsp;(2023): query types<br></li>
 <li>Kang &amp; Kim (2023): metadata in RAG<br></li>
 <li>Hayashi et al.&nbsp;(2024): metadata as document source<br></li>
-<li>Agarwal et al.&nbsp;(2024): bibliometric abstracts from Semantic Scholar for kw extraction<br></li>
+<li>Agarwal et al.&nbsp;(2024): abstracts from Semantic Scholar for kw extraction<br></li>
 </ul>
 <h3 id="perturbations-in-rag"><span class="yellow">Perturbations in RAG</span></h3>
 <ul>
@@ -271,6 +292,7 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<p>Yasser et al., (2011)</p>
 <ul>
 <li>Incorrect values</li>
 <li>Incorrect elements</li>
@@ -279,19 +301,56 @@ Poppy Riddle
 <li>Inconsistent value representation</li>
 </ul>
 </section>
+<section id="section" class="slide level2">
+<h2></h2>
+<p><span class="yellow absolute" style="top: 30%; left: 20%; right: 20%; ">If we use metadata as a knowledge source in RAG, what metadata characteristic might affect performance?</span></p>
+</section>
 <section id="areas-should-be-explored" class="slide level2 scrollable">
 <h2>3 areas should be explored:</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
 <ol type="1">
 <li>metadata characterization</li>
 <li>metadata source</li>
-<li>evaluate characteristic impact through case study</li>
+<li>evaluate impact through case study</li>
 </ol>
+</div><div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><a href="images/cog_source.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="images/cog_source.svg" class="quarto-figure quarto-figure-right"></a></p>
+</figure>
+</div>
+</div></div>
+</section></section>
+<section>
+<section id="research-questions" class="title-slide slide level1 center scrollable">
+<h1>Research Questions</h1>
+<aside class="notes">
+<p>incremental slides!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div>
+<ol type="1">
+<li class="fragment">What is the characterization of the metadata elements from a random sample of Crossref metadata?</li>
+<li class="fragment">What is the type and quantity of errors, enhancements, or transformations when a shared corpus in Crossref and OpenAlex are compared?</li>
+<li class="fragment">How do metadata characteristics and errors affect retriever performance and generated responses?</li>
+</ol>
+</div>
 </section>
 <section id="gaps-addressed" class="slide level2">
 <h2>Gaps addressed</h2>
 <ul>
 <li><p>Lack of characterization: of title and abstract content in metadata records</p></li>
-<li><p>Metadata source: compares two sources for effects of aggregation and transformation</p></li>
+<li><p>Metadata source: compares two sources for any transformations</p></li>
 <li><p>evidence for metadata directly as a document source in RAG</p></li>
 </ul>
 </section>
@@ -299,7 +358,7 @@ Poppy Riddle
 <h2>Framework</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="images/framework.svg" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="images/framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
 </figure>
 </div>
 </section></section>
@@ -313,7 +372,7 @@ Poppy Riddle
 <p>What are the characteristics of textual metadata from a registration agency, such as Crossref?</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part_1.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/part_1.svg" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="images/part_1.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/part_1.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
 </figure>
 </div>
 </section>
@@ -322,23 +381,23 @@ Poppy Riddle
 <p>Abstract metadata from <a href="https://api.crossref.org/works/10.1103/physrevd.110.036015" class="uri">https://api.crossref.org/works/10.1103/physrevd.110.036015</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/abstract.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/abstract.png" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="images/abstract.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/abstract.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 <p>Or, another example from <a href="https://api.crossref.org/works/10.33024/hjk.v15i1.3791" class="uri">https://api.crossref.org/works/10.33024/hjk.v15i1.3791</a>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/abstract2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/abstract2.png" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="images/abstract2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/abstract2.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 <p>Or one that contains geometric shapes, from <a href="https://api.crossref.org/works/10.1108/eemcs-04-2022-0108" class="uri">https://api.crossref.org/works/10.1108/eemcs-04-2022-0108</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/abstract3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/abstract3.png" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="images/abstract3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="images/abstract3.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 </section>
-<section id="section" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
 <p><span class="yellow absolute" style="top: 30%; left: 20%; right: 20%; ">Past studies have examined metadata for presence and accuracy, but have not examined content.</span></p>
 </section></section>
@@ -349,30 +408,15 @@ Poppy Riddle
 </section>
 <section id="compare-the-same-metadata-from-crossref-and-openalex" class="slide level2 scrollable">
 <h2>Compare the same metadata from Crossref and OpenAlex</h2>
-<p><a href="images/part_2_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="images/part_2_framework.svg" width="587"></a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/part_2_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="images/part_2_framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
+</figure>
+</div>
 </section>
-<section id="section-1" class="slide level2 scrollable">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><p>Same DOIs from Part 1</p></li>
-<li><p>Compare for changes</p>
-<ul>
-<li><p>Missing</p></li>
-<li><p>Incorrect</p></li>
-<li><p>Wrong element</p></li>
-<li><p>Different</p></li>
-<li><p>Representation</p></li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li><p>Subset analysis</p></li>
-<li><p>Code into patterns</p></li>
-<li><p>Analyze full dataset with patterns</p></li>
-</ul>
-</div></div>
+<section id="example-1" class="slide level2 scrollable">
+<h2>Example</h2>
+<p><img data-src="images/sankey.png" class="quarto-figure quarto-figure-center" style="width:80.0%"> Transformation of one license type to another with example of information loss.</p>
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
@@ -419,7 +463,7 @@ Poppy Riddle
       }</style></aside>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part_3_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="images/part_3_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
 </figure>
 </div>
 </section>
@@ -427,13 +471,13 @@ Poppy Riddle
 <h2>Example of measures in action</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part_3_example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="images/part_3_example.png" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="images/part_3_example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="images/part_3_example.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 <p><span class="italic">An example of response relevance scoring and faithfulness</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part_3_scores.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="images/part_3_scores.png" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="images/part_3_scores.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="images/part_3_scores.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 <p><span class="italic">Scores recorded for each query</span></p>
@@ -445,112 +489,41 @@ Poppy Riddle
 </section>
 <section id="purpose" class="slide level2">
 <h2>Purpose:</h2>
-<p><span class="absolute" style="top: 30%; left: 15%; right: 15%; "><span class="yellow">Bibliometric metadata</span> can be used as a source of <span class="yellow">external knowledge</span> in RAG, however, it is unknown what <span class="yellow">characteristics</span> or errors may impact RAG <span class="yellow">performance</span>.</span></p>
-</section>
-<section id="benefits" class="slide level2">
-<h2>Benefits</h2>
-<p><span class="absolute" style="top: 30%; left: 20%; right: 20%; ">This study should help us understand how <span class="yellow">characteristic</span> from Part 1 and how a <span class="yellow">data source</span> from Part 2, may <span class="yellow">impact retrieval and generation</span> in a RAG application.</span></p>
-</section>
-<section id="benefits-1" class="slide level2">
-<h2>Benefits</h2>
-<p><span class="absolute" style="top: 30%; left: 20%; right: 20%; ">Additionally, it also provides a handy set of <span class="yellow">patterns</span> that can be used to <span class="yellow">identify</span> such <span class="yellow">problems</span> before using the metadata, or for the purpose of cleaning.</span></p>
-</section>
-<section id="benefits-2" class="slide level2">
-<h2>Benefits</h2>
-<p><span class="absolute" style="top: 30%; left: 20%; right: 20%; ">It <span class="yellow">characterizes metadata</span> from Crossref and OpenAlex in a way that has not been done before.</span></p>
-</section>
-<section id="benefits-3" class="slide level2">
-<h2>Benefits</h2>
-<p><span class="absolute" style="top: 30%; left: 20%; right: 20%; ">Introduces the <span class="yellow">Crossref XML API</span> as part of analyzing metadata completeness and accuracy.</span></p>
-</section>
-<section id="benefits-4" class="slide level2">
-<h2>Benefits</h2>
-<p><span class="absolute" style="top: 30%; left: 20%; right: 20%; ">It contributes to research on the <span class="yellow">effect of perturbations</span> in embedding and generation models.</span></p>
-</section>
-<section id="benefits-5" class="slide level2">
-<h2>Benefits</h2>
-<p><span class="absolute" style="top: 30%; left: 20%; right: 20%; ">Raised my own skills in <span class="yellow">Python</span>, knowledge of how <span class="yellow">search and retrieval</span> is changing, how <span class="yellow">LLMs</span> work and their limitations.</span></p>
+<aside class="notes">
+<p>if metadata was previous used for discovery and analysis, that’s been the past lens on what is considered good metadata.<br> If there are efforts to improve metadata, is it only from the past lens, or one that may consider future use?</p>
+<p>past paradigm of discover and analysis, then improvements wont’ help future use with LLM-driven applications.</p>
+<p>if we want metadata to be a viable external source of knowledge on its own, then its characteristics and errors should be known to either fix our metadata workflows or improve the NLP side to anticipate these quirks.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p><span class="absolute" style="top: 30%; left: 15%; right: 15%; "><span class="yellow">Metadata</span> can be used as a source of <span class="yellow">external knowledge</span> in RAG, however, it is unknown what <span class="yellow">characteristics</span> or errors may impact RAG <span class="yellow">performance</span>.</span></p>
 </section></section>
+<section>
 <section id="thank-you" class="title-slide slide level1 center">
-<h1>Thank you!</h1>
-<p>And now, its time for questions.</p>
-</section>
-
-<section>
-<section id="sneak-peek" class="title-slide slide level1 center">
-<h1>Sneak peek</h1>
-<p>Who wants to see some results?</p>
-</section>
-<section id="part-1-summary-results" class="slide level2 scrollable">
-<h2>Part 1 summary results</h2>
-<aside class="notes">
-<p>put results into nice infographics, but use what you have first</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><a href="images/part_2.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="images/part_2.svg" width="587"></a></p>
-</section>
-<section id="part-2-summary-results" class="slide level2 scrollable">
-<h2>Part 2 summary results</h2>
-<aside class="notes">
-<p>put results into nice infographics, but use what you have first</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><a href="images/part_2.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/part_2.svg" width="587"></a></p>
-</section>
-<section id="part-3-summary-results" class="slide level2 scrollable">
-<h2>Part 3 summary results</h2>
-<aside class="notes">
-<p>no notes</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p><span class="italic">Metrics for each RAG pipeline using the same queries.</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/part_3_results_all.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/part_3_results_all.svg" class="quarto-figure quarto-figure-center"></a></p>
-</figure>
-</div>
-<p><span class="italic">Mean document scores for top DOIs</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/part_3_doc_score.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/part_3_doc_score.svg" class="quarto-figure quarto-figure-center"></a></p>
-</figure>
-</div>
-</section></section>
-<section>
-<section id="thank-you-1" class="title-slide slide level1 center">
 <h1>Thank you!</h1>
 <p>Poppy Riddle <span class="blue">Department of Information Science PhD Program</span></p>
 </section>
 <section id="references" class="slide level2">
 <h2>References</h2>
-<p>insert bibliography here</p>
+<p><span class="biblio">Agarwal, S., Laradji, I. H., Charlin, L., &amp; Pal, C. (2024). LitLLM: A Toolkit for Scientific Literature Review (No.&nbsp;arXiv:2402.01788). arXiv. https://doi.org/10.48550/arXiv.2402.01788</span></p>
+<p><span class="biblio">Alonso-Álvarez, P., &amp; van Eck, N. J. (2024, October 29). Coverage and metadata availability of African publications in OpenAlex: A comparative analysis. Zenodo. https://doi.org/10.5281/zenodo.14006425</span></p>
+<p><span class="biblio">Cho, S., Jeong, S., Seo, J., Hwang, T., &amp; Park, J. C. (2024). Typos that Broke the RAG’s Back: Genetic Attack on RAG Pipeline by Simulating Documents in the Wild via Low-level Perturbations (No.&nbsp;arXiv:2404.13948). arXiv. https://doi.org/10.48550/arXiv.2404.13948</span></p>
+<p><span class="biblio">Culbert, J., Hobert, A., Jahn, N., Haupka, N., Schmidt, M., Donner, P., &amp; Mayr, P. (2024). Reference Coverage Analysis of OpenAlex compared to Web of Science and Scopus (No.&nbsp;arXiv:2401.16359). arXiv. https://doi.org/10.48550/arXiv.2401.16359</span></p>
+<p><span class="biblio">Delgado-Quirós, L., &amp; Ortega, J. L. (2024). Completeness degree of publication metadata in eight free-access scholarly databases. Quantitative Science Studies, 5(1), 31–49. https://doi.org/10.1162/qss_a_00286</span></p>
+<p><span class="biblio">Hayashi, T., Sakaji, H., Dai, J., &amp; Goebel, R. (2024). Metadata-based Data Exploration with Retrieval-Augmented Generation for Large Language Models (No.&nbsp;arXiv:2410.04231). arXiv. https://doi.org/10.48550/arXiv.2410.04231</span></p>
+<p><span class="biblio">Ingwersen, P., &amp; Järvelin, K. (2005). The Turn Integration of Information Seeking and Retrieval in Context (1st ed.&nbsp;2005). Springer Netherlands : Imprint : Springer.</span></p>
+<p><span class="biblio">Kang, S.-H., &amp; Kim, S.-J. (2023). M-RAG: Enhancing Open-domain Question Answering with Metadata Retrieval-Augmented Generation. 한국정보통신학회논문지, 27(12), 1489–1500. https://doi.org/10.6109/jkiice.2023.27.12.1489</span></p>
+<p><span class="biblio">Saiyed, Z., Orian, C., Riddle, P., Prashanth Kanagaraj, G., Krause, G., Toupin, R., &amp; Brooks, S. (2025). RAG Based Navigation of the World Ocean Assessment II. Proceedings of the 21st Conference on Natural Language Processing (KONVENS 2025): Workshops, 282–290. https://aclanthology.org/2025.konvens-2.22.pdf</span></p>
+<p><span class="biblio">Shi, F., Chen, X., Misra, K., Scales, N., Dohan, D., Chi, E. H., Schärli, N., &amp; Zhou, D. (2023). Large Language Models Can Be Easily Distracted by Irrelevant Context. Proceedings of the 40th International Conference on Machine Learning, 31210–31227. https://proceedings.mlr.press/v202/shi23a.html</span></p>
+<p><span class="biblio">Yasser, C. M. (2011). An Analysis of Problems in Metadata Records. Journal of Library Metadata, 11(2), 51–62. https://doi.org/10.1080/19386389.2011.570654</span></p>
 
 </section></section>
     </div>

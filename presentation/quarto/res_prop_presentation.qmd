@@ -79,8 +79,6 @@ Summer of 2024 experimented using abstracts as a source of RAG applications
 [published in NLP4Sustainability Workshop, Proceedings of the 21st Conference on Natural Language Processing (KONVENS), Volume 2: Workshops,
 pages 282–290, 2025]{.blue}
 
-![](images/ocean_science_viz.png){fig-align="center"}
-[published in IV 2025 : 29th International Conference Information Visualisation, Darmstadt, DE]{.blue}
 
 ## Proposition
 [If we use metadata as a knowledge source in RAG, what metadata characteristic might affect performance?]{.yellow .absolute left="20%" top="30%" right="20%"}

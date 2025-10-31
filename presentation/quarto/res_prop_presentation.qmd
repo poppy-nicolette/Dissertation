@@ -48,13 +48,10 @@ External knowledge is important as LLMs rely on training data
 Metadata may be available on paywalled works
 :::
 
-Metadata has been used for discovery and analysis
 
-Efforts to improve metadata
+![](images/4_directions.svg){fig-align="center" width="50%"}
 
-Generative AI in academic libraries
 
-Metadata may be available when the full text is paywalled
 
 ## What is RAG?
 
@@ -165,13 +162,13 @@ incremental slides!
 
 ## Gaps addressed
 
--   Lack of characterization: of title and abstract content in metadata records
+-   Lack of characterization of title and abstract content in metadata records
 
--   Metadata source: compares two sources for any transformations
+-   Lack of comparisons between two sources of transformations of textual content
 
--   evidence for metadata directly as a document source in RAG
+-   Evidence of metadata characteristics in RAG application
 
-## Framework
+## Methodology
 
 ![](images/framework.svg){fig-align="center" width="160%"}
 
@@ -210,8 +207,17 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 
 ## Example {.scrollable}
 
-![](images/sankey.png){fig-align="center" width="80%"}
-Transformation of one license type to another with example of information loss. 
+![](images/abstract_tags.png){fig-align="center"}
+[Transformation of abstracts from Crossref (left) to OpenAlex (right)]{.blue .smaller}
+
+![](images/abstract_crammed.png){fig-align="center"}
+[Two languages in one abstract]{.blue .smaller}
+
+![](images/abstract_german.png){fig-align="center"}
+[Transformation of languages]{ .blue .smaller}
+
+![](images/abstract_encodings.png){fig-align="center"}
+[Encodings added to the OpenAlex version]{.blue .smaller}
 
 ##  
 

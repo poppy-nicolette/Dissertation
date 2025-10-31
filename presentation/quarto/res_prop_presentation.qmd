@@ -1,5 +1,5 @@
 ---
-title: "Is bibliometric metadata ready for RAG?"
+title: "Is metadata ready for RAG?"
 subtitle: "Research Proposal, PhD Program in Information Science"
 author: "Poppy Riddle"
 format: 
@@ -35,15 +35,13 @@ project:
 
 # Introduction
 
-## Background {.scrollable}
+## Context {.scrollable}
 ::: notes
 metadata is data on scholarly resources, such as journal articles,
 
 Efforts in community to improve such as COMET, California Digital Library, OpenAlex - enrichment process
 
 Generative AI in academic libraries: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant
-
-External knowledge is important as LLMs rely on training data
 
 Metadata may be available on paywalled works
 :::
@@ -68,7 +66,7 @@ LLM-based chat application
 Retrieval-augmented generation
 ![](images/rag_basic.svg){fig-align="center" width="160%" }
 
-## Theorhetical position
+## Theoretical position
 ::: notes
 - holistic model that extends to the entire system
 - good for limiting the research and positioning it within the whole system

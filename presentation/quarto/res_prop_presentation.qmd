@@ -174,7 +174,6 @@ incremental slides!
 
 ## Characterize metadata from Crossref {.scrollable}
 
-What are the characteristics of textual metadata from a registration agency, such as Crossref?
 
 ![](images/part_1.svg){fig-align="center" width="160%"}
 

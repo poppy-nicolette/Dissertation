@@ -82,6 +82,13 @@ Retrieval-augmented generation
 [Detailed view of the model]{.italic}
 ![](images/cog_model_detail_p284.png)
 
+## framework to study design
+show how the framework breaks down into variables for study design
+
+## limitations of I&J IS&R framework
+talk about limitations<br>
+this is the part I may improve upon or recontextualize
+
 ## Proof of concept {.scrollable}
 Summer of 2024 experimented using abstracts as a source of RAG applications
 
@@ -177,6 +184,9 @@ incremental slides!
 
 ![](images/part_1.svg){fig-align="center" width="160%"}
 
+## Study design
+add in I&J framework here
+
 ## Example: {.scrollable}
 
 Abstract metadata from <https://api.crossref.org/works/10.1103/physrevd.110.036015>
@@ -200,6 +210,9 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 ## Compare the same metadata from Crossref and OpenAlex {.scrollable}
 
 ![](images/part_2_framework.svg){fig-align="center" width="160%"}
+
+## Study design
+show how IS&R framework was used for study design
 
 
 ## Example {.scrollable}
@@ -255,6 +268,9 @@ A translated version in Japanese prepending the English
 :::
 
 ![](images/part_3_framework.svg){fig-align="center" width="160%"}
+
+## Study design
+show how IS&R framework was used for study design
 
 ## Example of measures in action
 

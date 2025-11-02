@@ -17,7 +17,7 @@
           <mxGeometry x="70" y="380" width="290" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ruW7QvP-dFmjIgO0X13P-5" value="34-38% URLs not resolving&lt;div&gt;6.4% have multiple abstracts not reported by the REST API&lt;/div&gt;&lt;div&gt;11% have markup or extraneous text such as hyperlinks, encodings, figures, tables, copyright text.&amp;nbsp;&lt;/div&gt;&lt;div&gt;7.75 is just HTML encoding&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="80" y="410" width="570" height="70" as="geometry" />
+          <mxGeometry x="70" y="400" width="570" height="70" as="geometry" />
         </mxCell>
         <mxCell id="ruW7QvP-dFmjIgO0X13P-13" value="Title subset analysis" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="65" y="480" width="290" height="30" as="geometry" />

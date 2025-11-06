@@ -197,6 +197,11 @@
        id="image1"
        x="453.9104"
        y="294.77728" /></g><g
+     id="layer4"
+     transform="translate(-568.30762,-335.0448)"><path
+       style="fill:#79caff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 904.02627,408.26993 c 0,0 9.72072,13.36598 8.50563,36.45267 -1.21509,23.08669 -8.50563,42.52812 -8.50563,42.52812 l 588.10313,1.21509 -1.2151,-70.47517 z"
+       id="path19" /></g><g
      id="layer2"
      style="display:inline"
      transform="translate(-568.30762,-335.0448)"><ellipse

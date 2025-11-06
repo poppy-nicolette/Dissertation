@@ -1,8 +1,10 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
   <diagram name="Page-1" id="74b105a0-9070-1c63-61bc-23e55f88626e">
-    <mxGraphModel dx="2369.5" dy="1625" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2564.5" dy="1902" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
-        <mxCell id="0" style=";html=1;" />
+        <UserObject label="" animation="HI there" id="0">
+          <mxCell style=";html=1;" />
+        </UserObject>
         <mxCell id="1" style=";html=1;" parent="0" />
         <mxCell id="ZuL10zp0FBLkSekguk2s-104" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="200" y="350" width="722" height="230" as="geometry" />
@@ -154,7 +156,7 @@
         <mxCell id="ZuL10zp0FBLkSekguk2s-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="ZuL10zp0FBLkSekguk2s-135" source="ZuL10zp0FBLkSekguk2s-124" target="ZuL10zp0FBLkSekguk2s-125" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZuL10zp0FBLkSekguk2s-124" value="&lt;font color=&quot;#01364c&quot; style=&quot;font-size: 11px;&quot;&gt;&lt;span class=&quot;NormalTextRun SCXW241726598 BCX0&quot; data-ccp-parastyle=&quot;Paragraph&quot; style=&quot;-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;DOI&lt;/span&gt;&lt;span class=&quot;NormalTextRun SCXW241726598 BCX0&quot; data-ccp-parastyle=&quot;Paragraph&quot; style=&quot;-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;NormalTextRun SCXW241726598 BCX0&quot; data-ccp-parastyle=&quot;Paragraph&quot; style=&quot;-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt; title, abstract, language&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;strokeWidth=2;strokeColor=#01364C;fillColor=#F7F8F9;" parent="ZuL10zp0FBLkSekguk2s-135" vertex="1">
+        <mxCell id="ZuL10zp0FBLkSekguk2s-124" value="&lt;font style=&quot;font-size: 11px;&quot; color=&quot;#01364c&quot;&gt;&lt;span style=&quot;-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; data-ccp-parastyle=&quot;Paragraph&quot; class=&quot;NormalTextRun SCXW241726598 BCX0&quot;&gt;FULL SAMPLE:&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot; color=&quot;#01364c&quot;&gt;&lt;span style=&quot;-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; data-ccp-parastyle=&quot;Paragraph&quot; class=&quot;NormalTextRun SCXW241726598 BCX0&quot;&gt;DOI&lt;/span&gt;&lt;span style=&quot;-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; data-ccp-parastyle=&quot;Paragraph&quot; class=&quot;NormalTextRun SCXW241726598 BCX0&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot; data-ccp-parastyle=&quot;Paragraph&quot; class=&quot;NormalTextRun SCXW241726598 BCX0&quot;&gt; title, abstract, language&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;strokeWidth=2;strokeColor=#01364C;fillColor=#F7F8F9;" parent="ZuL10zp0FBLkSekguk2s-135" vertex="1">
           <mxGeometry x="117" y="9" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="ZuL10zp0FBLkSekguk2s-125" value="&lt;font color=&quot;#01364c&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;incorrect values, elements&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;missing information&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;inconsistent value representation&lt;/span&gt;&lt;/font&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;strokeWidth=2;strokeColor=#F7F8F9;" parent="ZuL10zp0FBLkSekguk2s-135" vertex="1">
@@ -163,7 +165,7 @@
         <mxCell id="ZuL10zp0FBLkSekguk2s-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="ZuL10zp0FBLkSekguk2s-135" source="ZuL10zp0FBLkSekguk2s-126" target="ZuL10zp0FBLkSekguk2s-127" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZuL10zp0FBLkSekguk2s-126" value="&lt;font color=&quot;#01364c&quot;&gt;&lt;span style=&quot;font-size: 11px; text-align: left; white-space-collapse: preserve; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; background-color: rgb(255, 255, 255);&quot; class=&quot;NormalTextRun SCXW241726598 BCX0&quot; data-ccp-parastyle=&quot;Paragraph&quot;&gt;ti&lt;/span&gt;&lt;span style=&quot;font-size: 11px; text-align: left; white-space-collapse: preserve; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; background-color: rgb(255, 255, 255);&quot; class=&quot;NormalTextRun SCXW241726598 BCX0&quot; data-ccp-parastyle=&quot;Paragraph&quot;&gt;t&lt;/span&gt;&lt;span style=&quot;font-size: 11px; text-align: left; white-space-collapse: preserve; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; background-color: rgb(255, 255, 255);&quot; class=&quot;NormalTextRun SCXW241726598 BCX0&quot; data-ccp-parastyle=&quot;Paragraph&quot;&gt;le, abstract&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#01364C;fillColor=#F7F8F9;" parent="ZuL10zp0FBLkSekguk2s-135" vertex="1">
+        <mxCell id="ZuL10zp0FBLkSekguk2s-126" value="&lt;font color=&quot;#01364c&quot;&gt;&lt;span style=&quot;font-size: 11px; text-align: left; white-space-collapse: preserve; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; background-color: rgb(255, 255, 255);&quot; class=&quot;NormalTextRun SCXW241726598 BCX0&quot; data-ccp-parastyle=&quot;Paragraph&quot;&gt;SUBSET:&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#01364c&quot;&gt;&lt;span style=&quot;font-size: 11px; text-align: left; white-space-collapse: preserve; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; background-color: rgb(255, 255, 255);&quot; class=&quot;NormalTextRun SCXW241726598 BCX0&quot; data-ccp-parastyle=&quot;Paragraph&quot;&gt;ti&lt;/span&gt;&lt;span style=&quot;font-size: 11px; text-align: left; white-space-collapse: preserve; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; background-color: rgb(255, 255, 255);&quot; class=&quot;NormalTextRun SCXW241726598 BCX0&quot; data-ccp-parastyle=&quot;Paragraph&quot;&gt;t&lt;/span&gt;&lt;span style=&quot;font-size: 11px; text-align: left; white-space-collapse: preserve; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; font-family: &amp;quot;Atkinson Hyperlegible&amp;quot;, &amp;quot;Atkinson Hyperlegible_EmbeddedFont&amp;quot;, &amp;quot;Atkinson Hyperlegible_MSFontService&amp;quot;, sans-serif; font-variant-ligatures: none; text-indent: 37px; background-color: rgb(255, 255, 255);&quot; class=&quot;NormalTextRun SCXW241726598 BCX0&quot; data-ccp-parastyle=&quot;Paragraph&quot;&gt;le, abstract&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#01364C;fillColor=#F7F8F9;" parent="ZuL10zp0FBLkSekguk2s-135" vertex="1">
           <mxGeometry x="117" y="69" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ZuL10zp0FBLkSekguk2s-127" value="&lt;font color=&quot;#01364c&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;face markup, language attributes,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;non-Latin characters, problem categories&lt;/span&gt;&lt;/font&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;strokeWidth=2;strokeColor=#F7F8F9;" parent="ZuL10zp0FBLkSekguk2s-135" vertex="1">
@@ -206,7 +208,7 @@
           <mxGeometry x="-12" y="759" width="41" height="37" as="geometry" />
         </mxCell>
         <mxCell id="zoB-PzY4IPZ8VXrLv6D1-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4BA02;" parent="1" vertex="1">
-          <mxGeometry x="-12" y="805" width="41" height="37" as="geometry" />
+          <mxGeometry x="-12" y="759" width="41" height="37" as="geometry" />
         </mxCell>
         <mxCell id="zoB-PzY4IPZ8VXrLv6D1-7" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#01364C;" parent="1" vertex="1">
           <mxGeometry x="1052" y="32" width="41" height="37" as="geometry" />
@@ -649,32 +651,47 @@
         <mxCell id="ZuL10zp0FBLkSekguk2s-137" value="&lt;font color=&quot;#01364c&quot;&gt;OpenAlex database&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#01364C;fillColor=#F7F8F9;container=0;" parent="ZxaNEEp2_df2SUQsy-pQ-6" vertex="1">
           <mxGeometry y="99.5" width="108" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZxaNEEp2_df2SUQsy-pQ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#01364C;" parent="ZxaNEEp2_df2SUQsy-pQ-6" source="ZuL10zp0FBLkSekguk2s-138" target="ZuL10zp0FBLkSekguk2s-142" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="ZxaNEEp2_df2SUQsy-pQ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#01364C;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="ZxaNEEp2_df2SUQsy-pQ-6" source="ZuL10zp0FBLkSekguk2s-138" target="ZuL10zp0FBLkSekguk2s-142" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="208" y="95" />
+              <mxPoint x="208" y="95" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="ZuL10zp0FBLkSekguk2s-138" value="&lt;font color=&quot;#01364c&quot;&gt;matched on DOI&lt;/font&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#01364C;fillColor=#F7F8F9;container=0;" parent="ZxaNEEp2_df2SUQsy-pQ-6" vertex="1">
           <mxGeometry x="128" y="29.5" width="70" height="130" as="geometry" />
         </mxCell>
         <mxCell id="ZuL10zp0FBLkSekguk2s-142" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#99D9DD;strokeColor=#6c8ebf;container=0;" parent="ZxaNEEp2_df2SUQsy-pQ-6" vertex="1">
-          <mxGeometry x="216" width="312" height="189" as="geometry" />
+          <mxGeometry x="216" y="20" width="312" height="150" as="geometry" />
         </mxCell>
         <mxCell id="ZuL10zp0FBLkSekguk2s-143" value="&lt;font color=&quot;#01364c&quot;&gt;entire shared corpus&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#F7F8F9;container=0;" parent="ZxaNEEp2_df2SUQsy-pQ-6" vertex="1">
           <mxGeometry x="226" y="33" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ZuL10zp0FBLkSekguk2s-144" value="&lt;font color=&quot;#01364c&quot;&gt;subset analysis&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#F7F8F9;container=0;" parent="ZxaNEEp2_df2SUQsy-pQ-6" vertex="1">
-          <mxGeometry x="226" y="120.5" width="120" height="40" as="geometry" />
+          <mxGeometry x="226" y="103.5" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZuL10zp0FBLkSekguk2s-145" value="&lt;font color=&quot;#01364c&quot;&gt;Differences between DOI and its URL, title, cited by, abstract, license, language, doc_type&lt;/font&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#F7F8F9;container=0;" parent="ZxaNEEp2_df2SUQsy-pQ-6" vertex="1">
-          <mxGeometry x="368" y="10" width="140" height="86" as="geometry" />
+        <mxCell id="ZuL10zp0FBLkSekguk2s-145" value="&lt;font color=&quot;#01364c&quot;&gt;Differences between title, abstract, language&lt;/font&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#F7F8F9;container=0;" parent="ZxaNEEp2_df2SUQsy-pQ-6" vertex="1">
+          <mxGeometry x="368" y="28" width="140" height="50" as="geometry" />
         </mxCell>
         <mxCell id="ZxaNEEp2_df2SUQsy-pQ-1" value="&lt;font color=&quot;#01364c&quot;&gt;title and abstract&lt;/font&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#F7F8F9;container=0;" parent="ZxaNEEp2_df2SUQsy-pQ-6" vertex="1">
-          <mxGeometry x="368" y="109" width="140" height="63" as="geometry" />
+          <mxGeometry x="368" y="104" width="140" height="38" as="geometry" />
         </mxCell>
         <mxCell id="ZxaNEEp2_df2SUQsy-pQ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.01;entryY=0.51;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#01364C;" parent="ZxaNEEp2_df2SUQsy-pQ-6" source="ZuL10zp0FBLkSekguk2s-143" target="ZuL10zp0FBLkSekguk2s-145" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="358" y="53" />
+              <mxPoint x="358" y="54" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="ZxaNEEp2_df2SUQsy-pQ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.008;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#01364C;" parent="ZxaNEEp2_df2SUQsy-pQ-6" source="ZuL10zp0FBLkSekguk2s-144" target="ZxaNEEp2_df2SUQsy-pQ-1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="358" y="124" />
+              <mxPoint x="358" y="123" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="6vbjvutLvQpTnz5e0yrU-1" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="168" y="-237" width="770" height="250" as="geometry" />

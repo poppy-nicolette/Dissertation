@@ -1,0 +1,58 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram name="Page-1" id="RoVLDa-L5TI-RXKHmj7b">
+    <mxGraphModel dx="933" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Corpus creation&lt;/h1&gt;&lt;p&gt;This diagram outlines the corpus creation process.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-3" value="Clean corpus" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-4" value="QA pair creation&lt;div&gt;LLM-assist using Cohere &#39;command-a-03-2025&#39;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="210" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-5" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;QA pair creation&lt;/h1&gt;&lt;p&gt;This diagram outlines the process for creating question-answer pairs.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="60" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-6" value="QA pair selection:&lt;div&gt;human refinement and selection&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="290" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-7" value="QA pair validation:&lt;div&gt;human review, LLM-assist&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="370" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-8" value="Human-LLM agreement (Cohen&#39;s kappa)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="580" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-9" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Response relevance judgement criteria&lt;/h1&gt;&lt;p&gt;This is the criteria to judge the relevance of the generated response using boolean values.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="60" width="270" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-10" value="Judgement criteria:&lt;br&gt;&lt;ol&gt;&lt;li&gt;Originality check: can the model answer the question without the documents?&lt;/li&gt;&lt;li&gt;Clarity and completness&lt;/li&gt;&lt;li&gt;Correctness&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="330" y="430" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-11" value="JATS tags: prepend and append to abstract" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-12" value="Multi-lingual: translate title and abstract into Japanese" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-13" value="GoogleTranslator, target=&#39;ja&#39;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-14" value="beginning pattern = &quot;&amp;lt;jats:title&amp;gt;Abstract&amp;lt;/jats:title&amp;gt;&amp;lt;jats:p&amp;gt;&quot;&lt;div&gt;end_pattern: &quot;&amp;lt;/japts:p&amp;gt;&quot;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="340" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-15" value="Question-answer-response comparison: Boolean value" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="210" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-16" value="Judgement criteria:&lt;div&gt;&lt;ol&gt;&lt;li&gt;Does the response answer the question semantically?&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="600" y="270" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-17" value="Human-LLM agreement (Cohen&#39;s kappa)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="370" width="220" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

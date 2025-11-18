@@ -7,9 +7,6 @@
         <mxCell id="9n1auHnCpi2-6ulgBx6K-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Corpus creation&lt;/h1&gt;&lt;p&gt;This diagram outlines the corpus creation process.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="40" y="60" width="180" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="9n1auHnCpi2-6ulgBx6K-2" value="&lt;span style=&quot;text-align: start; font-size: 12pt; font-family: &amp;quot;Times New Roman&amp;quot;, serif;&quot;&gt;corpus creation, QA pair creation, annotation, and answer relevance judgement criteria, along with any human-human and human-llm agreement using Cohen’s kappa&lt;/span&gt;&lt;span style=&quot;font-size: medium; text-align: start;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="850" y="90" width="300" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="9n1auHnCpi2-6ulgBx6K-3" value="Clean corpus" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="200" width="220" height="60" as="geometry" />
         </mxCell>
@@ -50,7 +47,10 @@
           <mxGeometry x="600" y="210" width="220" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9n1auHnCpi2-6ulgBx6K-16" value="Judgement criteria:&lt;div&gt;&lt;ol&gt;&lt;li&gt;Does the response answer the question semantically?&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="600" y="290" width="220" height="60" as="geometry" />
+          <mxGeometry x="600" y="270" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9n1auHnCpi2-6ulgBx6K-17" value="Human-LLM agreement (Cohen&#39;s kappa)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="370" width="220" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

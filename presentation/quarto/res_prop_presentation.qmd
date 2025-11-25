@@ -139,7 +139,8 @@ Noise classification from Wu et al., (2025)<br>
 - Orthographic
 - Prior
 
-insert new classification here as table<br>
+Table: new classification for quality<br>
+<!--# https://tablesgenerator.com/markdown_tables -->
 
 | **Quality Classification**        | **Source**          |
 |-----------------------------------|---------------------|
@@ -153,7 +154,6 @@ insert new classification here as table<br>
 
 
 ## 
-
 
 [If we use metadata as a knowledge source in RAG, what metadata characteristic might affect performance?]{.yellow .absolute left="20%" top="30%" right="20%"}
 

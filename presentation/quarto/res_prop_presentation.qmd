@@ -117,7 +117,7 @@ past studies have examined coverage, completeness, accuracy, but not content.
 - F. Shi et al.(2023): irrelevant information in contexts<br>
 - Cho et al. (2024): typos affecting retrieval performance<br>
 
-## Definition of quality
+## [Definition of quality]{.scrollable}
 ::: notes
 Yasser et al., (2011) identified problems in metadata in which ‘poorly created metadata records result in poor retrieval and limit accessibility to collections’. They classified problems as “Incorrect Values, Incorrect Elements, Missing Information, Information Loss, and Inconsistent Value Representation ” (Yasser, 2011, p. 51).
 also Bruce and Hillman; Delgado-Quirós & Ortega 
@@ -129,6 +129,28 @@ Yasser et al., (2011)
 - Missing information
 - Information loss
 - Inconsistent value representation
+
+Noise classification from Wu et al., (2025)<br>
+- Semantic
+- Datatype
+- Illegal sentence
+- Counterfactual
+- Supportive
+- Orthographic
+- Prior
+
+insert new classification here as table<br>
+
+| **Quality Classification**        | **Source**          |
+|-----------------------------------|---------------------|
+| Semantic noise                    | Wu et al., 2025     |
+| Datatype noise                    | Wu et al., 2025     |
+| Incorrect values                  | Yasser et al., 2011 |
+| Incorrect elements                | Yasser et al., 2011 |
+| Missing information               | Yasser et al., 2011 |
+| Information loss                  | Yasser et al., 2011 |
+| Inconsistent value representation | Yasser et al., 2011 |
+
 
 ## 
 

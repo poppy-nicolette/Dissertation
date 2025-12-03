@@ -1,0 +1,4 @@
+DOI: 10.5281/ZENODO.13960973
+Title: Using missing data patterns to detect incorrectly assigned articles in bibliographic datasets
+Abstract: <jats:title>Abstract</jats:title><jats:p>The DORA declaration and CoARA call for the use of bibliometric indicators based on open data. However, established scholarly metadata datasets are closed, and the quality of open datasets has not yet been thoroughly examined. In this paper, I present a method to detect errors in a dataset using missing data patterns. As an example, the method is applied to the affiliation metadata of publications associated with ETH Zurich. This allows me to identify a series of incorrectly affiliated papers. The method introduced in this paper is not specifically designed for affiliation data and can also be used to detect errors in other types of data. It could lead to corrections which will hopefully benefit providers as well as users of data.
+</jats:p>

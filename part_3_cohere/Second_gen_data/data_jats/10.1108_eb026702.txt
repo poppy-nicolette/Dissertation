@@ -1,0 +1,3 @@
+DOI: 10.1108/eb026702
+Title: ON USER STUDIES AND INFORMATION NEEDS
+Abstract: <jats:title>Abstract</jats:title><jats:p>part from information retrieval there is virtually no other area of information science that has occasioned as much research effort and writing as 'user studies'. Within user studies the investigation of 'information needs' has been the subject of much debate and no little confusion. The aim of this paper is to attempt to reduce this confusion by devoting attention to the definition of some concepts and by proposing the basis for a theory of the motivations for information‐seeking behaviour.</jats:p>

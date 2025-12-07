@@ -1,0 +1,3 @@
+DOI: 10.1007/978-3-031-88708-6_3
+Title: 関連性は RAG の Retriever から Generator に伝播されますか? Is Relevance Propagated from Retriever to Generator in RAG?
+Abstract: なし None

@@ -8,9 +8,30 @@
    version="1.1"
    id="svg1"
    xml:space="preserve"
+   sodipodi:docname="theoretical_model_part_3.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.56296626"
+     inkscape:cx="548.87836"
+     inkscape:cy="433.41851"
+     inkscape:window-width="1464"
+     inkscape:window-height="891"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer4" /><defs
      id="defs1"><rect
        x="1127.2482"
        y="950.16772"
@@ -200,8 +221,9 @@
      id="layer4"
      transform="translate(-527.68163,-335.0448)"><path
        style="display:inline;fill:#79caff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       d="m 620.60314,508.44595 c 0,0 -10.468,-8.22486 -16.44972,-34.39488 -5.98172,-26.17001 -6.72943,-38.13344 -6.72943,-38.13344 0,0 -79.25775,74.77146 -68.78975,246.74583 10.46801,171.97436 68.78975,220.57581 68.78975,220.57581 0,0 -1.49543,-10.468 2.99086,-27.66544 4.48628,-17.19744 9.72029,-24.67458 9.72029,-24.67458 0,0 -28.41316,-84.49176 -29.16087,-178.7038 -0.74772,-94.21204 39.62887,-163.7495 39.62887,-163.7495 z"
-       id="path19" /></g><g
+       d="m 611.78141,482.21645 c 0,0 2.93863,16.67354 -3.04309,-9.49648 -5.98172,-26.17001 -1.85782,-43.30369 -1.85782,-43.30369 0,0 -52.63844,16.34376 -51.94327,242.17224 0.68186,221.50723 49.90232,235.49585 49.90232,235.49585 0,0 -5.06589,-11.84125 -0.5796,-29.03869 4.48628,-17.19744 8.89634,-23.30133 8.89634,-23.30133 0,0 -25.20466,-89.72123 -25.95237,-183.93327 -0.74772,-94.21204 24.57749,-188.59463 24.57749,-188.59463 z"
+       id="path19"
+       sodipodi:nodetypes="cscscscsc" /></g><g
      id="layer2"
      style="display:inline"
      transform="translate(-527.68163,-335.0448)"><ellipse
@@ -264,15 +286,15 @@
        transform="translate(8.9042203,-2.544063)"><tspan
          x="629.65625"
          y="427.89604"
-         id="tspan2">Information 
+         id="tspan1">Information 
 </tspan><tspan
          x="629.65625"
          y="466.46306"
-         id="tspan3">objects
+         id="tspan13">objects
 </tspan><tspan
          x="629.65625"
          y="505.03007"
-         id="tspan4">component</tspan></text><text
+         id="tspan18">component</tspan></text><text
        xml:space="preserve"
        id="text11-7"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:38.567px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect12-2);shape-padding:29.2567;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
@@ -281,11 +303,11 @@
        transform="translate(-23.183653,422.56169)"><tspan
          x="658.91211"
          y="457.1519"
-         id="tspan5">IT 
+         id="tspan19">IT 
 </tspan><tspan
          x="658.91211"
          y="495.71892"
-         id="tspan6">component</tspan></text><text
+         id="tspan20">component</tspan></text><text
        xml:space="preserve"
        id="text11-7-0"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:38.567px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect12-2-0);shape-padding:29.2567;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
@@ -294,7 +316,7 @@
        transform="translate(263.58277,228.22088)"><tspan
          x="658.91211"
          y="457.1519"
-         id="tspan7">Interface</tspan></text><text
+         id="tspan21">Interface</tspan></text><text
        xml:space="preserve"
        id="text11-7-0-9"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:38.567px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect12-2-0-9);shape-padding:29.2567;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
@@ -303,11 +325,11 @@
        transform="translate(622.53405,195.06778)"><tspan
          x="658.91211"
          y="457.1519"
-         id="tspan8">Cognitive 
+         id="tspan22">Cognitive 
 </tspan><tspan
          x="658.91211"
          y="495.71892"
-         id="tspan9">actor</tspan></text><text
+         id="tspan23">actor</tspan></text><text
        xml:space="preserve"
        id="text11-7-0-9-4"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:38.567px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect12-2-0-9-6);shape-padding:29.2567;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
@@ -316,7 +338,7 @@
        transform="translate(855.78264,56.133704)"><tspan
          x="658.91211"
          y="457.1519"
-         id="tspan10">Organization</tspan></text><text
+         id="tspan24">Organization</tspan></text><text
        xml:space="preserve"
        id="text11-7-0-9-4-0"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:38.567px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect12-2-0-9-6-1);shape-padding:29.2567;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
@@ -325,11 +347,11 @@
        transform="translate(1005.0572,204.35609)"><tspan
          x="658.91211"
          y="457.1519"
-         id="tspan11">Social
+         id="tspan25">Social
 </tspan><tspan
          x="658.91211"
          y="495.71892"
-         id="tspan12">context</tspan></text><text
+         id="tspan26">context</tspan></text><text
        xml:space="preserve"
        id="text11-7-0-9-4-0-6"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:38.567px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect12-2-0-9-6-1-9);shape-padding:29.2567;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
@@ -338,7 +360,7 @@
        transform="translate(861.80475,429.4136)"><tspan
          x="658.91211"
          y="457.1519"
-         id="tspan14">Cultural</tspan></text><g
+         id="tspan27">Cultural</tspan></text><g
        id="g14"
        transform="translate(-88.855784,12.693683)"><path
          style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5-5-5);paint-order:stroke fill markers"
@@ -353,13 +375,13 @@
          transform="translate(-15.243296,15.837802)"><tspan
            x="1127.248"
            y="966.78023"
-           id="tspan16"><tspan
+           id="tspan29"><tspan
              style="fill:#000000;stroke:none"
-             id="tspan15">=  Cognitive transformation and influence</tspan></tspan></text><text
+             id="tspan28">=  Cognitive transformation and influence</tspan></tspan></text><text
          xml:space="preserve"
          id="text12-7"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.6667px;line-height:22.4975px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect13-9);display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
          transform="translate(-14.986535,50.92554)"><tspan
            x="1127.248"
            y="966.78023"
-           id="tspan17">=  Interactive communication of cognitive structures</tspan></text></g></g></svg>
+           id="tspan30">=  Interactive communication of cognitive structures</tspan></text></g></g></svg>

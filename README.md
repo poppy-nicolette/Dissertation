@@ -44,7 +44,6 @@ see license file
   - part_3_create_questions.ipynb
   - Part_3_V6_Cohere_RAG.ipynb
   - prepare_corpus.py
-  - prepare_documents.py
   - requirements.txt
 - presentation
   - quarto

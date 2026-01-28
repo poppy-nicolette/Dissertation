@@ -26,21 +26,21 @@ For this part, I utilized two types of error and noise found in parts 1 and 2 to
 see license file
 
 ## Contents
+```
+- defense_presentation
+- diagrams
+-  Part_1_data
+-  Part_2_data
+-  part_3_cohere
+  -  Dec_analysis_FINAL
+    - Round1
+    - Round2
+    - Part_3_analysis.ipynb
+  - reconstruct_abstract
+    - reconstruct_abstract.py
+  - corpus.pkl
 
-|_ defense_presentation
-|_ diagrams
-|_ Part_1_data
-|_ Part_2_data
-|_ part_3_cohere
-  |_ Dec_analysis_FINAL
-    |_ Round1
-    |_ Round2
-    |_ Part_3_analysis.ipynb
-  |_ reconstruct_abstract
-    |_ reconstruct_abstract.py
-  |_ corpus.pkl
-
-
+```
 
 
 

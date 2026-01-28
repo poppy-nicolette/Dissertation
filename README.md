@@ -39,6 +39,19 @@ see license file
   - reconstruct_abstract
     - reconstruct_abstract.py
   - corpus.pkl
+  - golden_set.xlsx
+  - Part_3_create_corpus.ipynb
+  - part_3_create_questions.ipynb
+  - Part_3_V6_Cohere_RAG.ipynb
+  - prepare_corpus.py
+  - prepare_documents.py
+  - requirements.txt
+- presentation
+  - quarto
+- Study_design.xlsx
+- testing_crossref_api.ipynb
+- Ver_3_refined
+- Works_with_abstracts.ipynb
 
 ```
 

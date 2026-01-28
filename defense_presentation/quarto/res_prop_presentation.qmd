@@ -1,0 +1,360 @@
+---
+title: "Is metadata ready for RAG?"
+subtitle: "Research Proposal, PhD Program in Information Science"
+author: "Poppy Riddle"
+format: 
+  revealjs:
+    theme: [default, www/custom.scss]
+    progress: true
+    slide-number: true
+    preview-links: auto
+    embed-resources: false
+    scrollable: true
+lightbox: true
+editor: visual
+background-transition: fade
+project:
+  execute-dir: project
+---
+# hello!
+<!--# https://htmlcolorcodes.com/color-chart/web-safe-color-chart/ -->
+
+<!--# more helpful stuff: https://emilhvitfeldt.com/blog -->
+
+<!--# plugins should you want them: https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware -->
+
+## Presentation overview
+
+-   Introduction & background
+-   Positioning & framework
+-   Research questions
+-   Part 1: Random sample
+-   Part 2: Comparing sources
+-   Part 3: RAG in action
+-   Concluding thoughts and questions
+
+# Introduction
+
+## Context {.scrollable}
+::: notes
+metadata is data on scholarly resources, such as journal articles,
+
+Efforts in community to improve such as COMET, California Digital Library, OpenAlex - enrichment process
+
+Generative AI in academic libraries: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant
+
+Metadata may be available on paywalled works
+:::
+
+
+![](images/4_directions.svg){fig-align="center" width="50%"}
+
+
+
+## What is RAG?
+
+::: notes
+- A large language model is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation
+
+- parametric knowledge - knowlege from training data
+- external knowledge - from sources outside the training data
+:::
+
+LLM-based chat application
+![](images/LLM_chat.svg){fig-align="center" width="120%" }
+
+Retrieval-augmented generation
+![](images/rag_basic.svg){fig-align="center" width="160%" }
+
+## Theoretical position
+::: notes
+- holistic model that extends to the entire system
+- good for limiting the research and positioning it within the whole system
+- useful for discussing internal validity
+- discuss information object
+- lines 4 
+- line 3 (simulated) and 6 (controlled)
+:::
+
+[Ingwersen & Järvelin's Cognitive Model of IS&R]{.italic}
+![](images/cog_model_p271.png){fig-align="center"}
+
+[Detailed view of the model]{.italic}
+![](images/cog_model_detail_p284.png)
+
+## framework to study design
+show how the framework breaks down into variables for study design
+
+## limitations of I&J IS&R framework
+talk about limitations<br>
+this is the part I may improve upon or recontextualize
+
+## Proof of concept {.scrollable}
+Summer of 2024 experimented using abstracts as a source of RAG applications
+
+![](images/rag_based_nav.png){fig-align="center"}
+[published in NLP4Sustainability Workshop, Proceedings of the 21st Conference on Natural Language Processing (KONVENS), Volume 2: Workshops,
+pages 282–290, 2025]{.blue}
+
+
+## Past research 
+::: notes
+past studies have examined coverage, completeness, accuracy, but not content.
+:::
+
+### [Metadata quality]{.yellow}
+- Culbert et al. (2024): shared corpus of OpenAlex and other databases<br>
+- Delgado-Quiros & Ortega (2024): metadata in Crossref and OpenAlex<br>
+- Alonso-Alverez & van Eck (2024): analysis of OpenAlex<br>
+- Yasser et al., (2011): definition of quality
+
+### [RAG and metadata]{.yellow}
+- Kang & Kim (2023): metadata in RAG<br>
+- Hayashi et al. (2024): metadata as document source<br>
+- Agarwal et al. (2024): abstracts from Semantic Scholar for kw extraction<br>
+
+### [Perturbations in RAG]{.yellow}
+- F. Shi et al.(2023): irrelevant information in contexts<br>
+- Cho et al. (2024): typos affecting retrieval performance<br>
+
+## [Definition of quality]{.scrollable}
+::: notes
+Yasser et al., (2011) identified problems in metadata in which ‘poorly created metadata records result in poor retrieval and limit accessibility to collections’. They classified problems as “Incorrect Values, Incorrect Elements, Missing Information, Information Loss, and Inconsistent Value Representation ” (Yasser, 2011, p. 51).
+also Bruce and Hillman; Delgado-Quirós & Ortega 
+:::
+Yasser et al., (2011)
+
+- Incorrect values
+- Incorrect elements
+- Missing information
+- Information loss
+- Inconsistent value representation
+
+Noise classification from Wu et al., (2025)<br>
+- Semantic
+- Datatype
+- Illegal sentence
+- Counterfactual
+- Supportive
+- Orthographic
+- Prior
+
+Table: new classification for quality<br>
+<!--# https://tablesgenerator.com/markdown_tables -->
+
+| **Quality Classification**        | **Source**          |
+|-----------------------------------|---------------------|
+| Semantic noise                    | Wu et al., 2025     |
+| Datatype noise                    | Wu et al., 2025     |
+| Incorrect values                  | Yasser et al., 2011 |
+| Incorrect elements                | Yasser et al., 2011 |
+| Missing information               | Yasser et al., 2011 |
+| Information loss                  | Yasser et al., 2011 |
+| Inconsistent value representation | Yasser et al., 2011 |
+
+
+## 
+
+[If we use metadata as a knowledge source in RAG, what metadata characteristic might affect performance?]{.yellow .absolute left="20%" top="30%" right="20%"}
+
+## 3 areas should be explored:
+
+:::: {.columns}
+
+::: {.column width="40%"}
+1.  metadata characterization
+2.  metadata source
+3.  evaluate impact through case study
+:::
+
+::: {.column width="60%"}
+![](images/cog_source.svg){fig-align="right"}
+:::
+
+::::
+
+# Research Questions
+
+::: notes
+incremental slides!
+:::
+
+
+::: {.incremental}
+1.	What is the characterization of the metadata elements from a random sample of Crossref metadata?
+2.	What is the type and quantity of errors, enhancements, or transformations when a shared corpus in Crossref and OpenAlex are compared?
+3.	How do metadata characteristics and errors affect retriever performance and generated responses?
+:::
+
+
+## Gaps addressed
+
+-   Lack of characterization of title and abstract content in metadata records
+
+-   Lack of comparisons between two sources of transformations of textual content
+
+-   Evidence of metadata characteristics in RAG application
+
+## Methodology
+
+![](images/framework.svg){fig-align="center" width="160%"}
+
+# Part 1: Characterize metadata {.scrollable}
+
+## Characterize metadata from Crossref {.scrollable}
+
+
+![](images/part_1.svg){fig-align="center" width="160%"}
+
+## Study design
+add in I&J framework here
+
+## Example: {.scrollable}
+
+Abstract metadata from <https://api.crossref.org/works/10.1103/physrevd.110.036015>
+
+![](images/abstract.png){fig-align="center"}
+
+Or, another example from <https://api.crossref.org/works/10.33024/hjk.v15i1.3791>:
+
+![](images/abstract2.png){fig-align="center"}
+
+Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1108/eemcs-04-2022-0108>
+
+![](images/abstract3.png){fig-align="center"}
+
+## 
+
+[Past studies have examined metadata for presence and accuracy, but have not examined content.]{.yellow .absolute left="20%" top="30%" right="20%"}
+
+# Part 2: Compare data sources {.scrollable}
+
+## Compare the same metadata from Crossref and OpenAlex {.scrollable}
+
+![](images/part_2_framework.svg){fig-align="center" width="160%"}
+
+## Study design
+show how IS&R framework was used for study design
+
+
+## Example {.scrollable}
+
+![](images/abstract_tags.png){fig-align="center"}
+[Transformation of abstracts from Crossref (left) to OpenAlex (right)]{.blue .smaller}
+
+![](images/abstract_crammed.png){fig-align="center"}
+[Two languages in one abstract]{.blue .smaller}
+
+![](images/abstract_german.png){fig-align="center"}
+[Transformation of languages]{ .blue .smaller}
+
+![](images/abstract_encodings.png){fig-align="center"}
+[Encodings added to the OpenAlex version]{.blue .smaller}
+
+##  
+
+[Past studies have examined both databases for their appropriateness for bibliometric analysis, but not for NLP tasks.]{.yellow .absolute left="20%" top="30%" right="20%"}
+
+# Part 3: Evaluate some characteristics in action
+
+## What happens when we put metadata in a RAG application? {.scrollable}
+::: notes
+Three datasets of 45 works containing the DOI, the title, and the abstract:
+
+A clean dataset
+
+With JATS tags prepending and appending the title and abstract.
+
+A translated version in Japanese prepending the English
+
+-   Analyze results from the retriever:
+
+    -   precision
+
+    -   recall
+
+    -   F1
+
+    -   accuracy
+
+    -   balanced accuracy
+
+    -   document scores
+
+-   Analyze results from the generator model:
+
+    -   faithfulness
+
+    -   answer relevance
+
+:::
+
+![](images/part_3_framework.svg){fig-align="center" width="160%"}
+
+## Study design
+show how IS&R framework was used for study design
+
+## Example of measures in action
+
+![](images/part_3_example.png){fig-align="center"}
+
+[An example of response relevance scoring and faithfulness]{.italic}
+
+![](images/part_3_scores.png){fig-align="center"}
+
+[Scores recorded for each query]{.italic}
+
+# Summary
+
+## Purpose:
+
+::: notes
+if metadata was previous used for discovery and analysis, that's been the past lens on what is considered good metadata.<br>
+If there are efforts to improve metadata, is it only from the past lens, or one that may consider future use?
+
+past paradigm of discover and analysis, then improvements wont' help future use with LLM-driven applications. 
+
+if we want metadata to be a viable external source of knowledge on its own, then its characteristics and errors should be known to either fix our metadata workflows or improve the NLP side to anticipate these quirks. 
+
+:::
+
+
+[[Metadata]{.yellow} can be used as a source of [external knowledge]{.yellow} in RAG, however, it is unknown what [characteristics]{.yellow} or errors may impact RAG [performance]{.yellow}.]{.absolute left="15%" top="30%" right="15%"}
+
+
+# Thank you!
+Poppy Riddle
+[Department of Information Science PhD Program]{.blue}
+
+## References
+
+[Agarwal, S., Laradji, I. H., Charlin, L., & Pal, C. (2024). LitLLM: A Toolkit for Scientific Literature Review (No. arXiv:2402.01788). arXiv. https://doi.org/10.48550/arXiv.2402.01788]{.biblio}
+
+[Alonso-Álvarez, P., & van Eck, N. J. (2024, October 29). Coverage and metadata availability of African publications in OpenAlex: A comparative analysis. Zenodo. https://doi.org/10.5281/zenodo.14006425]{.biblio}
+
+[Cho, S., Jeong, S., Seo, J., Hwang, T., & Park, J. C. (2024). Typos that Broke the RAG’s Back: Genetic Attack on RAG Pipeline by Simulating Documents in the Wild via Low-level Perturbations (No. arXiv:2404.13948). arXiv. https://doi.org/10.48550/arXiv.2404.13948]{.biblio}
+
+[Culbert, J., Hobert, A., Jahn, N., Haupka, N., Schmidt, M., Donner, P., & Mayr, P. (2024). Reference Coverage Analysis of OpenAlex compared to Web of Science and Scopus (No. arXiv:2401.16359). arXiv. https://doi.org/10.48550/arXiv.2401.16359]{.biblio}
+
+[Delgado-Quirós, L., & Ortega, J. L. (2024). Completeness degree of publication metadata in eight free-access scholarly databases. Quantitative Science Studies, 5(1), 31–49. https://doi.org/10.1162/qss_a_00286]{.biblio}
+
+[Hayashi, T., Sakaji, H., Dai, J., & Goebel, R. (2024). Metadata-based Data Exploration with Retrieval-Augmented Generation for Large Language Models (No. arXiv:2410.04231). arXiv. https://doi.org/10.48550/arXiv.2410.04231]{.biblio}
+
+[Ingwersen, P., & Järvelin, K. (2005). The Turn Integration of Information Seeking and Retrieval in Context (1st ed. 2005). Springer Netherlands : Imprint : Springer.]{.biblio}
+
+[Kang, S.-H., & Kim, S.-J. (2023). M-RAG: Enhancing Open-domain Question Answering with Metadata Retrieval-Augmented Generation. 한국정보통신학회논문지, 27(12), 1489–1500. https://doi.org/10.6109/jkiice.2023.27.12.1489]{.biblio}
+
+[Saiyed, Z., Orian, C., Riddle, P., Prashanth Kanagaraj, G., Krause, G., Toupin, R., & Brooks, S. (2025). RAG Based Navigation of the World Ocean Assessment II. Proceedings of the 21st Conference on Natural Language Processing (KONVENS 2025): Workshops, 282–290. https://aclanthology.org/2025.konvens-2.22.pdf]{.biblio}
+
+[Shi, F., Chen, X., Misra, K., Scales, N., Dohan, D., Chi, E. H., Schärli, N., & Zhou, D. (2023). Large Language Models Can Be Easily Distracted by Irrelevant Context. Proceedings of the 40th International Conference on Machine Learning, 31210–31227. https://proceedings.mlr.press/v202/shi23a.html]{.biblio}
+
+[Yasser, C. M. (2011). An Analysis of Problems in Metadata Records. Journal of Library Metadata, 11(2), 51–62. https://doi.org/10.1080/19386389.2011.570654]{.biblio}
+
+
+
+
+
+
+
+
+

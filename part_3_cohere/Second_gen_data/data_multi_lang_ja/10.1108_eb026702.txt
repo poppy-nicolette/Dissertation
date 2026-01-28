@@ -1,3 +1,0 @@
-DOI: 10.1108/eb026702
-Title: ユーザー調査と情報ニーズについて ON USER STUDIES AND INFORMATION NEEDS
-Abstract: 情報検索の一部を除いて、「ユーザー研究」ほど多くの研究努力と執筆を必要とする情報科学の分野は事実上他にありません。ユーザー調査の中で、「情報ニーズ」の調査は多くの議論の対象となっており、少なからず混乱が生じています。この論文の目的は、いくつかの概念の定義に注意を払い、情報探索行動の動機に関する理論の基礎を提案することによって、この混乱を軽減することを試みることである。 part from information retrieval there is virtually no other area of information science that has occasioned as much research effort and writing as 'user studies'. Within user studies the investigation of 'information needs' has been the subject of much debate and no little confusion. The aim of this paper is to attempt to reduce this confusion by devoting attention to the definition of some concepts and by proposing the basis for a theory of the motivations for information‐seeking behaviour.

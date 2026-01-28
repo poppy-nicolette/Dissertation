@@ -1,0 +1,100 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Can RAG use bibliometric metadata?\"\n",
+        "subtitle: \"Research Proposal, PhD Program in Information Science\"\n",
+        "author: \"Poppy Riddle\"\n",
+        "format: \n",
+        "  revealjs:\n",
+        "    theme: dark\n",
+        "    progress: true\n",
+        "    slide-number: true\n",
+        "    preview-links: auto\n",
+        "    css: www/styles.css\n",
+        "editor: visual\n",
+        "backgroundcolor: \"#660099\"\n",
+        "---\n",
+        "\n",
+        "\n",
+        "# hello there! {background=\"#660099\"}\n",
+        "\n",
+        "<!--# https://htmlcolorcodes.com/color-chart/web-safe-color-chart/ -->\n",
+        "\n",
+        "## Presentation overview {background=\"#660099\"}\n",
+        "\n",
+        "-   Introduction\n",
+        "-   Part 1: Random sample\n",
+        "-   Part 2: Comparing sources\n",
+        "-   Part 3: RAG in action\n",
+        "-   Concluding thoughts and questions\n",
+        "\n",
+        "# Introduction {background=\"#6633CC\"}\n",
+        "\n",
+        "## Background {background=\"#6633CC\"}\n"
+      ],
+      "id": "a399af80"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: true\n",
+        "#| fig-align: center\n",
+        "\n",
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "r = np.arange(0, 2, 0.01)\n",
+        "theta = 2 * np.pi * r\n",
+        "fig, ax = plt.subplots(subplot_kw={\"projection\": \"polar\"})\n",
+        "ax.plot(theta, r)\n",
+        "ax.set_rticks([0.5, 1, 1.5, 2])\n",
+        "ax.grid(True)\n",
+        "plt.show()"
+      ],
+      "id": "a6dcfa3c",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "abstracts as summaries, though limited in depth\n",
+        "\n",
+        "many abstracts, might provide a more holistic answer\n",
+        "\n",
+        "systematic review well known process\n",
+        "\n",
+        "summer of 2024 experimented using abstracts as a source of RAG applications\n",
+        "\n",
+        "3 areas should be explored:\n",
+        "\n",
+        "1.  metadata characterization\n",
+        "2.  metadata source\n",
+        "3.  evaluate characteristic impact through case study\n",
+        "\n",
+        "# Part 1: Characterize metadata\n",
+        "\n",
+        "## Characterize metadata from Crossref\n",
+        "\n",
+        "What are the characteristics of textual metadata from a registration agency, such as Crossref?"
+      ],
+      "id": "5e3db3f8"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "part_3_cohere_rag",
+      "language": "python",
+      "display_name": "part_3_cohere_rag",
+      "path": "/Users/poppyriddle/Library/Jupyter/kernels/part_3_cohere_rag"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

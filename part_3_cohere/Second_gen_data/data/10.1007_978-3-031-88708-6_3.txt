@@ -1,3 +1,0 @@
-DOI: 10.1007/978-3-031-88708-6_3
-Title: Is Relevance Propagated from Retriever to Generator in RAG?
-Abstract: None

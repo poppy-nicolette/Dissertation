@@ -1,3 +1,0 @@
-DOI: 10.5281/ZENODO.6188748
-Title: Classes of errors in DOI names: evaluation dataset
-Abstract: This dataset contains the results of the evaluation of the methodology presented in the article Identifying and correcting invalid citations due to DOI errors in Crossref data. The file named 10_random_citations_per_rule.csv contains 193 randomly selected citations from the corrected citations obtained by the process described in the article. They were extracted using the script called evaluation.py, which can be viewed in the GitHub repository 

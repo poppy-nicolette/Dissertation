@@ -1,4 +1,0 @@
-DOI: 10.1162/qss_a_00212
-Title: Funding COVID-19 research: Insights from an exploratory analysis using open data infrastructures
-Abstract: <jats:title>Abstract</jats:title><jats:p>To analyze the outcomes of the funding they provide, it is essential for funding agencies to be able to trace the publications resulting from their funding. We study the open availability of funding data in Crossref, focusing on funding data for publications that report research related to COVID-19. We also present a comparison with the funding data available in two proprietary bibliometric databases: Scopus and Web of Science. Our analysis reveals limited coverage of funding data in Crossref. It also shows problems related to the quality of funding data, especially in Scopus. We offer recommendations for improving the open availability of funding data in Crossref.
-</jats:p>

@@ -1,3 +1,0 @@
-DOI: 10.1038/d41586-023-02470-3
-Title: ChatGPT-like AIs are coming to major science search engines
-Abstract: The conversational AI-powered chatbots that have come to Internet search engines, such as Google’s Bard and Microsoft’s Bing, look increasingly set to change scientific search too. On 1 August, Dutch publishing giant Elsevier released a ChatGPT-powered AI interface for some users of its Scopus database, while British firm Digital Science announced a closed trial of an AI large language model (LLM) assistant for its Dimensions database. Meanwhile, US firm Clarivate says it’s also working on bringing LLMs to its Web of Science database.

@@ -891,7 +891,7 @@
         <mxCell id="NnC-4bCgZhtCa4Vn9Kd9-7" value="Machine Learning" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#01364C;" vertex="1" parent="1">
           <mxGeometry x="-445" y="-230" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NnC-4bCgZhtCa4Vn9Kd9-8" value="Neural Networks" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#01364C;" vertex="1" parent="1">
+        <mxCell id="NnC-4bCgZhtCa4Vn9Kd9-8" value="Deep Learning" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#01364C;" vertex="1" parent="1">
           <mxGeometry x="-425" y="-155" width="100" height="30" as="geometry" />
         </mxCell>
       </root>

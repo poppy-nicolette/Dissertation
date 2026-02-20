@@ -1,0 +1,10 @@
+---
+title: "webpage"
+---
+# An Analysis of Crossref and OpenAlex as External Knowledge Sources for Retrieval-Augmented Generation
+### Or, Bring the Noise!
+This project page outlines my dissertation research for a PhD in Information Science at Dalhousie University. <br>
+In this research, I investigated the presence of errors or noise in bibliographic metadata, specifically the titles and abstracts from two bibliographic databases: Crossref and OpenAlex. Focused on errors and noise that may impact retrieval-augmented generation (RAG) pipelines, 86% of a random sample of journal articles had a error, (such as missing information, or containing multiple languages), or noise, (such as hyperlinks or face markup). An exploration of the effects of two types of errors and noise, specifically multilingual text and face markup, found significant effects on RAG performance. While face markup was not found to affect RAG retrieval or generation metrics, multilingual text was found to beneficially affect the retriever and negatively affect the generator. 
+
+## Background
+Conversational search agents...

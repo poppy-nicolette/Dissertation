@@ -1,0 +1,26 @@
+project:
+  type: website
+  title: Poppy Riddle's Dissertation
+  output-dir: pages
+
+website:
+  title: "Home"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - data.qmd
+      - results.qmd
+      - recommendations.qmd
+
+format:
+  html:
+    theme:
+      - spacelab
+      - brand
+    css: styles.css
+    toc: true
+
+
+

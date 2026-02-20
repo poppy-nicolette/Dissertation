@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "webpage",
+    "section": "",
+    "text": "This project page outlines my dissertation research for a PhD in Information Science at Dalhousie University.  In this research, I investigated the presence of errors or noise in bibliographic metadata, specifically the titles and abstracts from two bibliographic databases: Crossref and OpenAlex. Focused on errors and noise that may impact retrieval-augmented generation (RAG) pipelines, 86% of a random sample of journal articles had a error, (such as missing information, or containing multiple languages), or noise, (such as hyperlinks or face markup). An exploration of the effects of two types of errors and noise, specifically multilingual text and face markup, found significant effects on RAG performance. While face markup was not found to affect RAG retrieval or generation metrics, multilingual text was found to beneficially affect the retriever and negatively affect the generator.\n\n\n\nConversational search agents…"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "webpage",
+    "section": "",
+    "text": "Conversational search agents…"
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data",
+    "section": "",
+    "text": "Gimme some BASS!"
+  },
+  {
+    "objectID": "results.html",
+    "href": "results.html",
+    "title": "Results",
+    "section": "",
+    "text": "Gimme some pretty pictures"
+  },
+  {
+    "objectID": "recommendations.html",
+    "href": "recommendations.html",
+    "title": "Recommendations",
+    "section": "",
+    "text": "Recommendations from dissertation"
+  }
+]

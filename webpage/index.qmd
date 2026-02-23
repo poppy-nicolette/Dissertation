@@ -1,5 +1,5 @@
 ---
-title: "webpage"
+title: "Poppy Riddle's Dissertation Research"
 ---
 # An Analysis of Crossref and OpenAlex as External Knowledge Sources for Retrieval-Augmented Generation
 ### Or, Bring the Noise!
@@ -8,3 +8,11 @@ In this research, I investigated the presence of errors or noise in bibliographi
 
 ## Background
 Conversational search agents...
+
+## Problem statement
+
+## Methodology
+
+## Main results
+
+## Summary & Recommendations

@@ -1,7 +1,7 @@
 project:
   type: website
   title: Poppy Riddle's Dissertation
-  output-dir: pages
+  output-dir: docs
 
 website:
   title: "Home"

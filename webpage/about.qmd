@@ -2,4 +2,13 @@
 title: "About"
 ---
 
-About this site
+The increasing integration of AI within academic environments  as conversational search and literature summarization tools has opened the Pandora’s Box of using metadata as an external knowledge source and yet, little is known about how the title and abstract content may harmfully or beneficially[^1] affect retrieval or generation from these tools or what possible exploits may be gained from current practices, such as inclusion of multiple languages. The purpose of this research was to investigate bibliographic metadata for errors and noise that may impact RAG performance. 
+
+## Funding
+
+Funding was provided by Cohere as a research grant for using their models. Additional funding was provided by the Nova Scotia Graduate Scholarship, the Interdisciplinary PhD and the Information Science PhD Programs at Dalhousie University, and the QSS Lab under Dr. Philippe Mongeon at Dalhousie University. 
+
+This dissertation research was carried out from 2024-2026. Many thanks go out to Isaac Farley at Crossref, and Kyle Demes at OpenAlex for their advice and insights. 
+
+[^1]: Wu, J., Zhang, S., Che, F., Feng, M., Shao, P., & Tao, J. (2025). Pandora’s Box or Aladdin’s Lamp: A Comprehensive Analysis Revealing the Role of RAG Noise in Large Language Models. In W. Che, J. Nabende, E. Shutova, & M. T. Pilehvar (Eds.), Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (pp. 5019–5039). Association for Computational Linguistics. https://doi.org/10.18653/v1/2025.acl-long.250
+

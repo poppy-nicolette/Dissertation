@@ -137,7 +137,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#rq2" id="toc-rq2" class="nav-link" data-scroll-target="#rq2">RQ2</a></li>
   <li><a href="#rq3" id="toc-rq3" class="nav-link" data-scroll-target="#rq3">RQ3</a></li>
   </ul></li>
-  <li><a href="#summary-recommendations" id="toc-summary-recommendations" class="nav-link" data-scroll-target="#summary-recommendations">Summary &amp; Recommendations</a></li>
+  <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations">Recommendations</a>
+  <ul class="collapse">
+  <li><a href="#multiple-abstracts-need-to-be-available" id="toc-multiple-abstracts-need-to-be-available" class="nav-link" data-scroll-target="#multiple-abstracts-need-to-be-available">Multiple Abstracts Need to be Available</a></li>
+  <li><a href="#clean-out-jats-tags-on-rest-api" id="toc-clean-out-jats-tags-on-rest-api" class="nav-link" data-scroll-target="#clean-out-jats-tags-on-rest-api">Clean Out JATS Tags on REST API</a></li>
+  <li><a href="#multiple-language-values" id="toc-multiple-language-values" class="nav-link" data-scroll-target="#multiple-language-values">Multiple Language Values</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -203,13 +208,25 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="rq3" class="level3">
 <h3 class="anchored" data-anchor-id="rq3">RQ3</h3>
-<p>In RQ3, the purpose was to explore how observed errors and noise affect the outcomes of RAG retrieval and generation. The use of JATs tags (datatype noise) was justified by results from Part 1 (100% for JATS and 13% for other types in the automated check and 5.7% in the subset analysis) and Part 2 (100% for JATS and 6.5% of other types). Multilingual titles and abstracts (inconsistent value representation) were found in the data in Part 1 (6.7%) and in Part 2 (2.7%). While not as prevalent as other types of datatype noise, their inclusion was justified as there are no processes with the OpenAlex ingest process to remove or align them with language values. Two significant results were observed. Multilingual text was found to have a beneficial effect with higher document scores (p=0.00006, F-value=9.81, 0.95 CI) when used with multilingual capable models though this did not result in significantly different answer relevance scores. However, the same multilingual text was at a disadvantage as evidenced by significantly lower faithfulness scores (p=0.01, 0.95 CI), where at times, the generator struggled to incorporate the multilingual context. No significant effects were observed due to the JATS noise in the other dataset.</p>
+<p>In RQ3, the purpose was to explore how observed errors and noise affect the outcomes of RAG retrieval and generation. The use of JATs tags (datatype noise) was justified by results from Part 1 (100% for JATS and 13% for other types in the automated check and 5.7% in the subset analysis) and Part 2 (100% for JATS and 6.5% of other types). Multilingual titles and abstracts (inconsistent value representation) were found in the data in Part 1 (6.7%) and in Part 2 (2.7%). <br> Two significant results were observed. Multilingual text was found to have a beneficial effect with higher document similarity scores (p=0.00006, F-value=9.81, 0.95 CI) when used with multilingual capable models though this did not result in significantly different answer relevance scores. However, the same multilingual text was at a disadvantage as evidenced by significantly lower faithfulness scores (p=0.01, 0.95 CI), where at times, the generator struggled to incorporate the multilingual context. <br> No significant effects were observed due to the JATS noise in the other dataset.</p>
 </section>
 </section>
-<section id="summary-recommendations" class="level2">
-<h2 class="anchored" data-anchor-id="summary-recommendations">Summary &amp; Recommendations</h2>
+<section id="recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="recommendations">Recommendations</h2>
+<section id="multiple-abstracts-need-to-be-available" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-abstracts-need-to-be-available">Multiple Abstracts Need to be Available</h3>
+<p>In Part 1, it was found that 13% of journal article metadata do not match between the REST and XML API responses. This was due to multiple abstracts or multiple titles in the XML response which are not reported in the REST API. I suggest more infrastructure changes are needed by database managers to make multiple abstracts more visible and available through REST APIs, the primary means of harvesting data from both Crossref and OpenAlex. I think much can be done to improve this from Crossref with even the addition of a flag if other versions of the abstract are available in the XML API for harvesting single records. For OpenAlex, adding in an ingest path from the XML API would enrich their metadata and make it more aligned with publisher’s or author’s intent, though this is not needed if Crossref expands the REST API. Additionally, this would benefit bibliometrics and metadata quality research with a more accurate representation of abstracts.</p>
+</section>
+<section id="clean-out-jats-tags-on-rest-api" class="level3">
+<h3 class="anchored" data-anchor-id="clean-out-jats-tags-on-rest-api">Clean Out JATS Tags on REST API</h3>
+<p>To level the playing field between Crossref and other databases, The Crossref REST API response should clean JATS tags on export or provide clear documentation on best practices for cleaning them. While the effect was not significant in this research, a minimal amount of JATS tags was introduced as a perturbation and more is used in practice by some journals/publishers according to observations from Part 1. However, such a change by Crossref would require extensive outreach and testing for its effects on interoperability with users of abstract metadata.</p>
+</section>
+<section id="multiple-language-values" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-language-values">Multiple Language Values</h3>
+<p>As there are multiple places in the Crossref XML API where language attributes can be, OpenAlex should expand the ingest of all language attribute values from the XML API or Crossref should provide a data dump based on the XML API schema. If multiple versions of an abstract exist, there should be agreement between reported languages at the journal level and the languages in the specific title or abstract attributes. As an example, the language attribute, if maintained at the journal level, should include a tuple of all languages that have been used, such as (‘en’, ‘de’). Alternatively, Crossref could collect this information and make it available in the REST API.</p>
 
 
+</section>
 </section>
 </section>
 

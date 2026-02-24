@@ -213,7 +213,127 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="main-results">Main results</h2>
 <section id="rq1" class="level3">
 <h3 class="anchored" data-anchor-id="rq1">RQ1</h3>
-<p>In RQ1, it was unknown what types of problems may exist within the text of titles and abstracts sampled from Crossref. For titles, journal article titles were correct 66.5% in the subset compared with 78% correct with proceedings articles and 90% correct with book chapters. For abstracts, proceedings articles were most correct (78%) followed by book chapters (72%) and journal articles (16%). Missing information and information loss are the two biggest challenges as shown in past research<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> and in these results. Processes for addressing missing information and information loss, particularly for language values, where 80.5% of journal articles, 70% of book chapters, and 72% of proceedings articles did not have them. This was followed by the inclusion of multiple languages in titles and abstracts (as inconsistent value representation) and the inclusion of face markup such as MathML and tex-math (as datatype noise) as the most important problems that may directly affect RAG. Other characteristics were also observed such as HTML encodings, hyperlinks to repositories, figure and table captions, and copyright statements. When examined from a perspective of metadata quality that includes noise, Crossref metadata, particularly journal articles, has many errors and noise that may require preprocessing prior to use in RAG.</p>
+<p>In RQ1, it was unknown what types of problems may exist within the text of titles and abstracts sampled from Crossref. For titles, journal article titles were correct 66.5% in the subset compared with 78% correct with proceedings articles and 90% correct with book chapters. For abstracts, proceedings articles were most correct (78%) followed by book chapters (72%) and journal articles (16%). Missing information and information loss are the two biggest challenges as shown in past research<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> and in these results. Processes for addressing missing information and information loss, particularly for language values, where 80.5% of journal articles, 70% of book chapters, and 72% of proceedings articles did not have them. This was followed by the inclusion of multiple languages in titles and abstracts (as inconsistent value representation) and the inclusion of face markup such as MathML and tex-math (as datatype noise) as the most important problems that may directly affect RAG. Other characteristics were also observed such as HTML encodings, hyperlinks to repositories, figure and table captions, and copyright statements. When examined from a perspective of metadata quality that includes noise, Crossref metadata, particularly journal articles, has many errors and noise that may require preprocessing prior to use in RAG.<br> In the table below are errors and noise categories applied to problems found in the title subset analysis. <br></p>
+<table class="table-light table-hover caption-top table">
+<caption>Title errors and noise from subset analysis</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Category</th>
+<th style="text-align: center;">Count</th>
+<th style="text-align: right;">Percentage of subset</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No error or noise</td>
+<td style="text-align: center;">174</td>
+<td style="text-align: right;">58.0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Incorrect element</td>
+<td style="text-align: center;">47</td>
+<td style="text-align: right;">15.7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Information loss</td>
+<td style="text-align: center;">27</td>
+<td style="text-align: right;">9.0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Datatype noise</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: right;">5.7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Inconsistent value representation</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: right;">3.3%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Missing information</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: right;">3.0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Semantic noise</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">2.7%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Incorrect value</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">2.7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Total</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: right;">100.0%</td>
+</tr>
+</tbody>
+</table>
+<p><br> In the table below are errors and noise categories applied to problems found in the abstract subset analysis. <br></p>
+<table class="table-light table-hover caption-top table">
+<caption>Abstract errors and noise from subset analysis</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Categories</th>
+<th style="text-align: center;">Counts</th>
+<th style="text-align: right;">Percentage of subset</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No error or noise</td>
+<td style="text-align: center;">112</td>
+<td style="text-align: right;">37.3%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Incorrect value</td>
+<td style="text-align: center;">86</td>
+<td style="text-align: right;">28.7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Datatype noise</td>
+<td style="text-align: center;">29</td>
+<td style="text-align: right;">9.7%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Semantic noise</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: right;">7.0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Inconsistent value representation</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: right;">6.7%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Information loss</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: right;">6.7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Missing information</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: right;">3.0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Incorrect element</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">0.7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Information gain</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">0.3%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Total</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: right;">100.0%</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="rq2" class="level3">
 <h3 class="anchored" data-anchor-id="rq2">RQ2</h3>

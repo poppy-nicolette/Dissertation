@@ -2,7 +2,9 @@
 title: "Poppy Riddle's Dissertation Research"
 ---
 # An Analysis of Crossref and OpenAlex as External Knowledge Sources for Retrieval-Augmented Generation
-### Or, Bring the Noise!
+A preprint article version of this can be found here: [DOI]()<br>
+
+### Summary
 This project page outlines my dissertation research for a PhD in Information Science at Dalhousie University. <br>
 In this research, I investigated the presence of errors or noise in bibliographic metadata, specifically the titles and abstracts from two bibliographic databases: Crossref and OpenAlex. Focused on errors and noise that may impact retrieval-augmented generation (RAG) pipelines, 86% of a random sample of journal articles had a error, (such as missing information, or containing multiple languages), or noise, (such as hyperlinks or face markup). An exploration of the effects of two types of errors and noise, specifically multilingual text and face markup, found significant effects on RAG performance. While face markup was not found to affect RAG retrieval or generation metrics, multilingual text was found to beneficially affect the retriever and negatively affect the generator. 
 
@@ -21,10 +23,14 @@ To answer the problems and challenges introduced above, three research questions
 1. What errors or noise may be observed in the title and abstract from a random sample of Crossref metadata?
 2. How do Crossref and OpenAlex compare for errors and noise in the same random sample?
 3. What is the effect of observed errors and noise in metadata on retriever performance and generated responses?
+<br>
 
+![Diagram of a basic RAG architecture used for this study.](files/base_RAG.svg){width=100% fig-align="center" fig-alt="A diagram of a basic RAG architecture used in this study."}
 
 ## Methodology
 Methodologically, each RQ was answered in three parts with the first two parts focused on quantitatively measuring metadata quality and the third part quantitatively measuring effect. Part 1 utilized a random sample from Crossref to observe how the title and abstract contents may contain errors or noise from the perspective of using them in a RAG application as a document source. Part 2 compared the same set of metadata from OpenAlex to observe any differences. Part 3 used errors and noise observed in Parts 1 and 2 to create perturbed datasets which were run through a RAG instrument to measure the effect on the retriever and the generator. All three parts contributed to an information science approach that expanded metadata quality to include the perspective from NLP with types of noise, documented differences for non-matching works between two databases, and explored how errors and noise affected a RAG instrument.
+
+![Overall framework for each part of the study.](files/overall_framework.svg){width=80% fig-align="center" fig-alt="The overall framework for each part of the study."}
 
 ## Main results
 ### RQ1
@@ -36,6 +42,14 @@ In RQ2, 99% (9,998) of DOIs in Part 1 were found in the OpenAlex database. Non-m
 ### RQ3
 In RQ3, the purpose was to explore how observed errors and noise affect the outcomes of RAG retrieval and generation. The use of JATs tags (datatype noise) was justified by results from Part 1 (100% for JATS and 13% for other types in the automated check and 5.7% in the subset analysis) and Part 2 (100% for JATS and 6.5% of other types). Multilingual titles and abstracts (inconsistent value representation) were found in the data in Part 1 (6.7%) and in Part 2 (2.7%). <br>
 Two significant results were observed. Multilingual text was found to have a beneficial effect with higher document similarity scores (p=0.00006, F-value=9.81, 0.95 CI) when used with multilingual capable models though this did not result in significantly different answer relevance scores. However, the same multilingual text was at a disadvantage as evidenced by significantly lower faithfulness scores (p=0.01, 0.95 CI), where at times, the generator struggled to incorporate the multilingual context. <br>
+
+![Round 1 results for the document similarity scores showing the statistically significant benefit of multilingual text in the title and abstract.](files/Round1_document_scores_combined.png){width=100% fig-align="center"}
+
+<br>
+In the figure below, the clean dataset is on the left, the JATS-tagged text scores are in the middle, and the multilingual text is on the right. 
+
+![Round 2 faithfulness scores showing the negative effect of multilingual text on an English-only generator model.](files/Round2_faithfulness.png){width=80% fig-align="center"}
+
 No significant effects were observed due to the JATS noise in the other dataset. 
 
 ## Recommendations

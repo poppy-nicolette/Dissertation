@@ -2,4 +2,8 @@
 title: "Data"
 ---
 
-Gimme some BASS!
+## The data
+All data used in this research can be found on my Github repository for this dissertation. 
+
+### The Golden Set/Benchmark dataset
+The benchmark dataset created can be found [here](files/golden_set.xlsx)

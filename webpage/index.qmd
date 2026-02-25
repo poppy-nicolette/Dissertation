@@ -35,7 +35,7 @@ Methodologically, each RQ was answered in three parts with the first two parts f
 ## Main results
 ### RQ1
 In RQ1, it was unknown what types of problems may exist within the text of titles and abstracts sampled from Crossref. For titles, journal article titles were correct 66.5% in the subset compared with 78% correct with proceedings articles and 90% correct with book chapters. For abstracts, proceedings articles were most correct (78%) followed by book chapters (72%) and journal articles (16%). Missing information and information loss are the two biggest challenges as shown in past research[^14] and in these results. Processes for addressing missing information and information loss, particularly for language values, where 80.5% of journal articles, 70% of book chapters, and 72% of proceedings articles did not have them. This was followed by the inclusion of multiple languages in titles and abstracts (as inconsistent value representation) and the inclusion of face markup such as MathML and tex-math (as datatype noise) as the most important problems that may directly affect RAG. Other characteristics were also observed such as HTML encodings, hyperlinks to repositories, figure and table captions, and copyright statements. When examined from a perspective of metadata quality that includes noise, Crossref metadata, particularly journal articles, has many errors and noise that may require preprocessing prior to use in RAG.<br>
-In the table below are errors and noise categories applied to problems found in the title subset analysis. <br>
+In the table below are errors and noise categories applied to problems found in the title subset analysis across journal articles, book chapters, and conference proceedings. <br>
 
 |Category	|Count	|Percentage of subset|
 |:----------|:-----:|-------------------:|
@@ -51,7 +51,7 @@ In the table below are errors and noise categories applied to problems found in 
 : Title errors and noise from subset analysis {.light .hover}
 
 <br>
-In the table below are errors and noise categories applied to problems found in the abstract subset analysis. 
+In the table below are errors and noise categories applied to problems found in the abstract subset analysis across journal articles, book chapters, and conference proceedings. 
 <br>
 
 |Categories	|Counts	|Percentage of subset|
@@ -70,7 +70,37 @@ In the table below are errors and noise categories applied to problems found in 
 
 
 ### RQ2
-In RQ2, 99% (9,998) of DOIs in Part 1 were found in the OpenAlex database. Non-matching titles (223, 2.2%) and abstracts (688, 6.9%) were examined as subsets. Information gains were observed for language (51% of the shared corpus) and missing titles (0.2%) and abstracts (0.6%), which addressed in part one of the major problems identified in Part 1. For the non-matching items, information value representation affected 26% of those non-matching titles and 2.6% of non-matching abstracts. Mismatches between abstracts (5.7%) and titles (3.1%) was observed was due to introduction of datatype noise, adding to the noise already found in the Crossref titles (13.5%) and abstracts (6.5%). Other than information loss and gain as the two largest categories explaining mismatches between the data from the two databases, datatype noise and inconsistent value representation were selected as the errors and noise to explore in Part 3. Overall, the OpenAlex metadata improves upon the Crossref data and is clean of certain face markup, such as JATS tags, however there are areas of information loss and the introduction of noise that should be addressed if using this metadata as a source. 
+In RQ2, 99% (9,998) of DOIs in Part 1 were found in the OpenAlex database. Non-matching titles (223, 2.2%) and abstracts (688, 6.9%) were examined as subsets. Information gains were observed for language (51% of the shared corpus) and missing titles (0.2%) and abstracts (0.6%), which addressed in part one of the major problems identified in Part 1. For the non-matching items, information value representation affected 26% of those non-matching titles and 2.6% of non-matching abstracts. Mismatches between abstracts (5.7%) and titles (3.1%) was observed was due to introduction of datatype noise, adding to the noise already found in the Crossref titles (13.5%) and abstracts (6.5%). Other than information loss and gain as the two largest categories explaining mismatches between the data from the two databases, datatype noise and inconsistent value representation were selected as the errors and noise to explore in Part 3. Overall, the OpenAlex metadata improves upon the Crossref data and is clean of certain face markup, such as JATS tags, however there are areas of information loss and the introduction of noise that should be addressed if using this metadata as a source. <br>
+In the table below, non-matching titles were manually inspected and labels for errors and noise were applied as explanations for the difference between the two databases. 
+
+
+|Error and noise classification	|Count	|Percentage of non-matching	|Percentage of whole set|
+|:------------------------------|:-----:|:-------------------------:|----------------------:|
+|Information loss	|126	|56.5%	|1.3%|
+|Inconsistent value representation	|58	|26.0%	|0.6%|
+|Information gain	|23	|10.3%	|0.2%|
+|Semantic noise	|6	|2.7%	|0.1%|
+|Datatype noise	|7	|3.1%	|0.1%|
+|Missing information	|2	|0.9%	|0.0%|
+|Incorrect value	|1	|0.4%	|0.0%|
+|Total	|223	|100.0%	|2.2%|
+: Title mismatches labelled by error and noise classification scheme. {.light .hover}
+
+<br>
+
+In the table below, non-matching abstracts were manually inspected and explanatory labels for the difference between the two datasets were applied. 
+
+|Error and noise classification	|Count	|Percentage of non-matching	|Percentage of the total dataset|
+|:------------------------------|:-----:|:-------------------------:|------------------------------:|
+|Information loss	|563	|81.8%	|5.6%|
+|Information gain	|63	|9.2%	|0.6%|
+|Datatype noise	|39	|5.7%	|0.4%|
+|Inconsistent value representation	|18	|2.6%	|0.2%|
+|Semantic noise	|4	|0.6%	|0.0%|
+|Incorrect value	|1	|0.1%	|0.0%|
+|Total  |688    |100%   |   6.9%|
+: Differences in abstracts between Crossref and OpenAlex. {.light .hover}
+
 
 ### RQ3
 In RQ3, the purpose was to explore how observed errors and noise affect the outcomes of RAG retrieval and generation. The use of JATs tags (datatype noise) was justified by results from Part 1 (100% for JATS and 13% for other types in the automated check and 5.7% in the subset analysis) and Part 2 (100% for JATS and 6.5% of other types). Multilingual titles and abstracts (inconsistent value representation) were found in the data in Part 1 (6.7%) and in Part 2 (2.7%). <br>

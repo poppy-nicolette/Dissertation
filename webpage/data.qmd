@@ -7,3 +7,6 @@ All data used in this research can be found on my Github repository for this dis
 
 ### The Golden Set/Benchmark dataset
 The benchmark dataset created can be found [here](files/golden_set.xlsx)
+
+### Network placement
+![](files/burrito_annotated.png){fig-align="center" width="100%"}

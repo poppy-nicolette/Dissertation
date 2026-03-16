@@ -1,6 +1,6 @@
 ---
 title: "Will bibliographic metadata work in RAG?"
-subtitle: "Defence, PhD Program in Information Science"
+subtitle: "PhD Program in Information Science"
 author: "Poppy Riddle"
 format: 
   revealjs:
@@ -47,23 +47,24 @@ Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One,
 While they are using proprietary databases, can we use open-databases and create open-source conversational search?
 :::
 
-![Example of a conversational search interface, PrimoVE Research Assistant](images/PRA_Overview2.png){fig-align="center" width="100%"}
+![Example of a conversational search interface, PrimoVE Research Assistant](images/PRA_Overview2_overlays.png){fig-align="center" width="100%"}
 
 [image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE\_(English)/015_Getting_Started_with_Primo_Research_Assistant]{.small}
 
-![Example of keyword search interface](images/novanet.png){fig-align="center" width="100%"}
+![Example of keyword search interface](images/novanet_overlay.png){fig-align="center" width="100%"}
 
 ## What is Bibliographic Metadata?
 
 ::: notes
-the data about scholarly resources, books, articles, datasets, used for resource location, retrieval, identification, commpliance, preservation
+- Open sources of metadata
+- the data about scholarly resources, books, articles, datasets, 
+- used for resource location, retrieval, identification, commpliance, preservation
+- differences between two
 :::
-
-Open sources
 
 ::::: columns
 ::: {.column width="50%"}
-![](images/Crossref_Logo.png){fig-align="center" width="50%"}
+![](images/Crossref_Logo.png){fig-align="center" width="40%"}
 :::
 
 ::: {.column width="50%"}
@@ -71,24 +72,34 @@ Open sources
 :::
 :::::
 
-Examples of metadata from each
+
 
 ::::: columns
 ::: {.column width="50%"}
-![metadata from Crossref](){fig-align="center" width="50%"}
+![](images/crossref_metadata_overlay.png){fig-align="center" width="100%"}
 :::
 
 ::: {.column width="50%"}
-![metadata from OpenAlex](){fig-align="center" width="100%"}
+![](images/openalex_metadata_overlay.png){fig-align="center" width="100%"}
 :::
 :::::
 
 ## [Metadata Quality]{.scrollable}
 
 ::: notes
-Improve this with types of metadata quality: completeness, etc. (Kumar?)
+Improve this with types of metadata quality: accessibility, accuracy, consistency, completeness, etc. (Kumar?)
 
-Yasser et al., (2011) identified problems in metadata in which ‘poorly created metadata records result in poor retrieval and limit accessibility to collections’. They classified problems as “Incorrect Values, Incorrect Elements, Missing Information, Information Loss, and Inconsistent Value Representation ” (Yasser, 2011, p. 51). also Bruce and Hillman; Delgado-Quirós & Ortega
+- Yasser et al., (2011) identified problems in metadata in which ‘poorly created metadata records result in poor retrieval and limit accessibility to collections’. They classified problems as “Incorrect Values, Incorrect Elements, Missing Information, Information Loss, and Inconsistent Value Representation ” (Yasser, 2011, p. 51). also Bruce and Hillman; Delgado-Quirós & Ortega
+
+NLP defined noise from Wu et al
+- semantic: off-topic, deviating from intended meaning, ambiguous terms
+- datatype: links, encodings, urls, code
+- illegal sentence: incoherent or grammatically incorrect - OCR
+- counterfactual: factual errors
+- supportive: high semantic relevance, but lacking answer
+- orthographic: writing errors, typos, truncation
+- prior: false assumptions or premises
+
 :::
 
 ### An LIS Perspective
@@ -125,7 +136,7 @@ Noise classification from Wu et al., (2025)
 | Information loss                  | Yasser et al., 2011 |
 | Inconsistent value representation | Yasser et al., 2011 |
 
-: Propsed classification for quality from LIS and NLP perspectives<br> <!--# https://tablesgenerator.com/markdown_tables -->
+: <br> <!--# https://tablesgenerator.com/markdown_tables -->
 
 ## [Errors and Noise]{.scrollable}
 
@@ -133,7 +144,7 @@ Noise classification from Wu et al., (2025)
 
 Abstract metadata from <https://api.crossref.org/works/10.1103/physrevd.110.036015>
 
-![](images/abstract.png){fig-align="center"}
+![](images/abstract_overlay.png){fig-align="center"}
 
 Or, another example from <https://api.crossref.org/works/10.33024/hjk.v15i1.3791>:
 

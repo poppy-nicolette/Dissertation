@@ -148,21 +148,21 @@ Abstract metadata from <https://api.crossref.org/works/10.1103/physrevd.110.0360
 
 Or, another example from <https://api.crossref.org/works/10.33024/hjk.v15i1.3791>:
 
-![](images/abstract2.png){fig-align="center"}
+![](images/abstract2_overlay.png){fig-align="center"}
 
 Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1108/eemcs-04-2022-0108>
 
-![](images/abstract3.png){fig-align="center"}
+![](images/abstract3_overlay.png){fig-align="center"}
 
 ### OpenAlex
 
-![](images/abstract_tags.png){fig-align="center"} [Transformation of abstracts from Crossref (left) to OpenAlex (right)]{.blue .smaller}
+![](images/abstract_tags_overlay.png){fig-align="center"} [Transformation of abstracts from Crossref (left) to OpenAlex (right)]{.blue .smaller}
 
-![](images/abstract_crammed.png){fig-align="center"} [Two languages in one abstract]{.blue .smaller}
+![](images/abstract_crammed_overlay.png){fig-align="center"} [Two languages in one abstract]{.blue .smaller}
 
-![](images/abstract_german.png){fig-align="center"} [Transformation of languages]{.blue .smaller}
+![](images/abstract_german_overlay.png){fig-align="center"} [Transformation of languages]{.blue .smaller}
 
-![](images/abstract_encodings.png){fig-align="center"} [Encodings added to the OpenAlex version]{.blue .smaller}
+![](images/abstract_encodings_overlay.png){fig-align="center"} [Encodings added to the OpenAlex version]{.blue .smaller}
 
 ## Metadata and RAG?
 
@@ -173,16 +173,24 @@ LLM-based chat application ![](images/LLM_chat.svg){fig-align="center" width="12
 
 Retrieval-augmented generation ![](images/rag_basic.svg){fig-align="center" width="160%"}
 
-Metadata within a RAG architecture ![](){fig-align="center" width="100%"}
 
 # Theoretical Framework
 
 ## The Framework
 
 ::: notes
+- levels of framework
+- macro-level
+- meso-level
+- micro level 
 :::
 
 Inversen & Järvelin's Cognitive Model of Information Seeking and Retrieval ![](images/cog_model_p271.png){fig-align="center" width="100%"}
+
+
+::: {.fragment .fade-in-then-out}
+![](images/class_of_variables_3.png){fig-align="center" width="100%"}
+:::
 
 # Problem Statement, Purpose, & RQ
 

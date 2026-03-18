@@ -440,8 +440,9 @@ Poppy Riddle
 <ul>
 <li>Known that metadata quality problems exist</li>
 <li>Known there are differences with sources</li>
+<li>Known that noise affects LLMs and RAG</li>
+<li>Known that metadata can be a source of knowledge</li>
 <li>Metadata quality assessments have not included NLP perspectives</li>
-<li>Known that noise affects RAG</li>
 </ul>
 </section>
 <section id="purpose" class="slide level2">
@@ -470,14 +471,26 @@ Poppy Riddle
 <li class="fragment">What is the effect of observed errors and noise on RAG retrieval and generation?</li>
 </ol>
 </div>
+</section></section>
+<section>
+<section id="methods" class="title-slide slide level1 center">
+<h1>Methods</h1>
+
 </section>
-<section id="methodology" class="slide level2">
-<h2>Methodology</h2>
+<section id="section" class="slide level2">
+<h2></h2>
+<p>break this slide into fragments with info on each method <img data-src="images/framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></p>
+<h3 id="instrument">Instrument</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
+<p><a href="images/part_3_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
 </figure>
 </div>
+</section></section>
+<section>
+<section id="results" class="title-slide slide level1 center">
+<h1>Results</h1>
+
 </section>
 <section id="part-1-a-random-sample-from-crossref" class="slide level2 scrollable">
 <h2>Part 1: A random sample from Crossref</h2>
@@ -494,11 +507,13 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/part1_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/part1_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
-</figure>
-</div>
+<ul>
+<li>more results from first level of analysis</li>
+<li>results from pattern analysis</li>
+<li>second level of analysis</li>
+<li>how these differ</li>
+</ul>
+<p><img data-src="images/part1_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"> include other types</p>
 </section>
 <section id="part-2-compare-data-sources" class="slide level2 scrollable">
 <h2>Part 2: Compare data sources</h2>
@@ -521,9 +536,13 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<ul>
+<li>get rid of the 99% sample overlap</li>
+<li>include other types</li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part2_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/part2_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
+<p><a href="images/part2_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/part2_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
 </figure>
 </div>
 </section>
@@ -545,56 +564,25 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<h3 id="instrument">Instrument</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/part_3_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
-</figure>
-</div>
 <h3 id="results-round-1">Results: Round 1</h3>
 <p>Statistically significant: (p=0.00006, 0.95 CI)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Round1_document_scores_combined.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/Round1_document_scores_combined.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/Round1_document_scores_combined.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/Round1_document_scores_combined.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 <h3 id="results-round-2">Results: Round 2</h3>
 <p>Statistically significant: (p=0.01, 0.95 CI)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Round2_faithfulness.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="images/Round2_faithfulness.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
+<p><a href="images/Round2_faithfulness.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/Round2_faithfulness.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
 </figure>
 </div>
-</section>
-<section id="example-of-measures-in-action" class="slide level2">
-<h2>Example of measures in action</h2>
-<aside class="notes">
-<ul>
-<li>talk about p-hacking</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/part_3_example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="images/part_3_example.png" class="quarto-figure quarto-figure-center"></a></p>
-</figure>
-</div>
-<p><span class="italic">An example of response relevance scoring and faithfulness</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/part_3_scores.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="images/part_3_scores.png" class="quarto-figure quarto-figure-center"></a></p>
-</figure>
-</div>
-<p><span class="italic">Scores recorded for each query</span></p>
+</section></section>
+<section>
+<section id="implications" class="title-slide slide level1 center">
+<h1>Implications</h1>
+
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
@@ -627,27 +615,10 @@ Poppy Riddle
 <li>More research is needed with more noise categories</li>
 </ul>
 </section></section>
-<section>
-<section id="how-did-i-get-here" class="title-slide slide level1 center">
-<h1>How did I get here?</h1>
+<section id="future-research" class="title-slide slide level1 center">
+<h1>Future Research</h1>
+<aside class="notes">
 
-</section>
-<section id="classes-working-etc." class="slide level2">
-<h2>Classes, working, etc.</h2>
-<ul>
-<li>Human-computer Interaction classes</li>
-<li>Virtual reality and visualization literacy</li>
-<li>Reading courses</li>
-<li>Job at Crossref</li>
-</ul>
-</section>
-<section id="comprehensives" class="slide level2">
-<h2>Comprehensives</h2>
-<aside class="notes">
-<ul>
-<li>the first comprehensive revealed problems with ES, its narrow focus and process oriented, great for documenting a phenomena but less useful for deriving insight to create new IS&amp;R tools</li>
-<li>second one more focused with background on LLM, more indepth reading of IS&amp;R, and more recent works on systems for IS&amp;R, and how metadata was used in these systems.</li>
-</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -659,52 +630,9 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<p>Two comprehensives:</p>
-<ul>
-<li>Intersection of Exploratory Search and visualization of search results</li>
-<li>LLMs, Information seeking and retrieval, and metadata</li>
-</ul>
+<p>Pull from dissertation - improve the noise classification - Al Sharou et al.&nbsp;(2024) - Analyze a larger sample</p>
 </section>
-<section id="research-proposal" class="slide level2">
-<h2>Research proposal</h2>
-<ul>
-<li>Developed after my two comps</li>
-<li>Study in three parts</li>
-</ul>
-</section>
-<section id="lessons-learned" class="slide level2">
-<h2>Lessons learned?</h2>
-<aside class="notes">
-<p>Its not meant to take 10 years!</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<ul>
-<li>Writing on your own is hard.
-<ul>
-<li>Monograph vs the article-based approach</li>
-</ul></li>
-<li>Documenting your independent research.</li>
-<li>Leverage your comps!</li>
-<li>Write it in one semester.
-<ul>
-<li>Start with Chapter 3.</li>
-</ul></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/ogden_book.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="images/ogden_book.jpg" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
-</figure>
-</div>
-</section></section>
+
 <section>
 <section id="thank-you" class="title-slide slide level1 center">
 <h1>Thank you!</h1>

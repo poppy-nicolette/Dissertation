@@ -203,8 +203,9 @@ Inversen & Järvelin's Cognitive Model of Information Seeking and Retrieval ![](
 
 -   Known that metadata quality problems exist
 -   Known there are differences with sources
+-   Known that noise affects LLMs and RAG
+-   Known that metadata can be a source of knowledge
 -   Metadata quality assessments have not included NLP perspectives
--   Known that noise affects RAG
 
 ## Purpose
 
@@ -222,17 +223,32 @@ incremental slides!
 3.  What is the effect of observed errors and noise on RAG retrieval and generation?
 :::
 
-## Methodology
+# Methods
 
+## 
+break this slide into fragments with info on each method
 ![](images/framework.svg){fig-align="center" width="160%"}
+
+### Instrument
+
+![](images/part_3_framework.svg){fig-align="center" width="160%"}
+
+
+# Results
 
 ## Part 1: A random sample from Crossref {.scrollable}
 
 ::: notes
 talk about some other results here
 :::
+- add results from initial characterization - short and long char counts
+- pattern analysis
+- subset analysis
+- compare results between these
+
 
 ![](images/part1_main_results.svg){fig-align="center" width="80%"}
+include other types
 
 ## Part 2: Compare data sources {.scrollable}
 
@@ -243,6 +259,8 @@ talk about some other results here
 -   with the exception of titles
 -   this means that the problem still persists and doesn't go away with their processes
 :::
+- get rid of the 99% sample overlap 
+- include other types
 
 ![](images/part2_main_results.svg){fig-align="center" width="80%"}
 
@@ -253,15 +271,15 @@ talk about some other results here
 -   Round 2 was variables in English only models
 :::
 
-### Instrument
-
-![](images/part_3_framework.svg){fig-align="center" width="160%"}
-
 ### Results: Round 1
+
+
 
 Statistically significant: (p=0.00006, 0.95 CI)
 
 ![](images/Round1_document_scores_combined.png){fig-align="center" width="100%"}
+
+
 
 ### Results: Round 2
 
@@ -269,19 +287,7 @@ Statistically significant: (p=0.01, 0.95 CI)
 
 ![](images/Round2_faithfulness.png){fig-align="center" width="60%"}
 
-## Example of measures in action
-
-::: notes
--   talk about p-hacking
-:::
-
-![](images/part_3_example.png){fig-align="center"}
-
-[An example of response relevance scoring and faithfulness]{.italic}
-
-![](images/part_3_scores.png){fig-align="center"}
-
-[Scores recorded for each query]{.italic}
+# Implications
 
 ## Summary
 
@@ -302,46 +308,15 @@ What does this mean?
 -   Metadata enhancement is needed for errors
 -   More research is needed with more noise categories
 
-# How did I get here?
-
-## Classes, working, etc.
-
--   Human-computer Interaction classes
--   Virtual reality and visualization literacy
--   Reading courses
--   Job at Crossref
-
-## Comprehensives
+# Future Research
 
 ::: notes
--   the first comprehensive revealed problems with ES, its narrow focus and process oriented, great for documenting a phenomena but less useful for deriving insight to create new IS&R tools
--   second one more focused with background on LLM, more indepth reading of IS&R, and more recent works on systems for IS&R, and how metadata was used in these systems.
+
 :::
+Pull from dissertation
+- improve the noise classification - Al Sharou et al. (2024)
+- Analyze a larger sample
 
-Two comprehensives:
-
--   Intersection of Exploratory Search and visualization of search results
--   LLMs, Information seeking and retrieval, and metadata
-
-## Research proposal
-
--   Developed after my two comps
--   Study in three parts
-
-## Lessons learned?
-
-::: notes
-Its not meant to take 10 years!
-:::
-
--   Writing on your own is hard.
-    -   Monograph vs the article-based approach
--   Documenting your independent research.
--   Leverage your comps!
--   Write it in one semester.
-    -   Start with Chapter 3.
-
-![](images/ogden_book.jpg){fig-align="center" width="50%"}
 
 # Thank you!
 

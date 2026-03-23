@@ -301,11 +301,15 @@ Statistically significant: (p=0.01, 0.95 CI)
 
 What does this mean?
 
+Overarching question - can I use bibliographic metadata as it is for use in RAG?
+Yes, you can. 
+But, there is a bias and unpredictable affects. 
+![image of overarching question in the IS&R](){fig-align="center" width="100%"}
+
 -   Open metadata is [not]{.yellow .bold} ready for RAG-based applications
--   Which fields or publishers are most affected by the beneficial effect?
--   Does the negative effect really impact an information seeker?
 -   Cleaning is needed for noise
 -   Metadata enhancement is needed for errors
+-   Standards and best practices to be developed
 -   More research is needed with more noise categories
 
 # Future Research
@@ -316,9 +320,14 @@ What does this mean?
 Pull from dissertation
 - improve the noise classification - Al Sharou et al. (2024)
 - Analyze a larger sample
+- Which fields or publishers are most affected by the beneficial effect?
+- Does the negative effect really impact an information seeker?
 
 
 # Thank you!
+
+Thank you to everyone that has helped me over the years. <br>
+My family, my supervisor and committee, fellow students, organizations, and the Department of Information Science. <br>
 
 Poppy Riddle [Department of Information Science PhD Program]{.blue}
 

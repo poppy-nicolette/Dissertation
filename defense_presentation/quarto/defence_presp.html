@@ -32,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="defence_presp_files/libs/revealjs/dist/theme/quarto-52ff0333d2487d78ea9b2e58853eadb1.css">
+  <link rel="stylesheet" href="defence_presp_files/libs/revealjs/dist/theme/quarto-129da096ac4d61c90531563a6c4403bb.css">
   <link href="defence_presp_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="defence_presp_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="defence_presp_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -167,45 +167,6 @@ Poppy Riddle
 <h1>Introduction &amp; Background</h1>
 
 </section>
-<section id="context" class="slide level2 scrollable">
-<h2>Context</h2>
-<aside class="notes">
-<p>bibliographic metadata of scholarly resources: journal articles, book chapters, conference proceedings have the most textual data with abstracts</p>
-<p>Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant</p>
-<p>While they are using proprietary databases, can we use open-databases and create open-source conversational search?</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/PRA_Overview2_overlays.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Example of a conversational search interface, PrimoVE Research Assistant"><img data-src="images/PRA_Overview2_overlays.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Example of a conversational search interface, PrimoVE Research Assistant"></a></p>
-</figure>
-</div>
-<figcaption>Example of a conversational search interface, PrimoVE Research Assistant</figcaption>
-</figure>
-</div>
-<p><span class="small">image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_(English)/015_Getting_Started_with_Primo_Research_Assistant</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/novanet_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Example of keyword search interface"><img data-src="images/novanet_overlay.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Example of keyword search interface"></a></p>
-</figure>
-</div>
-<figcaption>Example of keyword search interface</figcaption>
-</figure>
-</div>
-</section>
 <section id="what-is-bibliographic-metadata" class="slide level2">
 <h2>What is Bibliographic Metadata?</h2>
 <aside class="notes">
@@ -230,13 +191,13 @@ Poppy Riddle
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Crossref_Logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/Crossref_Logo.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></a></p>
+<p><a href="images/Crossref_Logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="images/Crossref_Logo.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></a></p>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/OpenAlex_logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/OpenAlex_logo.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/OpenAlex_logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/OpenAlex_logo.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div></div>
@@ -244,25 +205,50 @@ Poppy Riddle
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/crossref_metadata_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/crossref_metadata_overlay.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/crossref_metadata_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/crossref_metadata_overlay.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/openalex_metadata_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="images/openalex_metadata_overlay.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/openalex_metadata_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/openalex_metadata_overlay.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div></div>
 </section>
-<section id="metadata-quality" class="slide level2">
-<h2><span class="scrollable">Metadata Quality</span></h2>
+<section id="errors-and-noise" class="slide level2">
+<h2><span class="scrollable">Errors and Noise</span></h2>
+<h3 id="crossref">Crossref</h3>
+<p>Abstract metadata from <a href="https://api.crossref.org/works/10.1103/physrevd.110.036015" class="uri">https://api.crossref.org/works/10.1103/physrevd.110.036015</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/abstract_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/abstract_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<p>Or, another example from <a href="https://api.crossref.org/works/10.33024/hjk.v15i1.3791" class="uri">https://api.crossref.org/works/10.33024/hjk.v15i1.3791</a>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/abstract2_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="images/abstract2_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<p>Or one that contains geometric shapes, from <a href="https://api.crossref.org/works/10.1108/eemcs-04-2022-0108" class="uri">https://api.crossref.org/works/10.1108/eemcs-04-2022-0108</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/abstract3_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="images/abstract3_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<h3 id="openalex">OpenAlex</h3>
+<p><img data-src="images/abstract_tags_overlay.png" class="quarto-figure quarto-figure-center"> <span class="blue smaller">Transformation of abstracts from Crossref (left) to OpenAlex (right)</span></p>
+<p><img data-src="images/abstract_crammed_overlay.png" class="quarto-figure quarto-figure-center"> <span class="blue smaller">Two languages in one abstract</span></p>
+<p><img data-src="images/abstract_german_overlay.png" class="quarto-figure quarto-figure-center"> <span class="blue smaller">Transformation of languages</span></p>
+<p><img data-src="images/abstract_encodings_overlay.png" class="quarto-figure quarto-figure-center"> <span class="blue smaller">Encodings added to the OpenAlex version</span></p>
+</section>
+<section id="conversational-search" class="slide level2 scrollable">
+<h2>Conversational Search</h2>
 <aside class="notes">
-<p>Improve this with types of metadata quality: accessibility, accuracy, consistency, completeness, etc. (Kumar?)</p>
-<ul>
-<li>Yasser et al., (2011) identified problems in metadata in which ‘poorly created metadata records result in poor retrieval and limit accessibility to collections’. They classified problems as “Incorrect Values, Incorrect Elements, Missing Information, Information Loss, and Inconsistent Value Representation” (Yasser, 2011, p.&nbsp;51). also Bruce and Hillman; Delgado-Quirós &amp; Ortega</li>
-</ul>
-<p>NLP defined noise from Wu et al - semantic: off-topic, deviating from intended meaning, ambiguous terms - datatype: links, encodings, urls, code - illegal sentence: incoherent or grammatically incorrect - OCR - counterfactual: factual errors - supportive: high semantic relevance, but lacking answer - orthographic: writing errors, typos, truncation - prior: false assumptions or premises</p>
+<p>bibliographic metadata of scholarly resources: journal articles, book chapters, conference proceedings have the most textual data with abstracts</p>
+<p>Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant</p>
+<p>While they are using proprietary databases, can we use open-databases and create open-source conversational search?</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -274,6 +260,48 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/PRA_Overview2_overlays.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Example of a conversational search interface, PrimoVE Research Assistant"><img data-src="images/PRA_Overview2_overlays.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Example of a conversational search interface, PrimoVE Research Assistant"></a></p>
+</figure>
+</div>
+<figcaption>Example of a conversational search interface, PrimoVE Research Assistant</figcaption>
+</figure>
+</div>
+<p><span class="small">image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_(English)/015_Getting_Started_with_Primo_Research_Assistant</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/novanet_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Example of keyword search interface"><img data-src="images/novanet_overlay.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Example of keyword search interface"></a></p>
+</figure>
+</div>
+<figcaption>Example of keyword search interface</figcaption>
+</figure>
+</div>
+</section>
+<section id="metadata-quality" class="slide level2">
+<h2><span class="scrollable">Metadata Quality</span></h2>
+<aside class="notes">
+<p>prior research - Coverage &amp; Availability (Alonso-Álvarez &amp; van Eck 2024) - Coverage, Accuracy, Completeness (Céspedes et al., 2024; Visser et al., 2021) - Coverage (Culbert et al., 2024) - Completeness (Delgado-Quirós &amp; Ortega 2024) - Availability (Eck &amp; Waltman 2022) - Completeness, Consistency, Conformity, Access (Király et al.&nbsp;2019) - Availability &amp; Completeness (Kramer &amp; de Jonge 2022) - Accuracy (Mongeon et al., 2025) - Accuracy (Sainte-Marie et al., 2025) - Coverage &amp; Accuracy (Schares 2024) - Accuracy, Consistency, Completeness (Shi et al., 2023) - Coverage (Simard et al., 2024) - Accessibility &amp; Coverage (Zhang et al., 2024)</p>
+<ul>
+<li>Yasser et al., (2011) ‘poorly created metadata records result in poor retrieval and limit accessibility to collections’. They classified problems as “Incorrect Values, Incorrect Elements, Missing Information, Information Loss, and Inconsistent Value Representation” (Yasser, 2011, p.&nbsp;51). also Bruce and Hillman; Delgado-Quirós &amp; Ortega</li>
+</ul>
+<p>NLP defined noise from Wu et al - semantic: off-topic, deviating from intended meaning, ambiguous terms - datatype: links, encodings, urls, code - illegal sentence: incoherent or grammatically incorrect - OCR - counterfactual: factual errors - supportive: high semantic relevance, but lacking answer - orthographic: writing errors, typos, truncation - prior: false assumptions or premises Beneficial and Harmful!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p><br> <a href="images/prior_metadata_1.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="images/prior_metadata_1.svg" class="center quarto-figure quarto-figure-center" style="width:70.0%"></a> <br> <br></p>
 <h3 id="an-lis-perspective">An LIS Perspective</h3>
 <p>Yasser et al., (2011)</p>
 <ul>
@@ -283,6 +311,7 @@ Poppy Riddle
 <li>Information loss</li>
 <li>Inconsistent value representation</li>
 </ul>
+<p><br></p>
 <h3 id="an-nlp-perspective">An NLP Perspective</h3>
 <p>Noise classification from Wu et al., (2025)</p>
 <ul>
@@ -294,6 +323,7 @@ Poppy Riddle
 <li>Orthographic</li>
 <li>Prior</li>
 </ul>
+<p><br></p>
 <h3 id="a-combined-perspective">A Combined Perspective</h3>
 <table class="caption-top">
 <caption><br> <!--# https://tablesgenerator.com/markdown_tables --></caption>
@@ -334,33 +364,6 @@ Poppy Riddle
 </tr>
 </tbody>
 </table>
-</section>
-<section id="errors-and-noise" class="slide level2">
-<h2><span class="scrollable">Errors and Noise</span></h2>
-<h3 id="crossref">Crossref</h3>
-<p>Abstract metadata from <a href="https://api.crossref.org/works/10.1103/physrevd.110.036015" class="uri">https://api.crossref.org/works/10.1103/physrevd.110.036015</a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/abstract_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="images/abstract_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
-</figure>
-</div>
-<p>Or, another example from <a href="https://api.crossref.org/works/10.33024/hjk.v15i1.3791" class="uri">https://api.crossref.org/works/10.33024/hjk.v15i1.3791</a>:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/abstract2_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="images/abstract2_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
-</figure>
-</div>
-<p>Or one that contains geometric shapes, from <a href="https://api.crossref.org/works/10.1108/eemcs-04-2022-0108" class="uri">https://api.crossref.org/works/10.1108/eemcs-04-2022-0108</a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/abstract3_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="images/abstract3_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
-</figure>
-</div>
-<h3 id="openalex">OpenAlex</h3>
-<p><img data-src="images/abstract_tags_overlay.png" class="quarto-figure quarto-figure-center"> <span class="blue smaller">Transformation of abstracts from Crossref (left) to OpenAlex (right)</span></p>
-<p><img data-src="images/abstract_crammed_overlay.png" class="quarto-figure quarto-figure-center"> <span class="blue smaller">Two languages in one abstract</span></p>
-<p><img data-src="images/abstract_german_overlay.png" class="quarto-figure quarto-figure-center"> <span class="blue smaller">Transformation of languages</span></p>
-<p><img data-src="images/abstract_encodings_overlay.png" class="quarto-figure quarto-figure-center"> <span class="blue smaller">Encodings added to the OpenAlex version</span></p>
 </section>
 <section id="metadata-and-rag" class="slide level2">
 <h2>Metadata and RAG?</h2>
@@ -409,7 +412,7 @@ Poppy Riddle
 <div class="fragment fade-in-then-out">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/class_of_variables_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="images/class_of_variables_3.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/class_of_variables_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/class_of_variables_3.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>
@@ -447,7 +450,7 @@ Poppy Riddle
 </section>
 <section id="purpose" class="slide level2">
 <h2>Purpose</h2>
-<p>To identify <span class="yellow">errors and noise</span> in title and abstract content,<br>compare metadata <span class="yellow">sources</span> for error and noise,<br>and observe the <span class="yellow">effect on RAG</span>.</p>
+<p>To identify <span class="magenta">errors and noise</span> in title and abstract content,<br>compare metadata <span class="yellow">sources</span> for error and noise,<br>and observe the <span class="yellow">effect on RAG</span>.</p>
 </section>
 <section id="research-questions" class="slide level2 scrollable">
 <h2>Research Questions</h2>
@@ -483,7 +486,7 @@ Poppy Riddle
 <h3 id="instrument">Instrument</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part_3_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
+<p><a href="images/part_3_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
 </figure>
 </div>
 </section></section>
@@ -508,10 +511,10 @@ Poppy Riddle
           display:block!important;
       }</style></aside>
 <ul>
-<li>more results from first level of analysis</li>
-<li>results from pattern analysis</li>
-<li>second level of analysis</li>
-<li>how these differ</li>
+<li>add results from initial characterization - short and long char counts</li>
+<li>pattern analysis</li>
+<li>subset analysis</li>
+<li>compare results between these</li>
 </ul>
 <p><img data-src="images/part1_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"> include other types</p>
 </section>
@@ -542,7 +545,7 @@ Poppy Riddle
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part2_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/part2_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
+<p><a href="images/part2_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/part2_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
 </figure>
 </div>
 </section>
@@ -568,14 +571,14 @@ Poppy Riddle
 <p>Statistically significant: (p=0.00006, 0.95 CI)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Round1_document_scores_combined.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/Round1_document_scores_combined.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/Round1_document_scores_combined.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/Round1_document_scores_combined.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 <h3 id="results-round-2">Results: Round 2</h3>
 <p>Statistically significant: (p=0.01, 0.95 CI)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Round2_faithfulness.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/Round2_faithfulness.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
+<p><a href="images/Round2_faithfulness.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/Round2_faithfulness.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
 </figure>
 </div>
 </section></section>
@@ -606,12 +609,12 @@ Poppy Riddle
           display:block!important;
       }</style></aside>
 <p>What does this mean?</p>
+<p>Overarching question - can I use bibliographic metadata as it is for use in RAG? Yes, you can. But, there is a bias and unpredictable affects. <img data-src=".png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="image of overarching question in the IS&amp;R"></p>
 <ul>
 <li>Open metadata is <span class="yellow bold">not</span> ready for RAG-based applications</li>
-<li>Which fields or publishers are most affected by the beneficial effect?</li>
-<li>Does the negative effect really impact an information seeker?</li>
 <li>Cleaning is needed for noise</li>
 <li>Metadata enhancement is needed for errors</li>
+<li>Standards and best practices to be developed</li>
 <li>More research is needed with more noise categories</li>
 </ul>
 </section></section>
@@ -630,12 +633,13 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<p>Pull from dissertation - improve the noise classification - Al Sharou et al.&nbsp;(2024) - Analyze a larger sample</p>
+<p>Pull from dissertation - improve the noise classification - Al Sharou et al.&nbsp;(2024) - Analyze a larger sample - Which fields or publishers are most affected by the beneficial effect? - Does the negative effect really impact an information seeker?</p>
 </section>
 
 <section>
 <section id="thank-you" class="title-slide slide level1 center">
 <h1>Thank you!</h1>
+<p>Thank you to everyone that has helped me over the years. <br> My family, my supervisor and committee, fellow students, organizations, and the Department of Information Science. <br></p>
 <p>Poppy Riddle <span class="blue">Department of Information Science PhD Program</span></p>
 </section>
 <section id="references" class="slide level2">

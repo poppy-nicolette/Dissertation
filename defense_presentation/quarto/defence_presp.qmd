@@ -37,22 +37,6 @@ project:
 
 # Introduction & Background
 
-## Context {.scrollable}
-
-::: notes
-bibliographic metadata of scholarly resources: journal articles, book chapters, conference proceedings have the most textual data with abstracts
-
-Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant
-
-While they are using proprietary databases, can we use open-databases and create open-source conversational search?
-:::
-
-![Example of a conversational search interface, PrimoVE Research Assistant](images/PRA_Overview2_overlays.png){fig-align="center" width="100%"}
-
-[image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE\_(English)/015_Getting_Started_with_Primo_Research_Assistant]{.small}
-
-![Example of keyword search interface](images/novanet_overlay.png){fig-align="center" width="100%"}
-
 ## What is Bibliographic Metadata?
 
 ::: notes
@@ -73,7 +57,6 @@ While they are using proprietary databases, can we use open-databases and create
 :::::
 
 
-
 ::::: columns
 ::: {.column width="50%"}
 ![](images/crossref_metadata_overlay.png){fig-align="center" width="100%"}
@@ -83,60 +66,6 @@ While they are using proprietary databases, can we use open-databases and create
 ![](images/openalex_metadata_overlay.png){fig-align="center" width="100%"}
 :::
 :::::
-
-## [Metadata Quality]{.scrollable}
-
-::: notes
-Improve this with types of metadata quality: accessibility, accuracy, consistency, completeness, etc. (Kumar?)
-
-- Yasser et al., (2011) identified problems in metadata in which ‘poorly created metadata records result in poor retrieval and limit accessibility to collections’. They classified problems as “Incorrect Values, Incorrect Elements, Missing Information, Information Loss, and Inconsistent Value Representation ” (Yasser, 2011, p. 51). also Bruce and Hillman; Delgado-Quirós & Ortega
-
-NLP defined noise from Wu et al
-- semantic: off-topic, deviating from intended meaning, ambiguous terms
-- datatype: links, encodings, urls, code
-- illegal sentence: incoherent or grammatically incorrect - OCR
-- counterfactual: factual errors
-- supportive: high semantic relevance, but lacking answer
-- orthographic: writing errors, typos, truncation
-- prior: false assumptions or premises
-
-:::
-
-### An LIS Perspective
-
-Yasser et al., (2011)
-
--   Incorrect values
--   Incorrect elements
--   Missing information
--   Information loss
--   Inconsistent value representation
-
-### An NLP Perspective
-
-Noise classification from Wu et al., (2025)
-
--   Semantic
--   Datatype
--   Illegal sentence
--   Counterfactual
--   Supportive
--   Orthographic
--   Prior
-
-### A Combined Perspective
-
-| **Quality Classification**        | **Source**          |
-|-----------------------------------|---------------------|
-| Semantic noise                    | Wu et al., 2025     |
-| Datatype noise                    | Wu et al., 2025     |
-| Incorrect values                  | Yasser et al., 2011 |
-| Incorrect elements                | Yasser et al., 2011 |
-| Missing information               | Yasser et al., 2011 |
-| Information loss                  | Yasser et al., 2011 |
-| Inconsistent value representation | Yasser et al., 2011 |
-
-: <br> <!--# https://tablesgenerator.com/markdown_tables -->
 
 ## [Errors and Noise]{.scrollable}
 
@@ -163,6 +92,101 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 ![](images/abstract_german_overlay.png){fig-align="center"} [Transformation of languages]{.blue .smaller}
 
 ![](images/abstract_encodings_overlay.png){fig-align="center"} [Encodings added to the OpenAlex version]{.blue .smaller}
+
+
+## Conversational Search {.scrollable}
+
+::: notes
+bibliographic metadata of scholarly resources: journal articles, book chapters, conference proceedings have the most textual data with abstracts
+
+Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant
+
+While they are using proprietary databases, can we use open-databases and create open-source conversational search?
+:::
+
+![Example of a conversational search interface, PrimoVE Research Assistant](images/PRA_Overview2_overlays.png){fig-align="center" width="100%"}
+
+[image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE\_(English)/015_Getting_Started_with_Primo_Research_Assistant]{.small}
+
+![Example of keyword search interface](images/novanet_overlay.png){fig-align="center" width="100%"}
+
+
+## [Metadata Quality]{.scrollable}
+
+::: notes
+prior research
+- Coverage & Availability (Alonso-Álvarez & van Eck 2024)
+- Coverage, Accuracy, Completeness (Céspedes et al., 2024; Visser et al., 2021)
+- Coverage (Culbert et al., 2024)
+- Completeness (Delgado-Quirós & Ortega 2024)
+- Availability (Eck & Waltman 2022)
+- Completeness, Consistency, Conformity, Access (Király et al. 2019)
+- Availability & Completeness (Kramer & de Jonge 2022)
+- Accuracy (Mongeon et al., 2025)
+- Accuracy (Sainte-Marie et al., 2025)
+- Coverage & Accuracy (Schares 2024)
+- Accuracy, Consistency, Completeness (Shi et al., 2023)
+- Coverage (Simard et al., 2024)
+- Accessibility & Coverage (Zhang et al., 2024)
+
+- Yasser et al., (2011) ‘poorly created metadata records result in poor retrieval and limit accessibility to collections’. They classified problems as “Incorrect Values, Incorrect Elements, Missing Information, Information Loss, and Inconsistent Value Representation ” (Yasser, 2011, p. 51). also Bruce and Hillman; Delgado-Quirós & Ortega
+
+NLP defined noise from Wu et al
+- semantic: off-topic, deviating from intended meaning, ambiguous terms
+- datatype: links, encodings, urls, code
+- illegal sentence: incoherent or grammatically incorrect - OCR
+- counterfactual: factual errors
+- supportive: high semantic relevance, but lacking answer
+- orthographic: writing errors, typos, truncation
+- prior: false assumptions or premises
+Beneficial and Harmful!
+:::
+
+<br>
+![](images/prior_metadata_1.svg){fig-align="center" width="70%" .lightbox .center}
+<br>
+<br>
+
+### An LIS Perspective
+
+Yasser et al., (2011)
+
+-   Incorrect values
+-   Incorrect elements
+-   Missing information
+-   Information loss
+-   Inconsistent value representation
+
+<br>
+
+### An NLP Perspective
+
+Noise classification from Wu et al., (2025)
+
+-   Semantic
+-   Datatype
+-   Illegal sentence
+-   Counterfactual
+-   Supportive
+-   Orthographic
+-   Prior
+
+<br>
+
+### A Combined Perspective
+
+| **Quality Classification**        | **Source**          |
+|-----------------------------------|---------------------|
+| Semantic noise                    | Wu et al., 2025     |
+| Datatype noise                    | Wu et al., 2025     |
+| Incorrect values                  | Yasser et al., 2011 |
+| Incorrect elements                | Yasser et al., 2011 |
+| Missing information               | Yasser et al., 2011 |
+| Information loss                  | Yasser et al., 2011 |
+| Inconsistent value representation | Yasser et al., 2011 |
+
+: <br> <!--# https://tablesgenerator.com/markdown_tables -->
+
 
 ## Metadata and RAG?
 
@@ -209,7 +233,7 @@ Inversen & Järvelin's Cognitive Model of Information Seeking and Retrieval ![](
 
 ## Purpose
 
-To identify [errors and noise]{.yellow} in title and abstract content,<br>compare metadata [sources]{.yellow} for error and noise,<br>and observe the [effect on RAG]{.yellow}.
+To identify [errors and noise]{.magenta} in title and abstract content,<br>compare metadata [sources]{.yellow} for error and noise,<br>and observe the [effect on RAG]{.yellow}.
 
 ## Research Questions
 

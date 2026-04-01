@@ -13,7 +13,7 @@
   <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Poppy Riddle">
-  <title>Will bibliographic metadata work in RAG?</title>
+  <title>Will open bibliographic metadata work in RAG?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -131,7 +131,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Will bibliographic metadata work in RAG?</h1>
+  <h1 class="title">Will open bibliographic metadata work in RAG?</h1>
   <p class="subtitle">PhD Program in Information Science</p>
 
 <div class="quarto-title-authors">
@@ -409,12 +409,11 @@ Poppy Riddle
           display:block!important;
       }</style></aside>
 <p>Inversen &amp; Järvelin’s Cognitive Model of Information Seeking and Retrieval <img data-src="images/cog_model_p271.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
-<div class="fragment fade-in-then-out">
+<p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="images/class_of_variables_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/class_of_variables_3.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
-</div>
 </div>
 </section></section>
 <section>
@@ -440,16 +439,29 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="yellow">Knowns</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="yellow">Unknowns</span></p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Known that metadata quality problems exist</li>
 <li>Known there are differences with sources</li>
-<li>Known that noise affects LLMs and RAG</li>
 <li>Known that metadata can be a source of knowledge</li>
+<li>Known that noise affects LLMs and RAG</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
 <li>Metadata quality assessments have not included NLP perspectives</li>
 </ul>
+</div></div>
 </section>
 <section id="purpose" class="slide level2">
 <h2>Purpose</h2>
+<p><br></p>
 <p>To identify <span class="magenta">errors and noise</span> in title and abstract content,<br>compare metadata <span class="yellow">sources</span> for error and noise,<br>and observe the <span class="yellow">effect on RAG</span>.</p>
 </section>
 <section id="research-questions" class="slide level2 scrollable">
@@ -498,7 +510,9 @@ Poppy Riddle
 <section id="part-1-a-random-sample-from-crossref" class="slide level2 scrollable">
 <h2>Part 1: A random sample from Crossref</h2>
 <aside class="notes">
-<p>talk about some other results here</p>
+<ul>
+<li>results from initial characterization - short and long char counts</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -510,13 +524,13 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<ul>
-<li>add results from initial characterization - short and long char counts</li>
-<li>pattern analysis</li>
-<li>subset analysis</li>
-<li>compare results between these</li>
-</ul>
-<p><img data-src="images/part1_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"> include other types</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/part1_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/part1_main_results.svg" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
+</figure>
+</div>
+<p><br></p>
+<p><a href="images/abstract_tokens.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/abstract_tokens.png" class="absolute" style="top: 200px; left: 0px; width: 50%; height: 300px; " width="350"></a> <br></p>
 </section>
 <section id="part-2-compare-data-sources" class="slide level2 scrollable">
 <h2>Part 2: Compare data sources</h2>
@@ -539,13 +553,9 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<ul>
-<li>get rid of the 99% sample overlap</li>
-<li>include other types</li>
-</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part2_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/part2_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
+<p><a href="images/part2_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/part2_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
 </figure>
 </div>
 </section>
@@ -571,14 +581,14 @@ Poppy Riddle
 <p>Statistically significant: (p=0.00006, 0.95 CI)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Round1_document_scores_combined.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/Round1_document_scores_combined.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/Round1_document_scores_combined.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="images/Round1_document_scores_combined.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 <h3 id="results-round-2">Results: Round 2</h3>
 <p>Statistically significant: (p=0.01, 0.95 CI)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Round2_faithfulness.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/Round2_faithfulness.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
+<p><a href="images/Round2_faithfulness.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="images/Round2_faithfulness.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
 </figure>
 </div>
 </section></section>
@@ -587,16 +597,10 @@ Poppy Riddle
 <h1>Implications</h1>
 
 </section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
+<section id="what-does-this-mean" class="slide level2">
+<h2>What does this mean?</h2>
 <aside class="notes">
-<ul>
-<li>this just examined Crossref and OpenAlex - other databases 56</li>
-<li>limitations to how much noise was introduced - more research needed</li>
-<li>multilingual text can be an advantage - more research is needed to see if this is unfair or just; other errors recorded such as information loss and missing information</li>
-<li>some fields/disciplines may be more ready than others</li>
-<li>more noise categories!</li>
-</ul>
+<p>Overarching question - can I use bibliographic metadata as it is for use in RAG? Yes, you can. But, there is a bias and unpredictable affects. <br> limitations:<br> - this just examined Crossref and OpenAlex - other databases 56 - limitations to how much noise was introduced - more research needed - multilingual text can be an advantage - more research is needed to see if this is unfair or just; other errors recorded such as information loss and missing information - some fields/disciplines may be more ready than others - more noise categories!</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -608,18 +612,28 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<p>What does this mean?</p>
-<p>Overarching question - can I use bibliographic metadata as it is for use in RAG? Yes, you can. But, there is a bias and unpredictable affects. <img data-src=".png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="image of overarching question in the IS&amp;R"></p>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/cog_model_p271.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="images/cog_model_p271.png" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/cog_model_summary.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="images/cog_model_summary.svg" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+<p><br></p>
 <ul>
-<li>Open metadata is <span class="yellow bold">not</span> ready for RAG-based applications</li>
-<li>Cleaning is needed for noise</li>
-<li>Metadata enhancement is needed for errors</li>
+<li>Open metadata is <span class="magenta bold">not</span> ready for RAG-based applications</li>
+<li>Multilingual text is introduced by OpenAlex</li>
 <li>Standards and best practices to be developed</li>
 <li>More research is needed with more noise categories</li>
 </ul>
-</section></section>
-<section id="future-research" class="title-slide slide level1 center">
-<h1>Future Research</h1>
+</section>
+<section id="future-research" class="slide level2 scrollable">
+<h2>Future Research</h2>
 <aside class="notes">
 
 <style type="text/css">
@@ -633,13 +647,19 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<p>Pull from dissertation - improve the noise classification - Al Sharou et al.&nbsp;(2024) - Analyze a larger sample - Which fields or publishers are most affected by the beneficial effect? - Does the negative effect really impact an information seeker?</p>
-</section>
-
+<p><br></p>
+<p><img data-src="images/al_sharou.png" class="quarto-figure quarto-figure-center" style="width:100.0%"> <br></p>
+<ul>
+<li>More granular noise - Al Sharou et al.&nbsp;(2024)</li>
+<li>Analyze a larger sample</li>
+<li>Which fields or publishers are most affected by the beneficial effect?</li>
+<li>Does the negative effect really impact an information seeker?</li>
+</ul>
+</section></section>
 <section>
 <section id="thank-you" class="title-slide slide level1 center">
 <h1>Thank you!</h1>
-<p>Thank you to everyone that has helped me over the years. <br> My family, my supervisor and committee, fellow students, organizations, and the Department of Information Science. <br></p>
+<p>Thank you to everyone that has helped and supported me over the years. <br> My family, my supervisor and committee, fellow students, organizations, and the Department of Information Science. <br> <br></p>
 <p>Poppy Riddle <span class="blue">Department of Information Science PhD Program</span></p>
 </section>
 <section id="references" class="slide level2">

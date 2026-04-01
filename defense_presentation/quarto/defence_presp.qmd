@@ -1,5 +1,5 @@
 ---
-title: "Will bibliographic metadata work in RAG?"
+title: "Will open bibliographic metadata work in RAG?"
 subtitle: "PhD Program in Information Science"
 author: "Poppy Riddle"
 format: 
@@ -211,10 +211,10 @@ Retrieval-augmented generation ![](images/rag_basic.svg){fig-align="center" widt
 
 Inversen & Järvelin's Cognitive Model of Information Seeking and Retrieval ![](images/cog_model_p271.png){fig-align="center" width="100%"}
 
+<br>
 
-::: {.fragment .fade-in-then-out}
 ![](images/class_of_variables_3.png){fig-align="center" width="100%"}
-:::
+
 
 # Problem Statement, Purpose, & RQ
 
@@ -225,13 +225,35 @@ Inversen & Järvelin's Cognitive Model of Information Seeking and Retrieval ![](
 -   new conversational search tools require new metadata quality assessment criteria
 :::
 
+::::: columns
+::: {.column width="50%"}
+[Knowns]{.yellow}
+:::
+
+::: {.column width="50%"}
+[Unknowns]{.yellow}
+:::
+:::::
+
+::::: columns
+::: {.column width="50%"}
 -   Known that metadata quality problems exist
 -   Known there are differences with sources
--   Known that noise affects LLMs and RAG
 -   Known that metadata can be a source of knowledge
+-   Known that noise affects LLMs and RAG
+
+:::
+
+::: {.column width="50%"}
 -   Metadata quality assessments have not included NLP perspectives
+:::
+:::::
+
+
+
 
 ## Purpose
+<br>
 
 To identify [errors and noise]{.magenta} in title and abstract content,<br>compare metadata [sources]{.yellow} for error and noise,<br>and observe the [effect on RAG]{.yellow}.
 
@@ -263,16 +285,16 @@ break this slide into fragments with info on each method
 ## Part 1: A random sample from Crossref {.scrollable}
 
 ::: notes
-talk about some other results here
+- results from initial characterization - short and long char counts
 :::
-- add results from initial characterization - short and long char counts
-- pattern analysis
-- subset analysis
-- compare results between these
 
+![](images/part1_main_results.svg){fig-align="center" width="70%"}
 
-![](images/part1_main_results.svg){fig-align="center" width="80%"}
-include other types
+<br>
+
+![](images/abstract_tokens.png){width="50%" .lightbox .absolute top=200 left=0 width="350" height="300"}
+<br>
+
 
 ## Part 2: Compare data sources {.scrollable}
 
@@ -283,8 +305,7 @@ include other types
 -   with the exception of titles
 -   this means that the problem still persists and doesn't go away with their processes
 :::
-- get rid of the 99% sample overlap 
-- include other types
+
 
 ![](images/part2_main_results.svg){fig-align="center" width="80%"}
 
@@ -313,9 +334,14 @@ Statistically significant: (p=0.01, 0.95 CI)
 
 # Implications
 
-## Summary
+## What does this mean?
 
 ::: notes
+Overarching question - can I use bibliographic metadata as it is for use in RAG?
+Yes, you can. 
+But, there is a bias and unpredictable affects. 
+<br>
+limitations:<br>
 -   this just examined Crossref and OpenAlex - other databases 56
 -   limitations to how much noise was introduced - more research needed
 -   multilingual text can be an advantage - more research is needed to see if this is unfair or just; other errors recorded such as information loss and missing information
@@ -323,26 +349,32 @@ Statistically significant: (p=0.01, 0.95 CI)
 -   more noise categories!
 :::
 
-What does this mean?
+::: {.r-stack}
+![](images/cog_model_p271.png){.fragment fig-align="center" width="100%"}
 
-Overarching question - can I use bibliographic metadata as it is for use in RAG?
-Yes, you can. 
-But, there is a bias and unpredictable affects. 
-![image of overarching question in the IS&R](){fig-align="center" width="100%"}
+![](images/cog_model_summary.svg){.fragment fig-align="center" width="100%"}
 
--   Open metadata is [not]{.yellow .bold} ready for RAG-based applications
--   Cleaning is needed for noise
--   Metadata enhancement is needed for errors
--   Standards and best practices to be developed
+:::
+
+<br>
+
+-   Open metadata is [not]{.magenta .bold} ready for RAG-based applications
+-   Multilingual text is introduced by OpenAlex
+-   Standards and best practices to be developed 
 -   More research is needed with more noise categories
 
-# Future Research
+## Future Research {.scrollable}
 
 ::: notes
 
 :::
-Pull from dissertation
-- improve the noise classification - Al Sharou et al. (2024)
+
+<br>
+
+![](images/al_sharou.png){fig-align="center" width="100%"}
+<br>
+
+- More granular noise - Al Sharou et al. (2024)
 - Analyze a larger sample
 - Which fields or publishers are most affected by the beneficial effect?
 - Does the negative effect really impact an information seeker?
@@ -350,8 +382,9 @@ Pull from dissertation
 
 # Thank you!
 
-Thank you to everyone that has helped me over the years. <br>
+Thank you to everyone that has helped and supported me over the years. <br>
 My family, my supervisor and committee, fellow students, organizations, and the Department of Information Science. <br>
+<br>
 
 Poppy Riddle [Department of Information Science PhD Program]{.blue}
 

@@ -17,13 +17,22 @@ project:
   execute-dir: project
 ---
 
-# hello!
-
 <!--# https://htmlcolorcodes.com/color-chart/web-safe-color-chart/ -->
 
 <!--# more helpful stuff: https://emilhvitfeldt.com/blog -->
 
 <!--# plugins should you want them: https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware -->
+
+<!--# IMPORTANT! SAVE AS STATIC WEBPAGE AND PDF FOR LIZ! -->
+
+# Hello
+::: notes
+Why am I doing this work?
+
+- background
+- physical tool making to digital tool making
+- lack of science and evidence in design
+:::
 
 ## Presentation overview
 
@@ -33,6 +42,8 @@ project:
 -   Methods
 -   Results
 -   Implications
+-   Recommendations
+-   Contributions
 -   Future Research
 
 # Introduction & Background
@@ -44,6 +55,7 @@ project:
 - the data about scholarly resources, books, articles, datasets, 
 - used for resource location, retrieval, identification, commpliance, preservation
 - differences between two
+- OpenAlex pulls from Crossref
 :::
 
 ::::: columns
@@ -68,6 +80,10 @@ project:
 :::::
 
 ## [Errors and Noise]{.scrollable}
+
+::: notes
+- Title and abstract, why are these significant?
+:::
 
 ### Crossref
 
@@ -102,6 +118,8 @@ bibliographic metadata of scholarly resources: journal articles, book chapters, 
 Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant
 
 While they are using proprietary databases, can we use open-databases and create open-source conversational search?
+
+- Title and Abstract - why are these significant?
 :::
 
 ![Example of a conversational search interface, PrimoVE Research Assistant](images/PRA_Overview2_overlays.png){fig-align="center" width="100%"}
@@ -272,13 +290,29 @@ incremental slides!
 # Methods
 
 ## 
+::: notes
+- sample size 10,000 and subset
+- based on recommendations
+:::
+
 break this slide into fragments with info on each method
 ![](images/framework.svg){fig-align="center" width="160%"}
 
-### Instrument
+## Instrument
+::: notes
+- talk more about what you did
+- versions developed, BM25, 
+- why i used closed models
+- why limit to this architecture? 
+:::
 
 ![](images/part_3_framework.svg){fig-align="center" width="160%"}
+ 
+Provide some code as example executable codeblock??
 
+
+
+Link to Github
 
 # Results
 
@@ -362,6 +396,25 @@ limitations:<br>
 -   Multilingual text is introduced by OpenAlex
 -   Standards and best practices to be developed 
 -   More research is needed with more noise categories
+
+## Recommendations
+::: notes
+- recommendations from dissertation
+:::
+
+Pull recommendations from dissertation
+
+## Contributions
+::: notes
+contributions from dissertation
+:::
+
+### Theoretical
+
+### Methodological
+
+### Practical
+
 
 ## Future Research {.scrollable}
 

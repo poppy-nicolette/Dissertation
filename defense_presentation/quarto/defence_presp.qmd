@@ -29,22 +29,32 @@ project:
 ::: notes
 Why am I doing this work?
 
-- background
-- physical tool making to digital tool making
-- lack of science and evidence in design
+- Crossref job
+- 
 :::
 
 ## Presentation overview
 
+
 -   Introduction & Background
--   Theoretical Framework
--   Problem Statement, Purpose, & RQs
--   Methods
+    
+    [Problem & RQs]{.smaller}
+
+-   Methodology
+
+    [Theoretical Framework & Methods]{.smaller}
+
 -   Results
--   Implications
--   Recommendations
--   Contributions
--   Future Research
+-   Discussion
+
+    [Contributions]{.smaller}
+
+-   Recommendations & Conclusion
+
+    [Future Research]{.smaller}
+
+-   Acknowledgments
+
 
 # Introduction & Background
 
@@ -82,7 +92,8 @@ Why am I doing this work?
 ## [Errors and Noise]{.scrollable}
 
 ::: notes
-- Title and abstract, why are these significant?
+- what i saw while working at Crossref
+- prior work in summer 2024
 :::
 
 ### Crossref
@@ -99,22 +110,13 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 
 ![](images/abstract3_overlay.png){fig-align="center"}
 
-### OpenAlex
 
-![](images/abstract_tags_overlay.png){fig-align="center"} [Transformation of abstracts from Crossref (left) to OpenAlex (right)]{.blue .smaller}
-
-![](images/abstract_crammed_overlay.png){fig-align="center"} [Two languages in one abstract]{.blue .smaller}
-
-![](images/abstract_german_overlay.png){fig-align="center"} [Transformation of languages]{.blue .smaller}
-
-![](images/abstract_encodings_overlay.png){fig-align="center"} [Encodings added to the OpenAlex version]{.blue .smaller}
 
 
 ## Conversational Search {.scrollable}
 
 ::: notes
-bibliographic metadata of scholarly resources: journal articles, book chapters, conference proceedings have the most textual data with abstracts
-
+Simultaneously,
 Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant
 
 While they are using proprietary databases, can we use open-databases and create open-source conversational search?
@@ -125,8 +127,6 @@ While they are using proprietary databases, can we use open-databases and create
 ![Example of a conversational search interface, PrimoVE Research Assistant](images/PRA_Overview2_overlays.png){fig-align="center" width="100%"}
 
 [image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE\_(English)/015_Getting_Started_with_Primo_Research_Assistant]{.small}
-
-![Example of keyword search interface](images/novanet_overlay.png){fig-align="center" width="100%"}
 
 
 ## [Metadata Quality]{.scrollable}
@@ -206,19 +206,9 @@ Noise classification from Wu et al., (2025)
 : <br> <!--# https://tablesgenerator.com/markdown_tables -->
 
 
-## Metadata and RAG?
+# Methodology
 
-::: notes
-:::
-
-LLM-based chat application ![](images/LLM_chat.svg){fig-align="center" width="120%"}
-
-Retrieval-augmented generation ![](images/rag_basic.svg){fig-align="center" width="160%"}
-
-
-# Theoretical Framework
-
-## The Framework
+## The Cognitive model of IS&R
 
 ::: notes
 - levels of framework
@@ -308,11 +298,57 @@ break this slide into fragments with info on each method
 
 ![](images/part_3_framework.svg){fig-align="center" width="160%"}
  
-Provide some code as example executable codeblock??
+[Example code from pipeline](https://github.com/poppy-nicolette/Dissertation/blob/main/part_3_cohere/Part_3_V6_Cohere_RAG.ipynb)
 
+```{code-fold="false" code-line-numbers="true"}
 
+def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 
-Link to Github
+    # retrieve documents from directory
+    documents = read_documents_with_doi(directory_path)
+    print(f"Length of documents: {len(documents)}")
+
+    # randomize order of documents
+    random.shuffle(documents) # this was added for december run - it seemed to have a big impact on precision, recall, etc. 
+
+    # embed the documents
+    documents_embedded = document_embed(documents)
+
+    #embed the query:
+    query_embedded = query_embed(search_queries)
+
+    # retrieve the top_k documents
+    retrieved_documents = retrieve_top_k(top_k, query_embedded, documents_embedded, documents)
+
+    # rerank the documents using the Rerank model from Cohere
+    reranked_documents, reranked_DOIs_with_score = rerank_documents(retrieved_documents,search_queries,threshold,top_k)
+    # set system instructions
+    instructions = """
+                    You are an academic research assistant.
+                    You must include the DOI in your response.
+                    If there is no content provided, ask for a different question.
+                    Please structure your response like this:
+                    Summary: summary statement here. 
+                    DOI: summary of the text associated with this DOI.
+                    Address me as, 'my lady'.
+                    """
+    # create messages to model
+    messages = [{"role":"user",
+                "content": search_queries[0]},
+                {"role":"system",
+                "content":instructions}]
+
+    # Generate the response NOTE: change the model for the test condition!
+    resp = co.chat(
+        model="command-a-03-2025",
+        messages=messages,
+        documents=reranked_documents,
+    )
+
+    return resp, reranked_documents, reranked_DOIs_with_score
+
+```
+
 
 # Results
 
@@ -320,7 +356,11 @@ Link to Github
 
 ::: notes
 - results from initial characterization - short and long char counts
+- What errors or noise may be observed in the title and abstract from a random sample of Crossref and OpenAlex?
 :::
+
+[RQ1.  What errors or noise may be observed in the title and abstract from a random sample of Crossref and OpenAlex?]{.italic}
+<br>
 
 ![](images/part1_main_results.svg){fig-align="center" width="70%"}
 

@@ -14,6 +14,8 @@ $presentation-heading-color: lighten($theme-blue, 15%);
 $font-family-sans-serif: "Atkinson Hyperlegible Next", sans-serif;
 $presentation-heading-font: "Atkinson Hyperlegible Next", sans-serif;
 
+$presentation-heading-color:$theme-yellow;
+
 /*-- scss:rules --*/
 
 .blue {
@@ -38,6 +40,7 @@ $presentation-heading-font: "Atkinson Hyperlegible Next", sans-serif;
 
   .h2 {
     overflow-y: true;
+    color: #F4BA02;
   }
 
   .biblio{

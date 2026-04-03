@@ -157,7 +157,7 @@ Poppy Riddle
 <p>Why am I doing this work?</p>
 <ul>
 <li>Crossref job</li>
-<li></li>
+<li>birth of LLMs and their role in information search</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -173,17 +173,33 @@ Poppy Riddle
 </section>
 <section id="presentation-overview" class="slide level2">
 <h2>Presentation overview</h2>
+<aside class="notes">
 <ul>
-<li><p>Introduction &amp; Background</p>
-<p><span class="smaller">Problem &amp; RQs</span></p></li>
-<li><p>Methodology</p>
-<p><span class="smaller">Theoretical Framework &amp; Methods</span></p></li>
-<li><p>Results</p></li>
-<li><p>Discussion</p>
-<p><span class="smaller">Contributions</span></p></li>
-<li><p>Recommendations &amp; Conclusion</p>
-<p><span class="smaller">Future Research</span></p></li>
-<li><p>Acknowledgments</p></li>
+<li>Introduction &amp; Background; problem and RQs</li>
+<li>Methodology; theoretical and methods</li>
+<li>Results</li>
+<li>Discussion; contributions</li>
+<li>Recommendations &amp; Conclusion; future research</li>
+<li>Acknowledgements</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<ul>
+<li>Introduction &amp; Background</li>
+<li>Methodology</li>
+<li>Results</li>
+<li>Discussion</li>
+<li>Recommendations &amp; Conclusion</li>
+<li>Acknowledgments</li>
 </ul>
 </section></section>
 <section>
@@ -200,6 +216,7 @@ Poppy Riddle
 <li>used for resource location, retrieval, identification, commpliance, preservation</li>
 <li>differences between two</li>
 <li>OpenAlex pulls from Crossref</li>
+<li>prior work in summer 2024 - can we use this in LLM to answer questions?</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -246,7 +263,7 @@ Poppy Riddle
 <aside class="notes">
 <ul>
 <li>what i saw while working at Crossref</li>
-<li>prior work in summer 2024</li>
+<li>gaps in the literature on documenting these characteristics</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -283,9 +300,9 @@ Poppy Riddle
 <h2>Conversational Search</h2>
 <aside class="notes">
 <p>Simultaneously, Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant</p>
-<p>While they are using proprietary databases, can we use open-databases and create open-source conversational search?</p>
+<p>While they are using proprietary databases, what might we need to create an open-source conversational search tool?</p>
 <ul>
-<li>Title and Abstract - why are these significant?</li>
+<li>Title and Abstract - are significant as open metadata - I4OA - initiative for open abstracts</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -309,15 +326,15 @@ Poppy Riddle
 </figure>
 </div>
 <p><span class="small">image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_(English)/015_Getting_Started_with_Primo_Research_Assistant</span></p>
-</section>
-<section id="metadata-quality" class="slide level2">
-<h2><span class="scrollable">Metadata Quality</span></h2>
+</section></section>
+<section>
+<section id="methodology" class="title-slide slide level1 center">
+<h1>Methodology</h1>
 <aside class="notes">
-<p>prior research - Coverage &amp; Availability (Alonso-Álvarez &amp; van Eck 2024) - Coverage, Accuracy, Completeness (Céspedes et al., 2024; Visser et al., 2021) - Coverage (Culbert et al., 2024) - Completeness (Delgado-Quirós &amp; Ortega 2024) - Availability (Eck &amp; Waltman 2022) - Completeness, Consistency, Conformity, Access (Király et al.&nbsp;2019) - Availability &amp; Completeness (Kramer &amp; de Jonge 2022) - Accuracy (Mongeon et al., 2025) - Accuracy (Sainte-Marie et al., 2025) - Coverage &amp; Accuracy (Schares 2024) - Accuracy, Consistency, Completeness (Shi et al., 2023) - Coverage (Simard et al., 2024) - Accessibility &amp; Coverage (Zhang et al., 2024)</p>
 <ul>
-<li>Yasser et al., (2011) ‘poorly created metadata records result in poor retrieval and limit accessibility to collections’. They classified problems as “Incorrect Values, Incorrect Elements, Missing Information, Information Loss, and Inconsistent Value Representation” (Yasser, 2011, p.&nbsp;51). also Bruce and Hillman; Delgado-Quirós &amp; Ortega</li>
+<li>thinking about these various threads</li>
+<li>holistic framework needed</li>
 </ul>
-<p>NLP defined noise from Wu et al - semantic: off-topic, deviating from intended meaning, ambiguous terms - datatype: links, encodings, urls, code - illegal sentence: incoherent or grammatically incorrect - OCR - counterfactual: factual errors - supportive: high semantic relevance, but lacking answer - orthographic: writing errors, typos, truncation - prior: false assumptions or premises Beneficial and Harmful!</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -329,7 +346,64 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<p><br> <a href="images/prior_metadata_1.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="images/prior_metadata_1.svg" class="center quarto-figure quarto-figure-center" style="width:70.0%"></a> <br> <br></p>
+</section>
+<section id="the-cognitive-model-of-isr" class="slide level2">
+<h2>The Cognitive model of IS&amp;R</h2>
+<aside class="notes">
+<ul>
+<li>levels of framework</li>
+<li>macro-level</li>
+<li>meso-level</li>
+<li>micro level</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p>Inversen &amp; Järvelin’s Cognitive Model of Information Seeking and Retrieval <img data-src="images/cog_model_p271.png" class="quarto-figure quarto-figure-center" style="width:100.0%"> <span class="smaller">From Ingwersen &amp; Järvelin (2005)</span></p>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/class_of_variables_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="images/class_of_variables_3.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+</figure>
+</div>
+</section>
+<section id="metadata-quality" class="slide level2">
+<h2><span class="scrollable">Metadata Quality</span></h2>
+<aside class="notes">
+<ul>
+<li>prior research on metadata quality</li>
+<li>other categories; but none looked at metadata for characteristics that affect NLP</li>
+<li>Accuracy, completeness, conformity closest, but without granularity to account for observed characteristics</li>
+<li>Yasser - study of holdings - what causes IR to fail</li>
+<li>Wu - study of impact of noise on LLMs</li>
+<li>Combined view does not exist to account for LLM’s now being in IR systems</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/prior_metadata_1.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="images/prior_metadata_1.svg" class="center quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
+</figure>
+</div>
+<p><br> <br></p>
 <h3 id="an-lis-perspective">An LIS Perspective</h3>
 <p>Yasser et al., (2011)</p>
 <ul>
@@ -392,51 +466,13 @@ Poppy Riddle
 </tr>
 </tbody>
 </table>
-</section></section>
-<section>
-<section id="methodology" class="title-slide slide level1 center">
-<h1>Methodology</h1>
-
-</section>
-<section id="the-cognitive-model-of-isr" class="slide level2">
-<h2>The Cognitive model of IS&amp;R</h2>
-<aside class="notes">
-<ul>
-<li>levels of framework</li>
-<li>macro-level</li>
-<li>meso-level</li>
-<li>micro level</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p>Inversen &amp; Järvelin’s Cognitive Model of Information Seeking and Retrieval <img data-src="images/cog_model_p271.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
-<p><br></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/class_of_variables_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="images/class_of_variables_3.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
-</figure>
-</div>
-</section></section>
-<section>
-<section id="problem-statement-purpose-rq" class="title-slide slide level1 center">
-<h1>Problem Statement, Purpose, &amp; RQ</h1>
-
 </section>
 <section id="problem-statement" class="slide level2">
 <h2>Problem Statement</h2>
 <aside class="notes">
 <ul>
-<li>gap linking LIS and NLP research</li>
-<li>new conversational search tools require new metadata quality assessment criteria</li>
+<li>by combining perspectives, the gap of analyzing metadata content for characteristics that would affect NLP could be addressed</li>
+<li>this is necessary because: new conversational search tools require new metadata quality assessment criteria</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -458,19 +494,34 @@ Poppy Riddle
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li>Known that metadata quality problems exist</li>
-<li>Known there are differences with sources</li>
-<li>Known that metadata can be a source of knowledge</li>
-<li>Known that noise affects LLMs and RAG</li>
+<li>Metadata can be a source of knowledge</li>
+<li>Metadata quality problems exist</li>
+<li>Differences with sources</li>
+<li>Noise affects LLMs and RAG</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <ul>
-<li>Metadata quality assessments have not included NLP perspectives</li>
+<li><span class="magenta">Metadata quality has not included NLP perspective</span></li>
 </ul>
 </div></div>
 </section>
 <section id="purpose" class="slide level2">
 <h2>Purpose</h2>
+<aside class="notes">
+<ul>
+<li>wing it</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <p><br></p>
 <p>To identify <span class="magenta">errors and noise</span> in title and abstract content,<br>compare metadata <span class="yellow">sources</span> for error and noise,<br>and observe the <span class="yellow">effect on RAG</span>.</p>
 </section>
@@ -496,14 +547,9 @@ Poppy Riddle
 <li class="fragment">What is the effect of observed errors and noise on RAG retrieval and generation?</li>
 </ol>
 </div>
-</section></section>
-<section>
-<section id="methods" class="title-slide slide level1 center">
-<h1>Methods</h1>
-
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="methods" class="slide level2">
+<h2>Methods</h2>
 <aside class="notes">
 <ul>
 <li>sample size 10,000 and subset</li>
@@ -520,7 +566,35 @@ Poppy Riddle
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<p>break this slide into fragments with info on each method <img data-src="images/framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/framework_part1.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/framework_part1.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
+</figure>
+</div>
+</section>
+<section id="methods-1" class="slide level2">
+<h2>Methods</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/framework_part2.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/framework_part2.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
+</figure>
+</div>
+</section>
+<section id="methods-2" class="slide level2">
+<h2>Methods</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/framework_part3.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/framework_part3.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
+</figure>
+</div>
+</section>
+<section id="methods-3" class="slide level2">
+<h2>Methods</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/framework_part4.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/framework_part4.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
+</figure>
+</div>
 </section>
 <section id="instrument" class="slide level2">
 <h2>Instrument</h2>
@@ -544,7 +618,7 @@ Poppy Riddle
       }</style></aside>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part_3_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
+<p><a href="images/part_3_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
 </figure>
 </div>
 <p><a href="https://github.com/poppy-nicolette/Dissertation/blob/main/part_3_cohere/Part_3_V6_Cohere_RAG.ipynb">Example code from pipeline</a></p>
@@ -621,11 +695,11 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <p><span class="italic">RQ1. What errors or noise may be observed in the title and abstract from a random sample of Crossref and OpenAlex?</span> <br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part1_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/part1_main_results.svg" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
+<p><a href="images/part1_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="images/part1_main_results.svg" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
 </figure>
 </div>
 <p><br></p>
-<p><a href="images/abstract_tokens.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/abstract_tokens.png" class="absolute" style="top: 200px; left: 0px; width: 50%; height: 300px; " width="350"></a> <br></p>
+<p><a href="images/abstract_tokens.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="images/abstract_tokens.png" class="absolute" style="top: 200px; left: 0px; width: 50%; height: 300px; " width="350"></a> <br></p>
 </section>
 <section id="part-2-compare-data-sources" class="slide level2 scrollable">
 <h2>Part 2: Compare data sources</h2>
@@ -650,7 +724,7 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
       }</style></aside>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part2_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/part2_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
+<p><a href="images/part2_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="images/part2_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
 </figure>
 </div>
 </section>
@@ -676,20 +750,20 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <p>Statistically significant: (p=0.00006, 0.95 CI)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Round1_document_scores_combined.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/Round1_document_scores_combined.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/Round1_document_scores_combined.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="images/Round1_document_scores_combined.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 <h3 id="results-round-2">Results: Round 2</h3>
 <p>Statistically significant: (p=0.01, 0.95 CI)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Round2_faithfulness.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="images/Round2_faithfulness.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
+<p><a href="images/Round2_faithfulness.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img data-src="images/Round2_faithfulness.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
 </figure>
 </div>
 </section></section>
 <section>
-<section id="implications" class="title-slide slide level1 center">
-<h1>Implications</h1>
+<section id="discussion" class="title-slide slide level1 center">
+<h1>Discussion</h1>
 
 </section>
 <section id="what-does-this-mean" class="slide level2">
@@ -710,12 +784,12 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <div class="r-stack">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/cog_model_p271.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="images/cog_model_p271.png" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/cog_model_p271.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img data-src="images/cog_model_p271.png" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/cog_model_summary.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="images/cog_model_summary.svg" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/cog_model_summary.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img data-src="images/cog_model_summary.svg" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>
@@ -726,25 +800,6 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <li>Standards and best practices to be developed</li>
 <li>More research is needed with more noise categories</li>
 </ul>
-</section>
-<section id="recommendations" class="slide level2">
-<h2>Recommendations</h2>
-<aside class="notes">
-<ul>
-<li>recommendations from dissertation</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<p>Pull recommendations from dissertation</p>
 </section>
 <section id="contributions" class="slide level2">
 <h2>Contributions</h2>
@@ -764,6 +819,32 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <h3 id="theoretical">Theoretical</h3>
 <h3 id="methodological">Methodological</h3>
 <h3 id="practical">Practical</h3>
+</section></section>
+<section>
+<section id="recommendations-and-conclusion" class="title-slide slide level1 center">
+<h1>Recommendations and Conclusion</h1>
+<aside class="notes">
+<ul>
+<li>answer each RQ</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p>Simplify answer to questions ### RQ1</p>
+</section>
+<h3 id="rq2">RQ2</h3>
+<h3 id="rq3">RQ3</h3>
+<section id="recommendations" class="slide level2">
+<h2>Recommendations</h2>
+<p>Pull recommendations from dissertation</p>
 </section>
 <section id="future-research" class="slide level2 scrollable">
 <h2>Future Research</h2>
@@ -790,9 +871,9 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 </ul>
 </section></section>
 <section>
-<section id="thank-you" class="title-slide slide level1 center">
-<h1>Thank you!</h1>
-<p>Thank you to everyone that has helped and supported me over the years. <br> My family, my supervisor and committee, fellow students, organizations, and the Department of Information Science. <br> <br></p>
+<section id="acknowledgments" class="title-slide slide level1 center">
+<h1>Acknowledgments</h1>
+<p>Thank you to everyone that has helped and supported me over the years. <br> My family, my supervisor and committee, fellow students, organizations, and the Department of Information Science. <br> Funding support was received from the Nova Scotia Graduate Scholarship, Dalhousie IDPhD and Department of Information Science Programs, Mitacs, and Cohere Labs Catalyst Grant Program. <br></p>
 <p>Poppy Riddle <span class="blue">Department of Information Science PhD Program</span></p>
 </section>
 <section id="references" class="slide level2">

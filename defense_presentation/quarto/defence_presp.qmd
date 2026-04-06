@@ -25,51 +25,68 @@ project:
 
 <!--# IMPORTANT! SAVE AS STATIC WEBPAGE AND PDF FOR LIZ! -->
 
-# Hello
-::: notes
-Why am I doing this work?
-
-- Crossref job
-- birth of LLMs and their role in information search
-:::
 
 ## Presentation overview
 ::: notes
 - Introduction & Background; problem and RQs
 - Methodology; theoretical and methods
 - Results
-- Discussion; contributions
-- Recommendations & Conclusion; future research
+- Discussion; contributions; future research
+- Recommendations & Conclusion
 - Acknowledgements
 :::
 
 -   Introduction & Background
 -   Methodology
 -   Results
--   Discussion
+-   Discussion & Contributions
 -   Recommendations & Conclusion
 -   Acknowledgments
 
 # Introduction & Background
+::: notes
+- working at Crossref in 2023-2024; 
+- witness to metadata creation and errors
+- began playing with LLMs and RAG
+- 2024 we used abstracts in a RAG 
+- what if that mess posed a problem?
+:::
 
-## What is Bibliographic Metadata?
+## Conversational Search {.scrollable}
 
 ::: notes
+has since been released in libraries
+Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant
+
+While they are using proprietary databases, what might we need to create an open-source conversational search tool?
+
+- Title and Abstract - are significant as open metadata; the aboutness - I4OA - initiative for open abstracts
+:::
+
+![Example of a conversational search interface, PrimoVE Research Assistant](images/PRA_Overview2_overlays.png){fig-align="center" width="100%"}
+
+[image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE\_(English)/015_Getting_Started_with_Primo_Research_Assistant]{.small}
+
+
+
+## Bibliographic Metadata
+
+::: notes
+- thinking about openness
 - Open sources of metadata
 - the data about scholarly resources, books, articles, datasets, 
 - used for resource location, retrieval, identification, commpliance, preservation
-- differences between two
 - OpenAlex pulls from Crossref
-- prior work in summer 2024 - can we use this in LLM to answer questions?
+- differences between two
 :::
 
 ::::: columns
 ::: {.column width="50%"}
-![](images/Crossref_Logo.png){fig-align="center" width="40%"}
+![](images/crossref_logo.svg){fig-align="center" width="40%"}
 :::
 
 ::: {.column width="50%"}
-![](images/OpenAlex_logo.png){fig-align="center" width="100%"}
+![](images/OpenAlex_logo_bg.png){fig-align="center" width="100%"}
 :::
 :::::
 
@@ -88,7 +105,10 @@ Why am I doing this work?
 
 ::: notes
 - what i saw while working at Crossref
+- including changes between databases, truncation, replacements with another language or content
 - gaps in the literature on documenting these characteristics
+- scientometric studies have examined the title and abstract, but for presence, language used, but also terminology and linguistics
+- NLP studies had examined unnecessary, unwanted, text as typos, errors, noise; beneficial or harmful in their effects on NLP systems and processes
 
 :::
 
@@ -108,21 +128,6 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 
 
 
-
-## Conversational Search {.scrollable}
-
-::: notes
-Simultaneously,
-Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant
-
-While they are using proprietary databases, what might we need to create an open-source conversational search tool?
-
-- Title and Abstract - are significant as open metadata - I4OA - initiative for open abstracts
-:::
-
-![Example of a conversational search interface, PrimoVE Research Assistant](images/PRA_Overview2_overlays.png){fig-align="center" width="100%"}
-
-[image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE\_(English)/015_Getting_Started_with_Primo_Research_Assistant]{.small}
 
 
 
@@ -264,8 +269,7 @@ incremental slides!
 
 ## Methods
 ::: notes
-- sample size 10,000 and subset
-- based on recommendations
+- part 2; 10,100 samples random; characterized them for characters, tokens, punctuation; selected a subset
 :::
 
 ![](images/framework_part1.svg){fig-align="center" width="160%"}
@@ -278,18 +282,14 @@ incremental slides!
 
 ![](images/framework_part3.svg){fig-align="center" width="160%"}
 
-## Methods
-
-![](images/framework_part4.svg){fig-align="center" width="160%"}
-
-
 
 ## Instrument
 ::: notes
-- talk more about what you did
 - versions developed, BM25, 
 - why i used closed models
 - why limit to this architecture? 
+- the code is shown to highlight the sensitivity to the prompt
+- in addition to the sensitivity of the noise and query
 :::
 
 ![](images/part_3_framework.svg){fig-align="center" width="160%"}
@@ -345,14 +345,15 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 
 ```
 
-
 # Results
 
 ## Part 1: A random sample from Crossref {.scrollable}
 
 ::: notes
+- other results were collected; characterization of tokens, characters
+- used to understand if additional NLP processes needed, or chunking strategies
 - results from initial characterization - short and long char counts
-- What errors or noise may be observed in the title and abstract from a random sample of Crossref and OpenAlex?
+
 :::
 
 [RQ1.  What errors or noise may be observed in the title and abstract from a random sample of Crossref and OpenAlex?]{.italic}

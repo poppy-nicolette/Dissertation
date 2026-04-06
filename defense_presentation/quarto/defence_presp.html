@@ -150,27 +150,6 @@ Poppy Riddle
 <!--# plugins should you want them: https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware -->
 <!--# IMPORTANT! SAVE AS STATIC WEBPAGE AND PDF FOR LIZ! -->
 </section>
-<section>
-<section id="hello" class="title-slide slide level1 center">
-<h1>Hello</h1>
-<aside class="notes">
-<p>Why am I doing this work?</p>
-<ul>
-<li>Crossref job</li>
-<li>birth of LLMs and their role in information search</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="presentation-overview" class="slide level2">
 <h2>Presentation overview</h2>
 <aside class="notes">
@@ -178,8 +157,8 @@ Poppy Riddle
 <li>Introduction &amp; Background; problem and RQs</li>
 <li>Methodology; theoretical and methods</li>
 <li>Results</li>
-<li>Discussion; contributions</li>
-<li>Recommendations &amp; Conclusion; future research</li>
+<li>Discussion; contributions; future research</li>
+<li>Recommendations &amp; Conclusion</li>
 <li>Acknowledgements</li>
 </ul>
 <style type="text/css">
@@ -197,26 +176,75 @@ Poppy Riddle
 <li>Introduction &amp; Background</li>
 <li>Methodology</li>
 <li>Results</li>
-<li>Discussion</li>
+<li>Discussion &amp; Contributions</li>
 <li>Recommendations &amp; Conclusion</li>
 <li>Acknowledgments</li>
 </ul>
-</section></section>
+</section>
 <section>
 <section id="introduction-background" class="title-slide slide level1 center">
 <h1>Introduction &amp; Background</h1>
-
-</section>
-<section id="what-is-bibliographic-metadata" class="slide level2">
-<h2>What is Bibliographic Metadata?</h2>
 <aside class="notes">
 <ul>
+<li>working at Crossref in 2023-2024;</li>
+<li>witness to metadata creation and errors</li>
+<li>began playing with LLMs and RAG</li>
+<li>2024 we used abstracts in a RAG</li>
+<li>what if that mess posed a problem?</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="conversational-search" class="slide level2 scrollable">
+<h2>Conversational Search</h2>
+<aside class="notes">
+<p>has since been released in libraries Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant</p>
+<p>While they are using proprietary databases, what might we need to create an open-source conversational search tool?</p>
+<ul>
+<li>Title and Abstract - are significant as open metadata; the aboutness - I4OA - initiative for open abstracts</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/PRA_Overview2_overlays.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Example of a conversational search interface, PrimoVE Research Assistant"><img data-src="images/PRA_Overview2_overlays.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Example of a conversational search interface, PrimoVE Research Assistant"></a></p>
+</figure>
+</div>
+<figcaption>Example of a conversational search interface, PrimoVE Research Assistant</figcaption>
+</figure>
+</div>
+<p><span class="small">image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_(English)/015_Getting_Started_with_Primo_Research_Assistant</span></p>
+</section>
+<section id="bibliographic-metadata" class="slide level2">
+<h2>Bibliographic Metadata</h2>
+<aside class="notes">
+<ul>
+<li>thinking about openness</li>
 <li>Open sources of metadata</li>
 <li>the data about scholarly resources, books, articles, datasets,</li>
 <li>used for resource location, retrieval, identification, commpliance, preservation</li>
-<li>differences between two</li>
 <li>OpenAlex pulls from Crossref</li>
-<li>prior work in summer 2024 - can we use this in LLM to answer questions?</li>
+<li>differences between two</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -233,13 +261,13 @@ Poppy Riddle
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Crossref_Logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="images/Crossref_Logo.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></a></p>
+<p><a href="images/crossref_logo.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/crossref_logo.svg" class="quarto-figure quarto-figure-center" style="width:40.0%"></a></p>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/OpenAlex_logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/OpenAlex_logo.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/OpenAlex_logo_bg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/OpenAlex_logo_bg.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div></div>
@@ -247,13 +275,13 @@ Poppy Riddle
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/crossref_metadata_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/crossref_metadata_overlay.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/crossref_metadata_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/crossref_metadata_overlay.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/openalex_metadata_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/openalex_metadata_overlay.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/openalex_metadata_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/openalex_metadata_overlay.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div></div>
@@ -263,7 +291,10 @@ Poppy Riddle
 <aside class="notes">
 <ul>
 <li>what i saw while working at Crossref</li>
+<li>including changes between databases, truncation, replacements with another language or content</li>
 <li>gaps in the literature on documenting these characteristics</li>
+<li>scientometric studies have examined the title and abstract, but for presence, language used, but also terminology and linguistics</li>
+<li>NLP studies had examined unnecessary, unwanted, text as typos, errors, noise; beneficial or harmful in their effects on NLP systems and processes</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -280,52 +311,21 @@ Poppy Riddle
 <p>Abstract metadata from <a href="https://api.crossref.org/works/10.1103/physrevd.110.036015" class="uri">https://api.crossref.org/works/10.1103/physrevd.110.036015</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/abstract_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/abstract_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="images/abstract_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="images/abstract_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 <p>Or, another example from <a href="https://api.crossref.org/works/10.33024/hjk.v15i1.3791" class="uri">https://api.crossref.org/works/10.33024/hjk.v15i1.3791</a>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/abstract2_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="images/abstract2_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="images/abstract2_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="images/abstract2_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 <p>Or one that contains geometric shapes, from <a href="https://api.crossref.org/works/10.1108/eemcs-04-2022-0108" class="uri">https://api.crossref.org/works/10.1108/eemcs-04-2022-0108</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/abstract3_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="images/abstract3_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="images/abstract3_overlay.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="images/abstract3_overlay.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
-</section>
-<section id="conversational-search" class="slide level2 scrollable">
-<h2>Conversational Search</h2>
-<aside class="notes">
-<p>Simultaneously, Conversational search using RAG: ScopusAI, WoS Research Assistant, ProQuest One, PrimoVE Research Assistant</p>
-<p>While they are using proprietary databases, what might we need to create an open-source conversational search tool?</p>
-<ul>
-<li>Title and Abstract - are significant as open metadata - I4OA - initiative for open abstracts</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/PRA_Overview2_overlays.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Example of a conversational search interface, PrimoVE Research Assistant"><img data-src="images/PRA_Overview2_overlays.png" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Example of a conversational search interface, PrimoVE Research Assistant"></a></p>
-</figure>
-</div>
-<figcaption>Example of a conversational search interface, PrimoVE Research Assistant</figcaption>
-</figure>
-</div>
-<p><span class="small">image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_(English)/015_Getting_Started_with_Primo_Research_Assistant</span></p>
 </section></section>
 <section>
 <section id="methodology" class="title-slide slide level1 center">
@@ -552,8 +552,7 @@ Poppy Riddle
 <h2>Methods</h2>
 <aside class="notes">
 <ul>
-<li>sample size 10,000 and subset</li>
-<li>based on recommendations</li>
+<li>part 2; 10,100 samples random; characterized them for characters, tokens, punctuation; selected a subset</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -588,22 +587,15 @@ Poppy Riddle
 </figure>
 </div>
 </section>
-<section id="methods-3" class="slide level2">
-<h2>Methods</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="images/framework_part4.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/framework_part4.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
-</figure>
-</div>
-</section>
 <section id="instrument" class="slide level2">
 <h2>Instrument</h2>
 <aside class="notes">
 <ul>
-<li>talk more about what you did</li>
 <li>versions developed, BM25,</li>
 <li>why i used closed models</li>
 <li>why limit to this architecture?</li>
+<li>the code is shown to highlight the sensitivity to the prompt</li>
+<li>in addition to the sensitivity of the noise and query</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -618,7 +610,7 @@ Poppy Riddle
       }</style></aside>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part_3_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
+<p><a href="images/part_3_framework.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="images/part_3_framework.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
 </figure>
 </div>
 <p><a href="https://github.com/poppy-nicolette/Dissertation/blob/main/part_3_cohere/Part_3_V6_Cohere_RAG.ipynb">Example code from pipeline</a></p>
@@ -678,8 +670,9 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <h2>Part 1: A random sample from Crossref</h2>
 <aside class="notes">
 <ul>
+<li>other results were collected; characterization of tokens, characters</li>
+<li>used to understand if additional NLP processes needed, or chunking strategies</li>
 <li>results from initial characterization - short and long char counts</li>
-<li>What errors or noise may be observed in the title and abstract from a random sample of Crossref and OpenAlex?</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -695,11 +688,11 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <p><span class="italic">RQ1. What errors or noise may be observed in the title and abstract from a random sample of Crossref and OpenAlex?</span> <br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part1_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="images/part1_main_results.svg" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
+<p><a href="images/part1_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/part1_main_results.svg" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
 </figure>
 </div>
 <p><br></p>
-<p><a href="images/abstract_tokens.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="images/abstract_tokens.png" class="absolute" style="top: 200px; left: 0px; width: 50%; height: 300px; " width="350"></a> <br></p>
+<p><a href="images/abstract_tokens.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="images/abstract_tokens.png" class="absolute" style="top: 200px; left: 0px; width: 50%; height: 300px; " width="350"></a> <br></p>
 </section>
 <section id="part-2-compare-data-sources" class="slide level2 scrollable">
 <h2>Part 2: Compare data sources</h2>
@@ -724,7 +717,7 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
       }</style></aside>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/part2_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="images/part2_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
+<p><a href="images/part2_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="images/part2_main_results.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
 </figure>
 </div>
 </section>
@@ -750,14 +743,14 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <p>Statistically significant: (p=0.00006, 0.95 CI)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Round1_document_scores_combined.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="images/Round1_document_scores_combined.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/Round1_document_scores_combined.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="images/Round1_document_scores_combined.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 <h3 id="results-round-2">Results: Round 2</h3>
 <p>Statistically significant: (p=0.01, 0.95 CI)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/Round2_faithfulness.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img data-src="images/Round2_faithfulness.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
+<p><a href="images/Round2_faithfulness.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="images/Round2_faithfulness.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></a></p>
 </figure>
 </div>
 </section></section>
@@ -784,12 +777,12 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <div class="r-stack">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/cog_model_p271.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img data-src="images/cog_model_p271.png" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/cog_model_p271.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img data-src="images/cog_model_p271.png" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/cog_model_summary.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img data-src="images/cog_model_summary.svg" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
+<p><a href="images/cog_model_summary.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img data-src="images/cog_model_summary.svg" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>

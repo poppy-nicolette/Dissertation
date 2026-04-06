@@ -369,6 +369,8 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 
 ## Part 2: Compare data sources {.scrollable}
 
+[How do Crossref and OpenAlex compare for errors and noise in the same random sample?]{.italic}
+
 ::: notes
 -   the percentages shown are part of the non-matching
 -   a larger sample than Crossref
@@ -382,14 +384,14 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 
 ## Part 3: What happens when we put metadata in a RAG application? {.scrollable}
 
+[What is the effect of observed errors and noise on RAG retrieval and generation?]{.italic}
+
 ::: notes
 -   Round 1 was variables in multilingual models
 -   Round 2 was variables in English only models
 :::
 
 ### Results: Round 1
-
-
 
 Statistically significant: (p=0.00006, 0.95 CI)
 

@@ -377,7 +377,7 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 
 ![](images/part2_main_results.svg){fig-align="center" width="80%"}
 
-## Part 3: What happens when we put metadata in a RAG application? {.scrollable}
+## Part 3: The effect on RAG {.scrollable}
 
 [What is the effect of observed errors and noise on RAG retrieval and generation?]{.italic}
 
@@ -386,7 +386,7 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 -   Round 2 was variables in English only models
 :::
 
-### Results: Round 1
+### Round 1
 
 Statistically significant: (p=0.00006, 0.95 CI)
 
@@ -394,7 +394,7 @@ Statistically significant: (p=0.00006, 0.95 CI)
 
 
 
-### Results: Round 2
+### Round 2
 
 Statistically significant: (p=0.01, 0.95 CI)
 

@@ -269,7 +269,7 @@ incremental slides!
 
 ## Methods
 ::: notes
-- part 2; 10,100 samples random; characterized them for characters, tokens, punctuation; selected a subset
+
 :::
 
 ![](images/framework_part1.svg){fig-align="center" width="160%"}
@@ -361,11 +361,6 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 
 ![](images/part1_main_results.svg){fig-align="center" width="70%"}
 
-<br>
-
-![](images/abstract_tokens.png){width="50%" .lightbox .absolute top=200 left=0 width="350" height="300"}
-<br>
-
 
 ## Part 2: Compare data sources {.scrollable}
 
@@ -423,7 +418,6 @@ limitations:<br>
 :::
 
 ::: {.r-stack}
-![](images/cog_model_p271.png){.fragment fig-align="center" width="100%"}
 
 ![](images/cog_model_summary.svg){.fragment fig-align="center" width="100%"}
 

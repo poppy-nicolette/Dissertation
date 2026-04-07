@@ -670,6 +670,7 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <ul>
 <li>other results were collected; characterization of tokens, characters</li>
 <li>used to understand if additional NLP processes needed, or chunking strategies</li>
+<li>token lengths work well with LLMs</li>
 <li>results from initial characterization - short and long char counts</li>
 </ul>
 <style type="text/css">
@@ -725,6 +726,10 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <ul>
 <li>Round 1 was variables in multilingual models</li>
 <li>Round 2 was variables in English only models</li>
+<li>there were other variables collected that were not significant. So, this may also mean that overall there is little effect.</li>
+<li>recall, precision, F1-score, balanced accuracy</li>
+<li>document score is from the encoding, dependent on that model and cosine similarity</li>
+<li>but faithfulness is an interpretation;</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -760,7 +765,15 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <section id="what-does-this-mean" class="slide level2">
 <h2>What does this mean?</h2>
 <aside class="notes">
-<p>Overarching question - can I use bibliographic metadata as it is for use in RAG? Yes, you can. But, there is a bias and unpredictable affects. <br> limitations:<br> - this just examined Crossref and OpenAlex - other databases 56 - limitations to how much noise was introduced - more research needed - multilingual text can be an advantage - more research is needed to see if this is unfair or just; other errors recorded such as information loss and missing information - some fields/disciplines may be more ready than others - more noise categories!</p>
+<p>Overarching question - can I use bibliographic metadata as it is for use in RAG? Yes, you can. But, there is a bias and unpredictable affects.</p>
+<p>limitations:</p>
+<ul>
+<li>this just examined Crossref and OpenAlex - other databases 56</li>
+<li>limitations to how much noise was introduced - more research needed</li>
+<li>multilingual text can be an advantage - more research is needed to see if this is unfair or just; other errors recorded such as information loss and missing information</li>
+<li>some fields/disciplines may be more ready than others</li>
+<li>more noise categories!</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -772,18 +785,20 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<div class="r-stack">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="images/cog_model_summary.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="images/cog_model_summary.svg" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a></p>
 </figure>
 </div>
-</div>
-<p><br></p>
+</section>
+<section id="what-does-this-mean-1" class="slide level2">
+<h2>What does this mean?</h2>
 <ul>
-<li>Open metadata is <span class="magenta bold">not</span> ready for RAG-based applications</li>
-<li>Multilingual text is introduced by OpenAlex</li>
-<li>Standards and best practices to be developed</li>
+<li>Information loss and missing info most significant problems</li>
+<li></li>
+<li>Most metrics are not significantly affected</li>
+<li>Ingest processes at OpenAlex introduce multilingual text</li>
+<li>Datatype noise had no effect</li>
 <li>More research is needed with more noise categories</li>
 </ul>
 </section>

@@ -352,6 +352,7 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 ::: notes
 - other results were collected; characterization of tokens, characters
 - used to understand if additional NLP processes needed, or chunking strategies
+- token lengths work well with LLMs
 - results from initial characterization - short and long char counts
 
 :::
@@ -384,6 +385,10 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 ::: notes
 -   Round 1 was variables in multilingual models
 -   Round 2 was variables in English only models
+- there were other variables collected that were not significant. So, this may also mean that overall there is little effect. 
+- recall, precision, F1-score, balanced accuracy
+- document score is from the encoding, dependent on that model and cosine similarity
+- but faithfulness is an interpretation; 
 :::
 
 ### Round 1
@@ -408,8 +413,9 @@ Statistically significant: (p=0.01, 0.95 CI)
 Overarching question - can I use bibliographic metadata as it is for use in RAG?
 Yes, you can. 
 But, there is a bias and unpredictable affects. 
-<br>
-limitations:<br>
+
+limitations:
+
 -   this just examined Crossref and OpenAlex - other databases 56
 -   limitations to how much noise was introduced - more research needed
 -   multilingual text can be an advantage - more research is needed to see if this is unfair or just; other errors recorded such as information loss and missing information
@@ -417,17 +423,16 @@ limitations:<br>
 -   more noise categories!
 :::
 
-::: {.r-stack}
-
 ![](images/cog_model_summary.svg){.fragment fig-align="center" width="100%"}
 
-:::
+## What does this mean?
 
-<br>
 
--   Open metadata is [not]{.magenta .bold} ready for RAG-based applications
--   Multilingual text is introduced by OpenAlex
--   Standards and best practices to be developed 
+-   Information loss and missing info most significant problems
+-   
+-   Most metrics are not significantly affected
+-   Ingest processes at OpenAlex introduce multilingual text
+-   Datatype noise had no effect
 -   More research is needed with more noise categories
 
 ## Contributions

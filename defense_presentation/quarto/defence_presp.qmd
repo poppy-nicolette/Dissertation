@@ -429,10 +429,10 @@ limitations:
 
 
 -   Information loss and missing info most significant problems
--   
--   Most metrics are not significantly affected
+-   Datatype, semantic, and multilingual are not uncommon
 -   Ingest processes at OpenAlex introduce multilingual text
--   Datatype noise had no effect
+-   Most metrics are not significantly affected
+-   Multilingual text causes both beneficial and harmful effects
 -   More research is needed with more noise categories
 
 ## Contributions
@@ -442,6 +442,8 @@ contributions from dissertation
 
 
 ### Theoretical
+
+
 
 ### Methodological
 

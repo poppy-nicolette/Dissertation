@@ -320,10 +320,10 @@
 </tspan><tspan
          x="514.40118"
          y="289.62122"
-         id="tspan2">10,100 titles and </tspan><tspan
+         id="tspan3">10,100 titles and </tspan><tspan
          x="514.40118"
          y="305.62122"
-         id="tspan3">abstracts</tspan></text><rect
+         id="tspan4">abstracts</tspan></text><rect
        style="fill:none;fill-opacity:1;stroke:#d5f990;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect23"
        width="153.94162"
@@ -337,13 +337,13 @@
        transform="translate(-7.1556724,-5.861504)"><tspan
          x="595.50119"
          y="479.48658"
-         id="tspan4">Characterize: </tspan><tspan
+         id="tspan5">Characterize: </tspan><tspan
          x="591.8372"
          y="495.48658"
-         id="tspan5">title, abstract, </tspan><tspan
+         id="tspan6">title, abstract, </tspan><tspan
          x="610.3652"
          y="511.48658"
-         id="tspan6">language</tspan></text><rect
+         id="tspan7">language</tspan></text><rect
        style="fill:none;fill-opacity:1;stroke:#d5f990;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect23-4"
        width="153.94162"
@@ -357,16 +357,16 @@
        transform="translate(-10.955254,70.183283)"><tspan
          x="616.66118"
          y="479.48658"
-         id="tspan7">Tokens, </tspan><tspan
+         id="tspan8">Tokens, </tspan><tspan
          x="603.74919"
          y="495.48658"
-         id="tspan12">characters, </tspan><tspan
+         id="tspan9">characters, </tspan><tspan
          x="608.4052"
          y="511.48658"
-         id="tspan13">numerals, </tspan><tspan
+         id="tspan10">numerals, </tspan><tspan
          x="600.38918"
          y="527.48658"
-         id="tspan14">punctuation</tspan></text><rect
+         id="tspan11">punctuation</tspan></text><rect
        style="fill:none;fill-opacity:1;stroke:#c446ff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect23-4-0-1"
        width="151.80029"
@@ -380,7 +380,7 @@
        transform="translate(367.36415,-6.0966692)"><tspan
          x="583.01376"
          y="479.48658"
-         id="tspan15">Regex patterns</tspan></text><rect
+         id="tspan12">Regex patterns</tspan></text><rect
        style="display:inline;fill:none;fill-opacity:1;stroke:#f990ca;stroke-width:3.00001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect43-8"
        width="193.2558"
@@ -391,42 +391,38 @@
        xml:space="preserve"
        id="text43-6"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect308-5);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       transform="translate(157.84284,28.246225)"><tspan
+       transform="translate(157.84284,36.246225)"><tspan
          x="609.412"
          y="479.48658"
-         id="tspan16">Incorrect values
+         id="tspan13">Incorrect values
 </tspan><tspan
          x="598.76401"
          y="495.48658"
-         id="tspan17">Incorrect elements
+         id="tspan14">Incorrect elements
 </tspan><tspan
          x="624.41997"
          y="511.48658"
-         id="tspan18">Missing info
+         id="tspan15">Missing info
 </tspan><tspan
          x="637.21201"
          y="527.48658"
-         id="tspan19">Info loss
-</tspan><tspan
-         x="636.468"
-         y="543.48658"
-         id="tspan20">Info gain
+         id="tspan16">Info loss
 </tspan><tspan
          x="585.81198"
-         y="559.48658"
-         id="tspan22">Inconsistent value rep
+         y="543.48658"
+         id="tspan17">Inconsistent value rep
 </tspan><tspan
          x="612.66"
-         y="575.48658"
-         id="tspan23">Semantic noise
+         y="559.48658"
+         id="tspan18">Semantic noise
 </tspan><tspan
          x="614.32401"
-         y="591.48658"
-         id="tspan24">Datatype noise
+         y="575.48658"
+         id="tspan19">Datatype noise
 </tspan><tspan
-         x="576.5332"
-         y="607.48658"
-         id="tspan25">
+         x="670.91602"
+         y="591.48658"
+         id="tspan20">
 </tspan></text><rect
        style="display:inline;fill:none;fill-opacity:1;stroke:#f990ca;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect44-8"
@@ -441,37 +437,37 @@
        transform="translate(172.37917,-26.021295)"><tspan
          x="581.62474"
          y="479.48658"
-         id="tspan26">Observed problems </tspan><tspan
+         id="tspan22">Observed problems </tspan><tspan
          x="602.80072"
          y="495.48658"
-         id="tspan27">and classified</tspan></text><text
+         id="tspan23">and classified</tspan></text><text
        xml:space="preserve"
        id="text322"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect323);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"><tspan
          x="590.49591"
          y="395.77311"
-         id="tspan29"><tspan
+         id="tspan25"><tspan
            style="font-size:16px"
-           id="tspan28">10,100 DOIs </tspan></tspan><tspan
+           id="tspan24">10,100 DOIs </tspan></tspan><tspan
          x="585.14392"
          y="413.19246"
-         id="tspan31"><tspan
+         id="tspan27"><tspan
            style="font-size:16px"
-           id="tspan30">from Crossref</tspan></tspan></text><text
+           id="tspan26">from Crossref</tspan></tspan></text><text
        xml:space="preserve"
        id="text323"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect324);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        transform="translate(-4,-4)"><tspan
          x="795.84778"
          y="390.72291"
-         id="tspan32">Subsets:
+         id="tspan28">Subsets:
 </tspan><tspan
          x="765.79977"
          y="406.72291"
-         id="tspan33">300 longest and </tspan><tspan
+         id="tspan29">300 longest and </tspan><tspan
          x="796.83977"
          y="422.72291"
-         id="tspan35">shortest</tspan></text></g><style
+         id="tspan30">shortest</tspan></text></g><style
      type="text/css"
      id="style1">
 	.st0{fill:#3EB1C8;}
@@ -527,11 +523,11 @@
        transform="translate(437.64399,117.46002)"><tspan
          x="514.40118"
          y="273.62122"
-         id="tspan36">Pattern analysis:
+         id="tspan31">Pattern analysis:
 </tspan><tspan
          x="514.40118"
          y="289.62122"
-         id="tspan37">shared corpus</tspan></text><rect
+         id="tspan32">shared corpus</tspan></text><rect
        style="fill:none;fill-opacity:1;stroke:#90d9f9;stroke-width:2.99999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect41"
        width="153.94162"
@@ -545,11 +541,11 @@
        transform="translate(-7.1556724,-5.861504)"><tspan
          x="599.95715"
          y="479.48658"
-         id="tspan38">Differences:
+         id="tspan33">Differences:
 </tspan><tspan
          x="587.54921"
          y="495.48658"
-         id="tspan39">title &amp; abstract</tspan></text><rect
+         id="tspan35">title &amp; abstract</tspan></text><rect
        style="fill:none;fill-opacity:1;stroke:#d5f990;stroke-width:3.00001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect43"
        width="193.2558"
@@ -563,39 +559,39 @@
        transform="translate(157.40748,27.441617)"><tspan
          x="609.412"
          y="479.48658"
-         id="tspan40">Incorrect values
+         id="tspan36">Incorrect values
 </tspan><tspan
          x="598.76401"
          y="495.48658"
-         id="tspan41">Incorrect elements
+         id="tspan37">Incorrect elements
 </tspan><tspan
          x="624.41997"
          y="511.48658"
-         id="tspan42">Missing info
+         id="tspan38">Missing info
 </tspan><tspan
          x="637.21201"
          y="527.48658"
-         id="tspan43">Info loss
+         id="tspan39">Info loss
 </tspan><tspan
          x="636.468"
          y="543.48658"
-         id="tspan44">Info gain
+         id="tspan40">Info gain
 </tspan><tspan
          x="585.81198"
          y="559.48658"
-         id="tspan45">Inconsistent value rep
+         id="tspan41">Inconsistent value rep
 </tspan><tspan
          x="612.66"
          y="575.48658"
-         id="tspan46">Semantic noise
+         id="tspan42">Semantic noise
 </tspan><tspan
          x="614.32401"
          y="591.48658"
-         id="tspan47">Datatype noise
+         id="tspan43">Datatype noise
 </tspan><tspan
          x="576.5332"
          y="607.48658"
-         id="tspan48">
+         id="tspan44">
 </tspan></text><rect
        style="fill:none;fill-opacity:1;stroke:#d5f990;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect44"
@@ -610,10 +606,10 @@
        transform="translate(171.94381,-26.8259)"><tspan
          x="581.62474"
          y="479.48658"
-         id="tspan49">Observed problems </tspan><tspan
+         id="tspan45">Observed problems </tspan><tspan
          x="602.80072"
          y="495.48658"
-         id="tspan50">and classified</tspan></text><rect
+         id="tspan46">and classified</tspan></text><rect
        style="fill:none;fill-opacity:1;stroke:#f990ca;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect45"
        width="151.80029"
@@ -627,30 +623,30 @@
        transform="translate(374.47488,-5.0027108)"><tspan
          x="581.8432"
          y="479.48658"
-         id="tspan51">Regex patterns:
+         id="tspan47">Regex patterns:
 </tspan><tspan
          x="598.23521"
          y="495.48658"
-         id="tspan52">From Part 1</tspan></text><text
+         id="tspan48">From Part 1</tspan></text><text
        xml:space="preserve"
        id="text324"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect325);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"><tspan
          x="578.4798"
          y="391.09986"
-         id="tspan53">9,980 works in </tspan><tspan
+         id="tspan49">9,980 works in </tspan><tspan
          x="580.37579"
          y="407.09986"
-         id="tspan54">shared corpus</tspan></text><text
+         id="tspan50">shared corpus</tspan></text><text
        xml:space="preserve"
        id="text325"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect326);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"><tspan
          x="793.42883"
          y="391.09986"
-         id="tspan55">Subsets:
+         id="tspan51">Subsets:
 </tspan><tspan
          x="768.18886"
          y="407.09986"
-         id="tspan56">title &amp; abstract</tspan></text></g><g
+         id="tspan52">title &amp; abstract</tspan></text></g><g
      id="g318"
      style="display:none"
      transform="translate(-539.17187,-331.52655)"><rect
@@ -703,10 +699,10 @@
        transform="translate(-7.1556724,-5.861504)"><tspan
          x="614.51585"
          y="479.48658"
-         id="tspan57">QA pair </tspan><tspan
+         id="tspan53">QA pair </tspan><tspan
          x="602.18785"
          y="495.48658"
-         id="tspan58">benchmark</tspan></text><rect
+         id="tspan54">benchmark</tspan></text><rect
        style="display:inline;fill:none;fill-opacity:1;stroke:#c446ff;stroke-width:2.99999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect315-5"
        width="153.94162"
@@ -720,10 +716,10 @@
        transform="translate(-6.287584,58.696871)"><tspan
          x="608.35718"
          y="479.48658"
-         id="tspan59">Response </tspan><tspan
+         id="tspan55">Response </tspan><tspan
          x="579.05318"
          y="495.48658"
-         id="tspan60">relevance criteria</tspan></text><rect
+         id="tspan56">relevance criteria</tspan></text><rect
        style="display:inline;fill:none;fill-opacity:1;stroke:#c446ff;stroke-width:2.99999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect315-5-5"
        width="153.94162"
@@ -737,7 +733,7 @@
        transform="translate(-6.8255549,122.56161)"><tspan
          x="602.87718"
          y="479.48658"
-         id="tspan61">Instrument</tspan></text><rect
+         id="tspan57">Instrument</tspan></text><rect
        style="fill:none;fill-opacity:1;stroke:#90d9f9;stroke-width:3.00001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect316"
        width="193.2558"
@@ -751,35 +747,35 @@
        transform="translate(158.31507,44.55054)"><tspan
          x="643.89558"
          y="479.48658"
-         id="tspan62">Query
+         id="tspan58">Query
 </tspan><tspan
          x="631.51155"
          y="495.48658"
-         id="tspan63">Precision
+         id="tspan59">Precision
 </tspan><tspan
          x="643.19159"
          y="511.48658"
-         id="tspan64">Recall
+         id="tspan60">Recall
 </tspan><tspan
          x="635.11156"
          y="527.48658"
-         id="tspan65">F1-score
+         id="tspan61">F1-score
 </tspan><tspan
          x="596.59158"
          y="543.48658"
-         id="tspan66">Balanced accuracy
+         id="tspan62">Balanced accuracy
 </tspan><tspan
          x="620.32755"
          y="559.48658"
-         id="tspan67">Faithfulness
+         id="tspan63">Faithfulness
 </tspan><tspan
          x="605.52756"
          y="575.48658"
-         id="tspan68">Document score
+         id="tspan64">Document score
 </tspan><tspan
          x="576.5332"
          y="591.48658"
-         id="tspan69">
+         id="tspan65">
 </tspan></text><rect
        style="fill:none;fill-opacity:1;stroke:#90d9f9;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect317"
@@ -794,11 +790,11 @@
        transform="translate(148.20772,-18.956954)"><tspan
          x="597.74204"
          y="477.44354"
-         id="tspan70">Round 1:
+         id="tspan66">Round 1:
 </tspan><tspan
          x="586.67542"
          y="490.77686"
-         id="tspan71">Multilingual </tspan></text><rect
+         id="tspan67">Multilingual </tspan></text><rect
        style="display:inline;fill:none;fill-opacity:1;stroke:#90d9f9;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect317-6"
        width="90.197716"
@@ -812,11 +808,11 @@
        transform="translate(252.19547,-18.509459)"><tspan
          x="596.82204"
          y="477.44354"
-         id="tspan72">Round 2:
+         id="tspan68">Round 2:
 </tspan><tspan
          x="585.47541"
          y="490.77686"
-         id="tspan73">English-only </tspan></text><rect
+         id="tspan69">English-only </tspan></text><rect
        style="fill:none;fill-opacity:1;stroke:#d5f990;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect318"
        width="151.80029"
@@ -830,13 +826,13 @@
        transform="translate(372.47488,-7.0027108)"><tspan
          x="607.2112"
          y="479.48658"
-         id="tspan74">Coded to </tspan><tspan
+         id="tspan70">Coded to </tspan><tspan
          x="605.15518"
          y="495.48658"
-         id="tspan75">relevance </tspan><tspan
+         id="tspan71">relevance </tspan><tspan
          x="613.90721"
          y="511.48658"
-         id="tspan76">criteria</tspan></text><rect
+         id="tspan72">criteria</tspan></text><rect
        style="display:inline;fill:none;fill-opacity:1;stroke:#d5f990;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect318-2"
        width="151.80029"
@@ -850,43 +846,43 @@
        transform="translate(373.13369,80.618745)"><tspan
          x="613.6272"
          y="479.48658"
-         id="tspan77">Answer </tspan><tspan
+         id="tspan73">Answer </tspan><tspan
          x="582.07518"
          y="495.48658"
-         id="tspan78">relevance score</tspan></text><text
+         id="tspan74">relevance score</tspan></text><text
        xml:space="preserve"
        id="text326"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect327);display:inline;fill:#ffffff;fill-opacity:0.997758;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        transform="translate(0,-6)"><tspan
          x="605.3588"
          y="388.56275"
-         id="tspan79">Corpora:
+         id="tspan75">Corpora:
 </tspan><tspan
          x="610.8308"
          y="404.56275"
-         id="tspan80">Clean, 
+         id="tspan76">Clean, 
 </tspan><tspan
          x="578.22278"
          y="420.56275"
-         id="tspan81">Datatype noise,
+         id="tspan77">Datatype noise,
 </tspan><tspan
          x="591.7348"
          y="436.56275"
-         id="tspan82">Multilingual</tspan></text><text
+         id="tspan78">Multilingual</tspan></text><text
        xml:space="preserve"
        id="text327"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect328);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        transform="translate(0.56867328,8.5243908)"><tspan
          x="739.00943"
          y="389.40846"
-         id="tspan83">RAG experiment loops</tspan></text><text
+         id="tspan79">RAG experiment loops</tspan></text><text
        xml:space="preserve"
        id="text328"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect329);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        transform="translate(-0.84562951,3.382518)"><tspan
          x="948.41299"
          y="389.40846"
-         id="tspan84">Manual relevance </tspan><tspan
+         id="tspan80">Manual relevance </tspan><tspan
          x="975.213"
          y="405.40846"
-         id="tspan85">evaluation</tspan></text></g></svg>
+         id="tspan81">evaluation</tspan></text></g></svg>

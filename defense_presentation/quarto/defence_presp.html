@@ -157,8 +157,8 @@ Poppy Riddle
 <li>Introduction &amp; Background; problem and RQs</li>
 <li>Methodology; theoretical and methods</li>
 <li>Results</li>
-<li>Discussion; contributions; future research</li>
-<li>Recommendations &amp; Conclusion</li>
+<li>Discussion; contributions</li>
+<li>Recommendations &amp; Future Reseach</li>
 <li>Acknowledgements</li>
 </ul>
 <style type="text/css">
@@ -177,7 +177,7 @@ Poppy Riddle
 <li>Methodology</li>
 <li>Results</li>
 <li>Discussion &amp; Contributions</li>
-<li>Recommendations &amp; Conclusion</li>
+<li>Recommendations &amp; Future Research</li>
 <li>Acknowledgments</li>
 </ul>
 </section>
@@ -187,7 +187,7 @@ Poppy Riddle
 <aside class="notes">
 <ul>
 <li>working at Crossref in 2023-2024;</li>
-<li>witness to metadata creation and errors</li>
+<li>witness to metadata creation, maintenance, and errors</li>
 <li>began playing with LLMs and RAG</li>
 <li>2024 we used abstracts in a RAG</li>
 <li>what if that mess posed a problem?</li>
@@ -291,10 +291,12 @@ Poppy Riddle
 <aside class="notes">
 <ul>
 <li>what i saw while working at Crossref</li>
+<li>walk through slides</li>
 <li>including changes between databases, truncation, replacements with another language or content</li>
 <li>gaps in the literature on documenting these characteristics</li>
-<li>scientometric studies have examined the title and abstract, but for presence, language used, but also terminology and linguistics</li>
-<li>NLP studies had examined unnecessary, unwanted, text as typos, errors, noise; beneficial or harmful in their effects on NLP systems and processes</li>
+<li>scientometric studies have examined the title and abstract, but for presence, language used,</li>
+<li>others studes: terminology and semantic qualities</li>
+<li>NLP studies had examined unnecessary, unwanted, text as typos, mistakes, hyperlinks, called noise; beneficial or harmful in their effects on NLP systems and processes</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -333,7 +335,7 @@ Poppy Riddle
 <aside class="notes">
 <ul>
 <li>thinking about these various threads</li>
-<li>holistic framework needed</li>
+<li>holistic framework needed to account for various parts and actors in an IR system</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -542,7 +544,7 @@ Poppy Riddle
       }</style></aside>
 <div>
 <ol type="1">
-<li class="fragment">What errors or noise may be observed in the title and abstract from a random sample of Crossref and OpenAlex?</li>
+<li class="fragment">What errors or noise may be observed in the title and abstract from a random Crossref sample?</li>
 <li class="fragment">How do Crossref and OpenAlex compare for errors and noise in the same random sample?</li>
 <li class="fragment">What is the effect of observed errors and noise on RAG retrieval and generation?</li>
 </ol>
@@ -551,7 +553,9 @@ Poppy Riddle
 <section id="methods" class="slide level2">
 <h2>Methods</h2>
 <aside class="notes">
-
+<ul>
+<li>note that patterns are semantic and datatype noise patterns</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -571,6 +575,21 @@ Poppy Riddle
 </section>
 <section id="methods-1" class="slide level2">
 <h2>Methods</h2>
+<aside class="notes">
+<ul>
+<li>added category of info gain</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="images/framework_part2.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/framework_part2.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
@@ -579,6 +598,19 @@ Poppy Riddle
 </section>
 <section id="methods-2" class="slide level2">
 <h2>Methods</h2>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="images/framework_part3.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/framework_part3.svg" class="quarto-figure quarto-figure-center" style="width:160.0%"></a></p>
@@ -671,7 +703,7 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <li>other results were collected; characterization of tokens, characters</li>
 <li>used to understand if additional NLP processes needed, or chunking strategies</li>
 <li>token lengths work well with LLMs</li>
-<li>results from initial characterization - short and long char counts</li>
+<li>results from initial characterization - short and long char counts used to create subset</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -684,7 +716,7 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<p><span class="italic">RQ1. What errors or noise may be observed in the title and abstract from a random sample of Crossref and OpenAlex?</span> <br></p>
+<p><span class="italic">RQ1. What errors or noise may be observed in the title and abstract from a random Crossref sample?</span> <br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="images/part1_main_results.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/part1_main_results.svg" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
@@ -765,15 +797,7 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <section id="what-does-this-mean" class="slide level2">
 <h2>What does this mean?</h2>
 <aside class="notes">
-<p>Overarching question - can I use bibliographic metadata as it is for use in RAG? Yes, you can. But, there is a bias and unpredictable affects.</p>
-<p>limitations:</p>
-<ul>
-<li>this just examined Crossref and OpenAlex - other databases 56</li>
-<li>limitations to how much noise was introduced - more research needed</li>
-<li>multilingual text can be an advantage - more research is needed to see if this is unfair or just; other errors recorded such as information loss and missing information</li>
-<li>some fields/disciplines may be more ready than others</li>
-<li>more noise categories!</li>
-</ul>
+<p>go over where this research is situated within the model</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -793,22 +817,42 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 </section>
 <section id="what-does-this-mean-1" class="slide level2">
 <h2>What does this mean?</h2>
+<aside class="notes">
+<p>Overarching question - can I use open bibliographic metadata as it is for use in RAG? Yes, you can. But, there is a possible bias and unpredictable affects.</p>
+<p>limitations:</p>
+<ul>
+<li>this just examined Crossref and OpenAlex - other databases 56</li>
+<li>limitations to how much noise was introduced - more research needed</li>
+<li>multilingual text can be an advantage - more research is needed to see if this is unfair or just; other errors recorded such as information loss and missing information</li>
+<li>some fields/disciplines may be more ready than others</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <h3 id="rq1-crossref-data-has-errors-and-noise.">RQ1: Crossref data has errors and noise.</h3>
 <ul>
-<li>missing and info loss biggest categories,</li>
-<li>identified datatype, semantinc, and multilingual text as problems</li>
+<li>Missing and information loss</li>
+<li>Identified datatype, semantic, and multilingual text as problems</li>
 </ul>
 <h3 id="r2-openalex-does-not-eliminate-these-problems">R2: OpenAlex does not eliminate these problems</h3>
 <ul>
-<li>improvements in langauge assignment</li>
-<li>improvemnts to address missing information</li>
-<li>reduction in datatype noise, but increase in multilingual text</li>
+<li>Improvements in langauge assignment</li>
+<li>Reduction in missing information</li>
+<li>Increase in datatype noise and multilingual text</li>
 </ul>
 <h3 id="rq3-most-metrics-unaffected">RQ3: most metrics unaffected</h3>
 <ul>
-<li>multilingual text provides a beneficial effect on retrieval</li>
-<li>scientometric perspective, does this give publishers an advantage?</li>
-<li>datatype noise had no effect, but caveats on mmy method</li>
+<li>Multilingual text provided a beneficial effect on retrieval</li>
+<li>Scientometric perspective, does this give publishers an advantage?</li>
+<li>Datatype noise had no effect, but limitations with my method</li>
 </ul>
 </section>
 <section id="contributions" class="slide level2">
@@ -832,8 +876,8 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 </ul>
 <h3 id="methodological">Methodological</h3>
 <ul>
-<li>Analysis of textual characteristics</li>
-<li>Merged LIS &amp; NLP perspectives</li>
+<li>Analysis of textual characteristics for problems</li>
+<li>Merged LIS &amp; NLP perspectives for categorization</li>
 <li>Real-world benchmark</li>
 </ul>
 <h3 id="empirical">Empirical</h3>
@@ -866,7 +910,7 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <ol type="1">
 <li>multiple abstracts in the REST API to mimic the XML API - titles are getting there; this impacts past research</li>
 <li>clean out jats tags on REST API calls; could be a flag or option within the REST API; improvement to usability</li>
-<li>multiple language values; language attributes, 3 letter ISO code, imaging tuple of multiple language codes</li>
+<li>multiple language values; language attributes, 3 letter ISO code, imaging tuple of multiple language codes; both OpenAlex and Crossref do this; inaccurate</li>
 </ol>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -906,7 +950,6 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 <li>More granular noise - Al Sharou et al.&nbsp;(2024)</li>
 <li>Analyze a larger sample</li>
 <li>Use incremental noise approach</li>
-<li>What are the effects of hidden Unicode?</li>
 <li>Does the beneficial affect provide an advantage for some publishers?</li>
 <li>Does the negative effect really impact an information seeker?</li>
 </ul>

@@ -31,8 +31,8 @@ project:
 - Introduction & Background; problem and RQs
 - Methodology; theoretical and methods
 - Results
-- Discussion; contributions; future research
-- Recommendations & Conclusion
+- Discussion; contributions
+- Recommendations & Future Reseach
 - Acknowledgements
 :::
 
@@ -40,13 +40,13 @@ project:
 -   Methodology
 -   Results
 -   Discussion & Contributions
--   Recommendations & Conclusion
+-   Recommendations & Future Research
 -   Acknowledgments
 
 # Introduction & Background
 ::: notes
 - working at Crossref in 2023-2024; 
-- witness to metadata creation and errors
+- witness to metadata creation, maintenance, and errors
 - began playing with LLMs and RAG
 - 2024 we used abstracts in a RAG 
 - what if that mess posed a problem?
@@ -105,10 +105,12 @@ While they are using proprietary databases, what might we need to create an open
 
 ::: notes
 - what i saw while working at Crossref
+- walk through slides
 - including changes between databases, truncation, replacements with another language or content
 - gaps in the literature on documenting these characteristics
-- scientometric studies have examined the title and abstract, but for presence, language used, but also terminology and linguistics
-- NLP studies had examined unnecessary, unwanted, text as typos, errors, noise; beneficial or harmful in their effects on NLP systems and processes
+- scientometric studies have examined the title and abstract, but for presence, language used, 
+- others studes: terminology and semantic qualities
+- NLP studies had examined unnecessary, unwanted, text as typos, mistakes, hyperlinks, called noise; beneficial or harmful in their effects on NLP systems and processes
 
 :::
 
@@ -127,15 +129,10 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 ![](images/abstract3_overlay.png){fig-align="center"}
 
 
-
-
-
-
-
 # Methodology
 ::: notes
 - thinking about these various threads
-- holistic framework needed
+- holistic framework needed to account for various parts and actors in an IR system
 :::
 
 ## The Cognitive model of IS&R
@@ -261,7 +258,7 @@ incremental slides!
 :::
 
 ::: incremental
-1.  What errors or noise may be observed in the title and abstract from a random sample of Crossref and OpenAlex?
+1.  What errors or noise may be observed in the title and abstract from a random Crossref sample?
 2.  How do Crossref and OpenAlex compare for errors and noise in the same random sample?
 3.  What is the effect of observed errors and noise on RAG retrieval and generation?
 :::
@@ -269,16 +266,22 @@ incremental slides!
 
 ## Methods
 ::: notes
-
+- note that patterns are semantic and datatype noise patterns
 :::
 
 ![](images/framework_part1.svg){fig-align="center" width="160%"}
 
 ## Methods
+::: notes
+- added category of info gain
+:::
 
 ![](images/framework_part2.svg){fig-align="center" width="160%"}
 
 ## Methods
+::: notes
+
+:::
 
 ![](images/framework_part3.svg){fig-align="center" width="160%"}
 
@@ -353,11 +356,11 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 - other results were collected; characterization of tokens, characters
 - used to understand if additional NLP processes needed, or chunking strategies
 - token lengths work well with LLMs
-- results from initial characterization - short and long char counts
+- results from initial characterization - short and long char counts used to create subset
 
 :::
 
-[RQ1.  What errors or noise may be observed in the title and abstract from a random sample of Crossref and OpenAlex?]{.italic}
+[RQ1. What errors or noise may be observed in the title and abstract from a random Crossref sample?]{.italic}
 <br>
 
 ![](images/part1_main_results.svg){fig-align="center" width="70%"}
@@ -410,9 +413,16 @@ Statistically significant: (p=0.01, 0.95 CI)
 ## What does this mean?
 
 ::: notes
-Overarching question - can I use bibliographic metadata as it is for use in RAG?
+go over where this research is situated within the model
+:::
+
+![](images/cog_model_summary.svg){.fragment fig-align="center" width="100%"}
+
+## What does this mean?
+::: notes
+Overarching question - can I use open bibliographic metadata as it is for use in RAG?
 Yes, you can. 
-But, there is a bias and unpredictable affects. 
+But, there is a possible bias and unpredictable affects. 
 
 limitations:
 
@@ -420,26 +430,21 @@ limitations:
 -   limitations to how much noise was introduced - more research needed
 -   multilingual text can be an advantage - more research is needed to see if this is unfair or just; other errors recorded such as information loss and missing information
 -   some fields/disciplines may be more ready than others
--   more noise categories!
 :::
 
-![](images/cog_model_summary.svg){.fragment fig-align="center" width="100%"}
-
-## What does this mean?
-
 ### RQ1: Crossref data has errors and noise.
-- missing and info loss biggest categories, 
-- identified datatype, semantinc, and multilingual text as problems
+- Missing and information loss
+- Identified datatype, semantic, and multilingual text as problems
 
 ### R2: OpenAlex does not eliminate these problems
-- improvements in langauge assignment
-- improvemnts to address missing information
-- reduction in datatype noise, but increase in multilingual text
+- Improvements in langauge assignment
+- Reduction in missing information
+- Increase in datatype noise and multilingual text
 
 ### RQ3: most metrics unaffected
-- multilingual text provides a beneficial effect on retrieval
-- scientometric perspective, does this give publishers an advantage?
-- datatype noise had no effect, but caveats on mmy method
+- Multilingual text provided a beneficial effect on retrieval
+- Scientometric perspective, does this give publishers an advantage?
+- Datatype noise had no effect, but limitations with my method
 
 
 ## Contributions
@@ -451,8 +456,8 @@ limitations:
 - Update to IS&R model for RAG processes
 
 ### Methodological
-- Analysis of textual characteristics
-- Merged LIS & NLP perspectives
+- Analysis of textual characteristics for problems
+- Merged LIS & NLP perspectives for categorization
 - Real-world benchmark 
 
 ### Empirical
@@ -469,7 +474,7 @@ recommendations from text
 ::: notes
 1. multiple abstracts in the REST API to mimic the XML API - titles are getting there; this impacts past research
 2. clean out jats tags on REST API calls; could be a flag or option within the REST API; improvement to usability
-3. multiple language values; language attributes, 3 letter ISO code, imaging tuple of multiple language codes
+3. multiple language values; language attributes, 3 letter ISO code, imaging tuple of multiple language codes;  both OpenAlex and Crossref do this; inaccurate
 :::
 
 1. Multiple abstracts availability
@@ -490,7 +495,6 @@ recommendations from text
 - More granular noise - Al Sharou et al. (2024)
 - Analyze a larger sample
 - Use incremental noise approach
-- What are the effects of hidden Unicode?
 - Does the beneficial affect provide an advantage for some publishers?
 - Does the negative effect really impact an information seeker?
 
@@ -500,7 +504,8 @@ recommendations from text
 thank family
 Dr. Mongeon and Dr. Conrad for encouraging me 
 Dr. Smit for insights, questions, and positive energy
-fellow students; Maddie and Geoff
+fellow students; Maddie and Geoff; 
+Dr. Brown for being a lighthouse
 Department support from IDPhD and Information Science
 Funding agencies
 :::

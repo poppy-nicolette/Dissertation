@@ -427,13 +427,21 @@ limitations:
 
 ## What does this mean?
 
+### RQ1: Crossref data has errors and noise.
+- missing and info loss biggest categories, 
+- identified datatype, semantinc, and multilingual text as problems
 
--   Information loss and missing info most significant problems
--   Datatype, semantic, and multilingual are not uncommon
--   Ingest processes at OpenAlex introduce multilingual text
--   Most metrics are not significantly affected
--   Multilingual text causes both beneficial and harmful effects
--   More research is needed with more noise categories
+### R2: OpenAlex does not eliminate these problems
+- improvements in langauge assignment
+- improvemnts to address missing information
+- reduction in datatype noise, but increase in multilingual text
+
+### RQ3: most metrics unaffected
+- multilingual text provides a beneficial effect on retrieval
+- scientometric perspective, does this give publishers an advantage?
+- datatype noise had no effect, but caveats on mmy method
+
+
 
 ## Contributions
 ::: notes
@@ -442,18 +450,21 @@ contributions from dissertation
 
 
 ### Theoretical
-
-
+- update to IS&R for use with RAG terminology and processes
 
 ### Methodological
+- classification scheme merging LIS & NLP perspectives for metadata quality
 
 ### Practical
+- data on content as it affects NLP processes
+- documenting differences between Crossref and OpenAlex
+- data supporting sensitivity of RAG to inputs
 
-
-# Recommendations and Conclusion
+# Recommendations & Future Research
 ::: notes
 - answer each RQ
 :::
+
 
 
 ## Recommendations

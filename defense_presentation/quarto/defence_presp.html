@@ -793,13 +793,22 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
 </section>
 <section id="what-does-this-mean-1" class="slide level2">
 <h2>What does this mean?</h2>
+<h3 id="rq1-crossref-data-has-errors-and-noise.">RQ1: Crossref data has errors and noise.</h3>
 <ul>
-<li>Information loss and missing info most significant problems</li>
-<li></li>
-<li>Most metrics are not significantly affected</li>
-<li>Ingest processes at OpenAlex introduce multilingual text</li>
-<li>Datatype noise had no effect</li>
-<li>More research is needed with more noise categories</li>
+<li>missing and info loss biggest categories,</li>
+<li>identified datatype, semantinc, and multilingual text as problems</li>
+</ul>
+<h3 id="r2-openalex-does-not-eliminate-these-problems">R2: OpenAlex does not eliminate these problems</h3>
+<ul>
+<li>improvements in langauge assignment</li>
+<li>improvemnts to address missing information</li>
+<li>reduction in datatype noise, but increase in multilingual text</li>
+</ul>
+<h3 id="rq3-most-metrics-unaffected">RQ3: most metrics unaffected</h3>
+<ul>
+<li>multilingual text provides a beneficial effect on retrieval</li>
+<li>scientometric perspective, does this give publishers an advantage?</li>
+<li>datatype noise had no effect, but caveats on mmy method</li>
 </ul>
 </section>
 <section id="contributions" class="slide level2">
@@ -818,12 +827,23 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
           display:block!important;
       }</style></aside>
 <h3 id="theoretical">Theoretical</h3>
+<ul>
+<li>update to IS&amp;R for use with RAG terminology and processes</li>
+</ul>
 <h3 id="methodological">Methodological</h3>
+<ul>
+<li>classification scheme merging LIS &amp; NLP perspectives for metadata quality</li>
+</ul>
 <h3 id="practical">Practical</h3>
+<ul>
+<li>data on content as it affects NLP processes</li>
+<li>documenting differences between Crossref and OpenAlex</li>
+<li>data supporting sensitivity of RAG to inputs</li>
+</ul>
 </section></section>
 <section>
-<section id="recommendations-and-conclusion" class="title-slide slide level1 center">
-<h1>Recommendations and Conclusion</h1>
+<section id="recommendations-future-research" class="title-slide slide level1 center">
+<h1>Recommendations &amp; Future Research</h1>
 <aside class="notes">
 <ul>
 <li>answer each RQ</li>
@@ -839,10 +859,7 @@ def cohere_rag_pipeline(directory_path,search_queries,top_k,threshold):
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<p>Simplify answer to questions ### RQ1</p>
 </section>
-<h3 id="rq2">RQ2</h3>
-<h3 id="rq3">RQ3</h3>
 <section id="recommendations" class="slide level2">
 <h2>Recommendations</h2>
 <p>Pull recommendations from dissertation</p>

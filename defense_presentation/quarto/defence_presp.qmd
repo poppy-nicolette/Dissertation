@@ -442,38 +442,39 @@ limitations:
 - datatype noise had no effect, but caveats on mmy method
 
 
-
 ## Contributions
 ::: notes
-contributions from dissertation
+
 :::
 
-
 ### Theoretical
-- update to IS&R for use with RAG terminology and processes
+- Update to IS&R model for RAG processes
 
 ### Methodological
-- classification scheme merging LIS & NLP perspectives for metadata quality
+- Analysis of textual characteristics
+- Merged LIS & NLP perspectives
+- Real-world benchmark 
 
-### Practical
-- data on content as it affects NLP processes
-- documenting differences between Crossref and OpenAlex
-- data supporting sensitivity of RAG to inputs
+### Empirical
+- Data on textual content
+- Documented differences between Crossref and OpenAlex
+- Data supporting sensitivity of RAG
 
 # Recommendations & Future Research
 ::: notes
-- answer each RQ
+recommendations from text
 :::
 
-
-
 ## Recommendations
+::: notes
+1. multiple abstracts in the REST API to mimic the XML API - titles are getting there; this impacts past research
+2. clean out jats tags on REST API calls; could be a flag or option within the REST API; improvement to usability
+3. multiple language values; language attributes, 3 letter ISO code, imaging tuple of multiple language codes
+:::
 
-Pull recommendations from dissertation
-
-
-
-
+1. Multiple abstracts availability
+2. Clean out JATS tags
+3. Multiple language values
 
 ## Future Research {.scrollable}
 
@@ -488,15 +489,26 @@ Pull recommendations from dissertation
 
 - More granular noise - Al Sharou et al. (2024)
 - Analyze a larger sample
-- Which fields or publishers are most affected by the beneficial effect?
+- Use incremental noise approach
+- What are the effects of hidden Unicode?
+- Does the beneficial affect provide an advantage for some publishers?
 - Does the negative effect really impact an information seeker?
 
 
-# Acknowledgments
+## Acknowledgments
+::: notes
+thank family
+Dr. Mongeon and Dr. Conrad for encouraging me 
+Dr. Smit for insights, questions, and positive energy
+fellow students; Maddie and Geoff
+Department support from IDPhD and Information Science
+Funding agencies
+:::
 
-Thank you to everyone that has helped and supported me over the years. <br>
+[Thank you to everyone that has helped and supported me over the years. <br>
 My family, my supervisor and committee, fellow students, organizations, and the Department of Information Science. <br>
-Funding support was received from the Nova Scotia Graduate Scholarship, Dalhousie IDPhD and Department of Information Science Programs, Mitacs, and Cohere Labs Catalyst Grant Program.
+Funding support was received from the Nova Scotia Graduate Scholarship, Dalhousie IDPhD and Department of Information Science Programs, Mitacs, and Cohere Labs Catalyst Grant Program.]{.smaller}
+<br>
 <br>
 
 Poppy Riddle [Department of Information Science PhD Program]{.blue}
@@ -506,6 +518,8 @@ Poppy Riddle [Department of Information Science PhD Program]{.blue}
 [Agarwal, S., Laradji, I. H., Charlin, L., & Pal, C. (2024). LitLLM: A Toolkit for Scientific Literature Review (No. arXiv:2402.01788). arXiv. https://doi.org/10.48550/arXiv.2402.01788]{.biblio}
 
 [Alonso-Álvarez, P., & van Eck, N. J. (2024, October 29). Coverage and metadata availability of African publications in OpenAlex: A comparative analysis. Zenodo. https://doi.org/10.5281/zenodo.14006425]{.biblio}
+
+[Al Sharou, K., Li, Z., & Specia, L. (2021). Towards a Better Understanding of Noise in Natural Language Processing. In R. Mitkov & G. Angelova (Eds.), Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2021) (pp. 53–62). INCOMA Ltd. https://aclanthology.org/2021.ranlp-1.7/]{.biblio}
 
 [Cho, S., Jeong, S., Seo, J., Hwang, T., & Park, J. C. (2024). Typos that Broke the RAG’s Back: Genetic Attack on RAG Pipeline by Simulating Documents in the Wild via Low-level Perturbations (No. arXiv:2404.13948). arXiv. https://doi.org/10.48550/arXiv.2404.13948]{.biblio}
 

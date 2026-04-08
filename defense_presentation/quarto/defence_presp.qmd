@@ -68,7 +68,6 @@ While they are using proprietary databases, what might we need to create an open
 [image source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE\_(English)/015_Getting_Started_with_Primo_Research_Assistant]{.small}
 
 
-
 ## Bibliographic Metadata
 
 ::: notes
@@ -135,7 +134,7 @@ Or one that contains geometric shapes, from <https://api.crossref.org/works/10.1
 - holistic framework needed to account for various parts and actors in an IR system
 :::
 
-## The Cognitive model of IS&R
+## The Cognitive Model of IS&R
 
 ::: notes
 - levels of framework
@@ -162,6 +161,8 @@ Inversen & Järvelin's Cognitive Model of Information Seeking and Retrieval ![](
 - Yasser - study of holdings - what causes IR to fail
 - Wu - study of impact of noise on LLMs
 - Combined view does not exist to account for LLM's now being in IR systems
+-   by combining perspectives, the gap of analyzing metadata content for characteristics that would affect NLP could be addressed
+-   this is necessary because: new conversational search tools require new metadata quality assessment criteria
 :::
 
 <br>
@@ -215,8 +216,7 @@ Noise classification from Wu et al., (2025)
 ## Problem Statement
 
 ::: notes
--   by combining perspectives, the gap of analyzing metadata content for characteristics that would affect NLP could be addressed
--   this is necessary because: new conversational search tools require new metadata quality assessment criteria
+
 :::
 
 ::::: columns
@@ -429,7 +429,7 @@ limitations:
 -   this just examined Crossref and OpenAlex - other databases 56
 -   limitations to how much noise was introduced - more research needed
 -   multilingual text can be an advantage - more research is needed to see if this is unfair or just; other errors recorded such as information loss and missing information
--   some fields/disciplines may be more ready than others
+-   some fields/disciplines, such as Mathematics, Genomics, Physics may be more ready than others
 :::
 
 ### RQ1: Crossref data has errors and noise.
@@ -437,11 +437,11 @@ limitations:
 - Identified datatype, semantic, and multilingual text as problems
 
 ### R2: OpenAlex does not eliminate these problems
-- Improvements in langauge assignment
+- Improvements in language assignment
 - Reduction in missing information
 - Increase in datatype noise and multilingual text
 
-### RQ3: most metrics unaffected
+### RQ3: Most metrics unaffected
 - Multilingual text provided a beneficial effect on retrieval
 - Scientometric perspective, does this give publishers an advantage?
 - Datatype noise had no effect, but limitations with my method
@@ -495,7 +495,8 @@ recommendations from text
 - More granular noise - Al Sharou et al. (2024)
 - Analyze a larger sample
 - Use incremental noise approach
-- Does the beneficial affect provide an advantage for some publishers?
+- Noise types within/across disciplines
+- Does the beneficial effect provide an advantage for some publishers?
 - Does the negative effect really impact an information seeker?
 
 
@@ -516,7 +517,7 @@ Funding support was received from the Nova Scotia Graduate Scholarship, Dalhousi
 <br>
 <br>
 
-Poppy Riddle [Department of Information Science PhD Program]{.blue}
+[Poppy Riddle [Department of Information Science PhD Program]{.blue}]{.smaller}
 
 ## References
 

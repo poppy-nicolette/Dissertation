@@ -654,7 +654,7 @@
      id="g318"
      style="display:inline"
      transform="translate(-539.17187,-331.27054)"><rect
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="fill:none;fill-opacity:1;stroke:#fbff2e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect311"
        width="565.36365"
        height="285.98383"
@@ -669,28 +669,28 @@
          id="tspan311"
          x="540.09827"
          y="345.77719">Part 3</tspan></text><rect
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="fill:none;fill-opacity:1;stroke:#c446ff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect312"
        width="153.94162"
        height="66.087341"
        x="557.95868"
        y="370.06729"
        ry="9.7699461" /><rect
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="fill:none;fill-opacity:1;stroke:#90d9f9;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect313"
        width="194.7558"
        height="50.771954"
        x="726.45038"
        y="370.06732"
        ry="7.151443" /><rect
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="fill:none;fill-opacity:1;stroke:#d5f990;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect314"
        width="152.75117"
        height="66.087402"
        x="938.04919"
        y="368.53381"
        ry="10.677567" /><rect
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.99999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="fill:none;fill-opacity:1;stroke:#c446ff;stroke-width:2.99999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect315"
        width="153.94162"
        height="48.69038"
@@ -707,7 +707,7 @@
          x="602.18785"
          y="495.48658"
          id="tspan58">benchmark</tspan></text><rect
-       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.99999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="display:inline;fill:none;fill-opacity:1;stroke:#c446ff;stroke-width:2.99999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect315-5"
        width="153.94162"
        height="54.135921"
@@ -716,7 +716,7 @@
        ry="8.418582" /><text
        xml:space="preserve"
        id="text315-4"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect319-3);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect319-3);display:inline;fill:#ffffff;fill-opacity:0.997758;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        transform="translate(-6.287584,58.696871)"><tspan
          x="608.35718"
          y="479.48658"
@@ -724,7 +724,7 @@
          x="579.05318"
          y="495.48658"
          id="tspan60">relevance criteria</tspan></text><rect
-       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.99999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="display:inline;fill:none;fill-opacity:1;stroke:#c446ff;stroke-width:2.99999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect315-5-5"
        width="153.94162"
        height="54.135921"
@@ -738,7 +738,7 @@
          x="602.87718"
          y="479.48658"
          id="tspan61">Instrument</tspan></text><rect
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.00001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="fill:none;fill-opacity:1;stroke:#90d9f9;stroke-width:3.00001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect316"
        width="193.2558"
        height="123.27821"
@@ -781,7 +781,7 @@
          y="591.48658"
          id="tspan69">
 </tspan></text><rect
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="fill:none;fill-opacity:1;stroke:#90d9f9;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect317"
        width="90.684273"
        height="51.803364"
@@ -799,7 +799,7 @@
          x="586.67542"
          y="490.77686"
          id="tspan71">Multilingual </tspan></text><rect
-       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="display:inline;fill:none;fill-opacity:1;stroke:#90d9f9;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect317-6"
        width="90.197716"
        height="51.803364"
@@ -817,7 +817,7 @@
          x="585.47541"
          y="490.77686"
          id="tspan73">English-only </tspan></text><rect
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="fill:none;fill-opacity:1;stroke:#d5f990;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect318"
        width="151.80029"
        height="68.512764"
@@ -837,7 +837,7 @@
          x="613.90721"
          y="511.48658"
          id="tspan76">criteria</tspan></text><rect
-       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="display:inline;fill:none;fill-opacity:1;stroke:#d5f990;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect318-2"
        width="151.80029"
        height="57.621685"
@@ -856,8 +856,8 @@
          id="tspan78">relevance score</tspan></text><text
        xml:space="preserve"
        id="text326"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect327);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       transform="translate(0,-4)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:16px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect327);display:inline;fill:#ffffff;fill-opacity:0.997758;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       transform="translate(0,-6)"><tspan
          x="605.3588"
          y="388.56275"
          id="tspan79">Corpora:

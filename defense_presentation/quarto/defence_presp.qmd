@@ -447,9 +447,13 @@ limitations:
 - Datatype noise had no effect, but limitations with my method
 
 
-## Contributions
+## Why is this important?
 ::: notes
-
+- metadata is being used in a new way with conversational search tools
+- IS as an interdisciplinary field, brings in NLP definitions for noise to enhance research on IS&R
+- expands the definition of metadata quality with an integration of NLP perspectives
+- updates an underutilized model for IR brings it into metadata quality research
+- documents problems with using titles and abstracts as information sources and starts the conversation about what might be improved
 :::
 
 ### Theoretical
